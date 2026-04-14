@@ -9,6 +9,9 @@ from datetime import datetime, timezone
 
 ROOT_TYPE = "CodexProtocolRoot"
 
+INIT_PATTERN = re.compile(r"^(\s*public init\()(.+)(\)\s*\{)\s*$")
+OPTIONAL_PARAM_PATTERN = re.compile(r"^(\s*\w+\s*:\s*.+\?)(\s*=\s*[^,]+)?$")
+
 
 def remove_block(lines: list[str], start_index: int) -> int:
     depth = 0
@@ -24,6 +27,43 @@ def remove_block(lines: list[str], start_index: int) -> int:
         if depth <= 0:
             break
     return index
+
+
+def split_params(params_text: str) -> list[str]:
+    params: list[str] = []
+    current: list[str] = []
+    depth = 0
+    for character in params_text:
+        if character in "([{<":
+            depth += 1
+        elif character in ")]}>":
+            depth -= 1
+        if character == "," and depth == 0:
+            params.append("".join(current).strip())
+            current = []
+            continue
+        current.append(character)
+    tail = "".join(current).strip()
+    if tail:
+        params.append(tail)
+    return params
+
+
+def add_optional_defaults_to_init_signature(line: str) -> str:
+    match = INIT_PATTERN.match(line)
+    if not match:
+        return line
+
+    prefix, params_text, suffix = match.groups()
+    params = split_params(params_text)
+    rewritten: list[str] = []
+    for param in params:
+        param_match = OPTIONAL_PARAM_PATTERN.match(param)
+        if param_match and param_match.group(2) is None:
+            rewritten.append(f"{param_match.group(1)} = nil")
+        else:
+            rewritten.append(param)
+    return f"{prefix}{', '.join(rewritten)}{suffix}\n"
 
 
 def main() -> int:
@@ -64,6 +104,7 @@ def main() -> int:
         index += 1
 
     content = "".join(line for line in lines if line is not None)
+    content = "".join(add_optional_defaults_to_init_signature(line) for line in content.splitlines(keepends=True))
     content = content.replace("internal ", "public ")
     content = content.replace(
         "class JSONCodingKey: CodingKey",

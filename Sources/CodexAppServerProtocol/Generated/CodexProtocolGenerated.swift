@@ -2,7 +2,7 @@
 //
 // Source: codex app-server generate-json-schema --experimental
 // Codex version: 0.120.0 (codex-cli 0.120.0)
-// Generated at: 2026-04-14T22:29:05Z
+// Generated at: 2026-04-14T22:44:05Z
 //
 // To regenerate: ./Scripts/generate-protocol.sh
 //
@@ -914,7 +914,7 @@ public struct CodexProtocolRoot: Codable, Sendable {
         case writeStatus = "WriteStatus"
     }
 
-    public init(absolutePathBuf: String?, account: Account?, accountLoginCompletedNotification: AccountLoginCompletedNotification?, accountRateLimitsUpdatedNotification: AccountRateLimitsUpdatedNotification?, accountUpdatedNotification: AccountUpdatedNotification?, additionalFileSystemPermissions: AdditionalFileSystemPermissions?, additionalNetworkPermissions: AdditionalNetworkPermissions?, additionalPermissionProfile: AdditionalPermissionProfile?, agentMessageDeltaNotification: AgentMessageDeltaNotification?, agentPath: String?, analyticsConfig: AnalyticsConfig?, appBranding: AppBranding?, appConfig: AppConfig?, appInfo: AppInfo?, appListUpdatedNotification: AppListUpdatedNotification?, applyPatchApprovalParams: ApplyPatchApprovalParams?, applyPatchApprovalResponse: ApplyPatchApprovalResponse?, appMetadata: AppMetadata?, appReview: AppReview?, approvalsReviewer: ApprovalsReviewer?, appsConfig: AppsConfig?, appScreenshot: AppScreenshot?, appsDefaultConfig: AppsDefaultConfig?, appsListParams: AppsListParams?, appsListResponse: AppsListResponse?, appSummary: AppSummary?, appToolApproval: AppToolApproval?, appToolConfig: AppToolConfig?, appToolsConfig: [String: JSONAny]?, askForApproval: AskForApproval?, authMode: AuthMode?, autoReviewDecisionSource: AutoReviewDecisionSource?, byteRange: ByteRange?, cancelLoginAccountParams: CancelLoginAccountParams?, cancelLoginAccountResponse: CancelLoginAccountResponse?, cancelLoginAccountStatus: CancelLoginAccountStatus?, chatgptAuthTokensRefreshParams: ChatgptAuthTokensRefreshParams?, chatgptAuthTokensRefreshReason: ChatgptAuthTokensRefreshReason?, chatgptAuthTokensRefreshResponse: ChatgptAuthTokensRefreshResponse?, clientInfo: ClientInfo?, clientNotification: ClientNotificationClass?, clientRequest: ClientRequest?, codexErrorInfo: CodexErrorInfo?, collabAgentState: CollabAgentState?, collabAgentStatus: CollabAgentStatus?, collabAgentTool: CollabAgentTool?, collabAgentToolCallStatus: ToolCallStatus?, collaborationMode: CollaborationMode?, collaborationModeListParams: [String: JSONAny]?, collaborationModeListResponse: CollaborationModeListResponse?, collaborationModeMask: CollaborationModeMask?, commandAction: CommandAction?, commandExecOutputDeltaNotification: CommandExecOutputDeltaNotification?, commandExecOutputStream: CommandExecOutputStream?, commandExecParams: CommandExecParams?, commandExecResizeParams: CommandExecResizeParams?, commandExecResizeResponse: [String: JSONAny]?, commandExecResponse: CommandExecResponse?, commandExecTerminalSize: CommandExecTerminalSize?, commandExecTerminateParams: CommandExecTerminateParams?, commandExecTerminateResponse: [String: JSONAny]?, commandExecutionApprovalDecision: CommandExecutionApprovalDecision?, commandExecutionOutputDeltaNotification: CommandExecutionOutputDeltaNotification?, commandExecutionRequestApprovalParams: CommandExecutionRequestApprovalParams?, commandExecutionRequestApprovalResponse: CommandExecutionRequestApprovalResponse?, commandExecutionSource: CommandExecutionSource?, commandExecutionStatus: Status?, commandExecWriteParams: CommandExecWriteParams?, commandExecWriteResponse: [String: JSONAny]?, config: Config?, configBatchWriteParams: ConfigBatchWriteParams?, configEdit: ConfigEdit?, configLayer: ConfigLayer?, configLayerMetadata: ConfigLayerMetadata?, configLayerSource: ConfigLayerSource?, configReadParams: ConfigReadParams?, configReadResponse: ConfigReadResponse?, configRequirements: ConfigRequirements?, configRequirementsReadResponse: ConfigRequirementsReadResponse?, configValueWriteParams: ConfigValueWriteParams?, configWarningNotification: ConfigWarningNotification?, configWriteResponse: ConfigWriteResponse?, contentItem: ContentItem?, contextCompactedNotification: ContextCompactedNotification?, creditsSnapshot: CreditsSnapshot?, deprecationNoticeNotification: DeprecationNoticeNotification?, dynamicToolCallOutputContentItem: DynamicToolCallOutputContentItem?, dynamicToolCallParams: DynamicToolCallParams?, dynamicToolCallResponse: DynamicToolCallResponse?, dynamicToolCallStatus: ToolCallStatus?, dynamicToolSpec: DynamicToolSpec?, errorNotification: ErrorNotification?, execCommandApprovalParams: ExecCommandApprovalParams?, execCommandApprovalResponse: ExecCommandApprovalResponse?, experimentalFeature: ExperimentalFeature?, experimentalFeatureEnablementSetParams: ExperimentalFeatureEnablementSetParams?, experimentalFeatureEnablementSetResponse: ExperimentalFeatureEnablementSetResponse?, experimentalFeatureListParams: ExperimentalFeatureListParams?, experimentalFeatureListResponse: ExperimentalFeatureListResponse?, experimentalFeatureStage: ExperimentalFeatureStage?, externalAgentConfigDetectParams: ExternalAgentConfigDetectParams?, externalAgentConfigDetectResponse: ExternalAgentConfigDetectResponse?, externalAgentConfigImportParams: ExternalAgentConfigImportParams?, externalAgentConfigImportResponse: [String: JSONAny]?, externalAgentConfigMigrationItem: ExternalAgentConfigMigrationItem?, externalAgentConfigMigrationItemType: ExternalAgentConfigMigrationItemType?, feedbackUploadParams: FeedbackUploadParams?, feedbackUploadResponse: FeedbackUploadResponse?, fileChange: FileChange?, fileChangeApprovalDecision: FileChangeApprovalDecision?, fileChangeOutputDeltaNotification: FileChangeOutputDeltaNotification?, fileChangeRequestApprovalParams: FileChangeRequestApprovalParams?, fileChangeRequestApprovalResponse: FileChangeRequestApprovalResponse?, fileUpdateChange: FileUpdateChange?, forcedLoginMethod: ForcedLoginMethod?, fsChangedNotification: FSChangedNotification?, fsCopyParams: FSCopyParams?, fsCopyResponse: [String: JSONAny]?, fsCreateDirectoryParams: FSCreateDirectoryParams?, fsCreateDirectoryResponse: [String: JSONAny]?, fsGetMetadataParams: FSGetMetadataParams?, fsGetMetadataResponse: FSGetMetadataResponse?, fsReadDirectoryEntry: FSReadDirectoryEntry?, fsReadDirectoryParams: FSReadDirectoryParams?, fsReadDirectoryResponse: FSReadDirectoryResponse?, fsReadFileParams: FSReadFileParams?, fsReadFileResponse: FSReadFileResponse?, fsRemoveParams: FSRemoveParams?, fsRemoveResponse: [String: JSONAny]?, fsUnwatchParams: FSUnwatchParams?, fsUnwatchResponse: [String: JSONAny]?, fsWatchParams: FSWatchParams?, fsWatchResponse: FSWatchResponse?, fsWriteFileParams: FSWriteFileParams?, fsWriteFileResponse: [String: JSONAny]?, functionCallOutputBody: FunctionCallOutputBody?, functionCallOutputContentItem: FunctionCallOutputContentItem?, fuzzyFileSearchMatchType: FuzzyFileSearchMatchType?, fuzzyFileSearchParams: FuzzyFileSearchParams?, fuzzyFileSearchResponse: FuzzyFileSearchResponse?, fuzzyFileSearchResult: FuzzyFileSearchResult?, fuzzyFileSearchSessionCompletedNotification: FuzzyFileSearchSessionCompletedNotification?, fuzzyFileSearchSessionStartParams: FuzzyFileSearchSessionStartParams?, fuzzyFileSearchSessionStartResponse: [String: JSONAny]?, fuzzyFileSearchSessionStopParams: FuzzyFileSearchSessionStopParams?, fuzzyFileSearchSessionStopResponse: [String: JSONAny]?, fuzzyFileSearchSessionUpdatedNotification: FuzzyFileSearchSessionUpdatedNotification?, fuzzyFileSearchSessionUpdateParams: FuzzyFileSearchSessionUpdateParams?, fuzzyFileSearchSessionUpdateResponse: [String: JSONAny]?, getAccountParams: GetAccountParams?, getAccountRateLimitsResponse: GetAccountRateLimitsResponse?, getAccountResponse: GetAccountResponse?, ghostCommit: GhostCommitClass?, gitInfo: GitInfo?, grantedPermissionProfile: GrantedPermissionProfile?, guardianApprovalReview: GuardianApprovalReview?, guardianApprovalReviewAction: GuardianApprovalReviewAction?, guardianApprovalReviewStatus: GuardianApprovalReviewStatus?, guardianCommandSource: GuardianCommandSource?, guardianRiskLevel: GuardianRiskLevel?, guardianUserAuthorization: GuardianUserAuthorization?, hookCompletedNotification: HookCompletedNotification?, hookEventName: HookEventName?, hookExecutionMode: HookExecutionMode?, hookHandlerType: HookHandlerType?, hookOutputEntry: HookOutputEntry?, hookOutputEntryKind: HookOutputEntryKind?, hookPromptFragment: HookPromptFragment?, hookRunStatus: HookRunStatus?, hookRunSummary: HookRunSummary?, hookScope: HookScope?, hookStartedNotification: HookStartedNotification?, imageDetail: ImageDetail?, initializeCapabilities: InitializeCapabilities?, initializeParams: InitializeParams?, initializeResponse: InitializeResponse?, inputModality: InputModality?, itemCompletedNotification: ItemCompletedNotification?, itemGuardianApprovalReviewCompletedNotification: ItemGuardianApprovalReviewCompletedNotification?, itemGuardianApprovalReviewStartedNotification: ItemGuardianApprovalReviewStartedNotification?, itemStartedNotification: ItemStartedNotification?, jsonrpcError: JSONRPCError?, jsonrpcErrorError: JSONRPCErrorError?, jsonrpcMessage: JSONRPCMessage?, jsonrpcNotification: JSONRPCNotification?, jsonrpcRequest: JSONRPCRequest?, jsonrpcResponse: JSONRPCResponse?, listMcpServerStatusParams: ListMcpServerStatusParams?, listMcpServerStatusResponse: ListMcpServerStatusResponse?, localShellAction: LocalShellAction?, localShellStatus: LocalShellStatus?, loginAccountParams: CodexProtocolRootLoginAccountParams?, loginAccountResponse: LoginAccountResponse?, logoutAccountResponse: [String: JSONAny]?, marketplaceInterface: MarketplaceInterface?, marketplaceLoadErrorInfo: MarketplaceLoadErrorInfo?, mcpAuthStatus: MCPAuthStatus?, mcpElicitationArrayType: MCPElicitationArrayType?, mcpElicitationBooleanSchema: MCPElicitationBooleanSchema?, mcpElicitationBooleanType: MCPElicitationBooleanType?, mcpElicitationConstOption: MCPElicitationConstOption?, mcpElicitationEnumSchema: MCPElicitationEnumSchema?, mcpElicitationLegacyTitledEnumSchema: MCPElicitationLegacyTitledEnumSchema?, mcpElicitationMultiSelectEnumSchema: MCPElicitationMultiSelectEnumSchema?, mcpElicitationNumberSchema: MCPElicitationNumberSchema?, mcpElicitationNumberType: MCPElicitationNumberType?, mcpElicitationObjectType: MCPElicitationObjectType?, mcpElicitationPrimitiveSchema: MCPElicitationPrimitiveSchema?, mcpElicitationSchema: MCPElicitationSchema?, mcpElicitationSingleSelectEnumSchema: MCPElicitationSingleSelectEnumSchema?, mcpElicitationStringFormat: MCPElicitationStringFormat?, mcpElicitationStringSchema: MCPElicitationStringSchema?, mcpElicitationStringType: MCPElicitationStringType?, mcpElicitationTitledEnumItems: MCPElicitationTitledEnumItemsClass?, mcpElicitationTitledMultiSelectEnumSchema: MCPElicitationTitledMultiSelectEnumSchema?, mcpElicitationTitledSingleSelectEnumSchema: MCPElicitationTitledSingleSelectEnumSchema?, mcpElicitationUntitledEnumItems: MCPElicitationUntitledEnumItems?, mcpElicitationUntitledMultiSelectEnumSchema: MCPElicitationUntitledMultiSelectEnumSchema?, mcpElicitationUntitledSingleSelectEnumSchema: MCPElicitationUntitledSingleSelectEnumSchema?, mcpResourceReadParams: MCPResourceReadParams?, mcpResourceReadResponse: MCPResourceReadResponse?, mcpServerElicitationAction: MCPServerElicitationAction?, mcpServerElicitationRequestParams: MCPServerElicitationRequestParams?, mcpServerElicitationRequestResponse: MCPServerElicitationRequestResponse?, mcpServerOauthLoginCompletedNotification: MCPServerOauthLoginCompletedNotification?, mcpServerOauthLoginParams: MCPServerOauthLoginParams?, mcpServerOauthLoginResponse: MCPServerOauthLoginResponse?, mcpServerRefreshResponse: [String: JSONAny]?, mcpServerStartupState: MCPServerStartupState?, mcpServerStatus: MCPServerStatus?, mcpServerStatusDetail: MCPServerStatusDetail?, mcpServerStatusUpdatedNotification: MCPServerStatusUpdatedNotification?, mcpToolCallError: MCPToolCallError?, mcpToolCallProgressNotification: MCPToolCallProgressNotification?, mcpToolCallResult: MCPToolCallResult?, mcpToolCallStatus: ToolCallStatus?, memoryCitation: MemoryCitation?, memoryCitationEntry: MemoryCitationEntryElement?, mergeStrategy: MergeStrategy?, messagePhase: MessagePhase?, mockExperimentalMethodParams: MockExperimentalMethodParams?, mockExperimentalMethodResponse: MockExperimentalMethodResponse?, modeKind: ModeKind?, model: Model?, modelAvailabilityNux: ModelAvailabilityNux?, modelListParams: ModelListParams?, modelListResponse: ModelListResponse?, modelReroutedNotification: ModelReroutedNotification?, modelRerouteReason: ModelRerouteReason?, modelUpgradeInfo: ModelUpgradeInfo?, networkAccess: NetworkAccess?, networkApprovalContext: NetworkApprovalContext?, networkApprovalProtocol: NetworkApprovalProtocol?, networkDomainPermission: NetworkIon?, networkPolicyAmendment: NetworkPolicyAmendmentElement?, networkPolicyRuleAction: NetworkIon?, networkRequirements: NetworkRequirements?, networkUnixSocketPermission: NetworkUnixSocketPermission?, nonSteerableTurnKind: NonSteerableTurnKind?, overriddenMetadata: OverriddenMetadata?, parsedCommand: ParsedCommand?, patchApplyStatus: Status?, patchChangeKind: PatchChangeKind?, permissionGrantScope: PermissionGrantScope?, permissionsRequestApprovalParams: PermissionsRequestApprovalParams?, permissionsRequestApprovalResponse: PermissionsRequestApprovalResponse?, personality: Personality?, planDeltaNotification: PlanDeltaNotification?, planType: PlanType?, pluginAuthPolicy: PluginAuthPolicy?, pluginDetail: PluginDetail?, pluginInstallParams: PluginInstallParams?, pluginInstallPolicy: PluginInstallPolicy?, pluginInstallResponse: PluginInstallResponse?, pluginInterface: PluginInterface?, pluginListParams: PluginListParams?, pluginListResponse: PluginListResponse?, pluginMarketplaceEntry: PluginMarketplaceEntry?, pluginReadParams: PluginReadParams?, pluginReadResponse: PluginReadResponse?, pluginSource: PluginSource?, pluginSummary: PluginSummary?, pluginUninstallParams: PluginUninstallParams?, pluginUninstallResponse: [String: JSONAny]?, profileV2: ProfileV2?, rateLimitSnapshot: RateLimitSnapshot?, rateLimitWindow: RateLimitWindow?, rawResponseItemCompletedNotification: RawResponseItemCompletedNotification?, readOnlyAccess: ReadOnlyAccess?, realtimeConversationVersion: RealtimeConversationVersion?, realtimeVoice: RealtimeVoice?, realtimeVoicesList: RealtimeVoicesList?, reasoningEffort: ReasoningEffort?, reasoningEffortOption: ReasoningEffortOption?, reasoningItemContent: ReasoningItemContent?, reasoningItemReasoningSummary: ReasoningItemReasoningSummary?, reasoningSummary: ReasoningSummary?, reasoningSummaryPartAddedNotification: ReasoningSummaryPartAddedNotification?, reasoningSummaryTextDeltaNotification: ReasoningSummaryTextDeltaNotification?, reasoningTextDeltaNotification: ReasoningTextDeltaNotification?, requestId: RequestId?, requestPermissionProfile: RequestPermissionProfile?, residencyRequirement: ResidencyRequirement?, resource: Resource?, resourceContent: ResourceContent?, resourceTemplate: ResourceTemplate?, responseItem: ResponseItem?, responsesApiWebSearchAction: ResponsesApiWebSearchAction?, reviewDecision: ReviewDecision?, reviewDelivery: ReviewDelivery?, reviewStartParams: ReviewStartParams?, reviewStartResponse: ReviewStartResponse?, reviewTarget: ReviewTarget?, sandboxMode: SandboxMode?, sandboxPolicy: SandboxPolicy?, sandboxWorkspaceWrite: SandboxWorkspaceWrite?, serverNotification: ServerNotification?, serverRequest: ServerRequest?, serverRequestResolvedNotification: ServerRequestResolvedNotification?, serviceTier: ServiceTier?, sessionSource: SessionSource?, settings: SettingsClass?, skillDependencies: SkillDependencies?, skillErrorInfo: SkillErrorInfo?, skillInterface: SkillInterface?, skillMetadata: SkillMetadata?, skillsChangedNotification: [String: JSONAny]?, skillsConfigWriteParams: SkillsConfigWriteParams?, skillsConfigWriteResponse: SkillsConfigWriteResponse?, skillScope: SkillScope?, skillsListEntry: SkillsListEntry?, skillsListExtraRootsForCwd: SkillsListExtraRootsForCwd?, skillsListParams: SkillsListParams?, skillsListResponse: SkillsListResponse?, skillSummary: SkillSummary?, skillToolDependency: SkillToolDependency?, subAgentSource: SubAgentSource?, terminalInteractionNotification: TerminalInteractionNotification?, textElement: TextElement?, textPosition: TextPosition?, textRange: TextRange?, thread: ThreadElement?, threadActiveFlag: ThreadActiveFlag?, threadArchivedNotification: ThreadArchivedNotification?, threadArchiveParams: ThreadArchiveParams?, threadArchiveResponse: [String: JSONAny]?, threadBackgroundTerminalsCleanParams: ThreadBackgroundTerminalsCleanParams?, threadBackgroundTerminalsCleanResponse: [String: JSONAny]?, threadClosedNotification: ThreadClosedNotification?, threadCompactStartParams: ThreadCompactStartParams?, threadCompactStartResponse: [String: JSONAny]?, threadDecrementElicitationParams: ThreadDecrementElicitationParams?, threadDecrementElicitationResponse: ThreadDecrementElicitationResponse?, threadForkParams: ThreadForkParams?, threadForkResponse: ThreadForkResponse?, threadId: String?, threadIncrementElicitationParams: ThreadIncrementElicitationParams?, threadIncrementElicitationResponse: ThreadIncrementElicitationResponse?, threadItem: ThreadItem?, threadListParams: ThreadListParams?, threadListResponse: ThreadListResponse?, threadLoadedListParams: ThreadLoadedListParams?, threadLoadedListResponse: ThreadLoadedListResponse?, threadMetadataGitInfoUpdateParams: ThreadMetadataGitInfoUpdateParams?, threadMetadataUpdateParams: ThreadMetadataUpdateParams?, threadMetadataUpdateResponse: ThreadMetadataUpdateResponse?, threadNameUpdatedNotification: ThreadNameUpdatedNotification?, threadReadParams: ThreadReadParams?, threadReadResponse: ThreadReadResponse?, threadRealtimeAppendAudioParams: ThreadRealtimeAppendAudioParams?, threadRealtimeAppendAudioResponse: [String: JSONAny]?, threadRealtimeAppendTextParams: ThreadRealtimeAppendTextParams?, threadRealtimeAppendTextResponse: [String: JSONAny]?, threadRealtimeAudioChunk: ThreadRealtimeAudioChunk?, threadRealtimeClosedNotification: ThreadRealtimeClosedNotification?, threadRealtimeErrorNotification: ThreadRealtimeErrorNotification?, threadRealtimeItemAddedNotification: ThreadRealtimeItemAddedNotification?, threadRealtimeListVoicesParams: [String: JSONAny]?, threadRealtimeListVoicesResponse: ThreadRealtimeListVoicesResponse?, threadRealtimeOutputAudioDeltaNotification: ThreadRealtimeOutputAudioDeltaNotification?, threadRealtimeSdpNotification: ThreadRealtimeSdpNotification?, threadRealtimeStartedNotification: ThreadRealtimeStartedNotification?, threadRealtimeStartParams: ThreadRealtimeStartParams?, threadRealtimeStartResponse: [String: JSONAny]?, threadRealtimeStartTransport: ThreadRealtimeStartTransport?, threadRealtimeStopParams: ThreadRealtimeStopParams?, threadRealtimeStopResponse: [String: JSONAny]?, threadRealtimeTranscriptUpdatedNotification: ThreadRealtimeTranscriptUpdatedNotification?, threadResumeParams: ThreadResumeParams?, threadResumeResponse: ThreadResumeResponse?, threadRollbackParams: ThreadRollbackParams?, threadRollbackResponse: ThreadRollbackResponse?, threadSetNameParams: ThreadSetNameParams?, threadSetNameResponse: [String: JSONAny]?, threadShellCommandParams: ThreadShellCommandParams?, threadShellCommandResponse: [String: JSONAny]?, threadSortKey: ThreadSortKey?, threadSourceKind: ThreadSourceKind?, threadStartedNotification: ThreadStartedNotification?, threadStartParams: ThreadStartParams?, threadStartResponse: ThreadStartResponse?, threadStartSource: ThreadStartSource?, threadStatus: ThreadStatus?, threadStatusChangedNotification: ThreadStatusChangedNotification?, threadTokenUsage: ThreadTokenUsage?, threadTokenUsageUpdatedNotification: ThreadTokenUsageUpdatedNotification?, threadUnarchivedNotification: ThreadUnarchivedNotification?, threadUnarchiveParams: ThreadUnarchiveParams?, threadUnarchiveResponse: ThreadUnarchiveResponse?, threadUnsubscribeParams: ThreadUnsubscribeParams?, threadUnsubscribeResponse: ThreadUnsubscribeResponse?, threadUnsubscribeStatus: ThreadUnsubscribeStatus?, tokenUsageBreakdown: TokenUsageBreakdown?, tool: Tool?, toolRequestUserInputAnswer: ToolRequestUserInputAnswer?, toolRequestUserInputOption: ToolRequestUserInputOption?, toolRequestUserInputParams: ToolRequestUserInputParams?, toolRequestUserInputQuestion: ToolRequestUserInputQuestion?, toolRequestUserInputResponse: ToolRequestUserInputResponse?, toolsV2: ToolsV2?, turn: Turn?, turnCompletedNotification: TurnCompletedNotification?, turnDiffUpdatedNotification: TurnDiffUpdatedNotification?, turnError: TurnError?, turnInterruptParams: TurnInterruptParams?, turnInterruptResponse: [String: JSONAny]?, turnPlanStep: TurnPlanStep?, turnPlanStepStatus: TurnPlanStepStatus?, turnPlanUpdatedNotification: TurnPlanUpdatedNotification?, turnStartedNotification: TurnStartedNotification?, turnStartParams: TurnStartParams?, turnStartResponse: TurnStartResponse?, turnStatus: TurnStatus?, turnSteerParams: TurnSteerParams?, turnSteerResponse: TurnSteerResponse?, userInput: UserInput?, v2: JSONAny?, verbosity: Verbosity?, w3CTraceContext: W3CTraceContext?, webSearchAction: WebSearchAction?, webSearchContextSize: Verbosity?, webSearchLocation: WebSearchLocation?, webSearchMode: WebSearchMode?, webSearchToolConfig: WebSearchToolConfig?, windowsSandboxSetupCompletedNotification: WindowsSandboxSetupCompletedNotification?, windowsSandboxSetupMode: WindowsSandboxSetupMode?, windowsSandboxSetupStartParams: WindowsSandboxSetupStartParams?, windowsSandboxSetupStartResponse: WindowsSandboxSetupStartResponse?, windowsWorldWritableWarningNotification: WindowsWorldWritableWarningNotification?, writeStatus: WriteStatus?) {
+    public init(absolutePathBuf: String? = nil, account: Account? = nil, accountLoginCompletedNotification: AccountLoginCompletedNotification? = nil, accountRateLimitsUpdatedNotification: AccountRateLimitsUpdatedNotification? = nil, accountUpdatedNotification: AccountUpdatedNotification? = nil, additionalFileSystemPermissions: AdditionalFileSystemPermissions? = nil, additionalNetworkPermissions: AdditionalNetworkPermissions? = nil, additionalPermissionProfile: AdditionalPermissionProfile? = nil, agentMessageDeltaNotification: AgentMessageDeltaNotification? = nil, agentPath: String? = nil, analyticsConfig: AnalyticsConfig? = nil, appBranding: AppBranding? = nil, appConfig: AppConfig? = nil, appInfo: AppInfo? = nil, appListUpdatedNotification: AppListUpdatedNotification? = nil, applyPatchApprovalParams: ApplyPatchApprovalParams? = nil, applyPatchApprovalResponse: ApplyPatchApprovalResponse? = nil, appMetadata: AppMetadata? = nil, appReview: AppReview? = nil, approvalsReviewer: ApprovalsReviewer? = nil, appsConfig: AppsConfig? = nil, appScreenshot: AppScreenshot? = nil, appsDefaultConfig: AppsDefaultConfig? = nil, appsListParams: AppsListParams? = nil, appsListResponse: AppsListResponse? = nil, appSummary: AppSummary? = nil, appToolApproval: AppToolApproval? = nil, appToolConfig: AppToolConfig? = nil, appToolsConfig: [String: JSONAny]? = nil, askForApproval: AskForApproval? = nil, authMode: AuthMode? = nil, autoReviewDecisionSource: AutoReviewDecisionSource? = nil, byteRange: ByteRange? = nil, cancelLoginAccountParams: CancelLoginAccountParams? = nil, cancelLoginAccountResponse: CancelLoginAccountResponse? = nil, cancelLoginAccountStatus: CancelLoginAccountStatus? = nil, chatgptAuthTokensRefreshParams: ChatgptAuthTokensRefreshParams? = nil, chatgptAuthTokensRefreshReason: ChatgptAuthTokensRefreshReason? = nil, chatgptAuthTokensRefreshResponse: ChatgptAuthTokensRefreshResponse? = nil, clientInfo: ClientInfo? = nil, clientNotification: ClientNotificationClass? = nil, clientRequest: ClientRequest? = nil, codexErrorInfo: CodexErrorInfo? = nil, collabAgentState: CollabAgentState? = nil, collabAgentStatus: CollabAgentStatus? = nil, collabAgentTool: CollabAgentTool? = nil, collabAgentToolCallStatus: ToolCallStatus? = nil, collaborationMode: CollaborationMode? = nil, collaborationModeListParams: [String: JSONAny]? = nil, collaborationModeListResponse: CollaborationModeListResponse? = nil, collaborationModeMask: CollaborationModeMask? = nil, commandAction: CommandAction? = nil, commandExecOutputDeltaNotification: CommandExecOutputDeltaNotification? = nil, commandExecOutputStream: CommandExecOutputStream? = nil, commandExecParams: CommandExecParams? = nil, commandExecResizeParams: CommandExecResizeParams? = nil, commandExecResizeResponse: [String: JSONAny]? = nil, commandExecResponse: CommandExecResponse? = nil, commandExecTerminalSize: CommandExecTerminalSize? = nil, commandExecTerminateParams: CommandExecTerminateParams? = nil, commandExecTerminateResponse: [String: JSONAny]? = nil, commandExecutionApprovalDecision: CommandExecutionApprovalDecision? = nil, commandExecutionOutputDeltaNotification: CommandExecutionOutputDeltaNotification? = nil, commandExecutionRequestApprovalParams: CommandExecutionRequestApprovalParams? = nil, commandExecutionRequestApprovalResponse: CommandExecutionRequestApprovalResponse? = nil, commandExecutionSource: CommandExecutionSource? = nil, commandExecutionStatus: Status? = nil, commandExecWriteParams: CommandExecWriteParams? = nil, commandExecWriteResponse: [String: JSONAny]? = nil, config: Config? = nil, configBatchWriteParams: ConfigBatchWriteParams? = nil, configEdit: ConfigEdit? = nil, configLayer: ConfigLayer? = nil, configLayerMetadata: ConfigLayerMetadata? = nil, configLayerSource: ConfigLayerSource? = nil, configReadParams: ConfigReadParams? = nil, configReadResponse: ConfigReadResponse? = nil, configRequirements: ConfigRequirements? = nil, configRequirementsReadResponse: ConfigRequirementsReadResponse? = nil, configValueWriteParams: ConfigValueWriteParams? = nil, configWarningNotification: ConfigWarningNotification? = nil, configWriteResponse: ConfigWriteResponse? = nil, contentItem: ContentItem? = nil, contextCompactedNotification: ContextCompactedNotification? = nil, creditsSnapshot: CreditsSnapshot? = nil, deprecationNoticeNotification: DeprecationNoticeNotification? = nil, dynamicToolCallOutputContentItem: DynamicToolCallOutputContentItem? = nil, dynamicToolCallParams: DynamicToolCallParams? = nil, dynamicToolCallResponse: DynamicToolCallResponse? = nil, dynamicToolCallStatus: ToolCallStatus? = nil, dynamicToolSpec: DynamicToolSpec? = nil, errorNotification: ErrorNotification? = nil, execCommandApprovalParams: ExecCommandApprovalParams? = nil, execCommandApprovalResponse: ExecCommandApprovalResponse? = nil, experimentalFeature: ExperimentalFeature? = nil, experimentalFeatureEnablementSetParams: ExperimentalFeatureEnablementSetParams? = nil, experimentalFeatureEnablementSetResponse: ExperimentalFeatureEnablementSetResponse? = nil, experimentalFeatureListParams: ExperimentalFeatureListParams? = nil, experimentalFeatureListResponse: ExperimentalFeatureListResponse? = nil, experimentalFeatureStage: ExperimentalFeatureStage? = nil, externalAgentConfigDetectParams: ExternalAgentConfigDetectParams? = nil, externalAgentConfigDetectResponse: ExternalAgentConfigDetectResponse? = nil, externalAgentConfigImportParams: ExternalAgentConfigImportParams? = nil, externalAgentConfigImportResponse: [String: JSONAny]? = nil, externalAgentConfigMigrationItem: ExternalAgentConfigMigrationItem? = nil, externalAgentConfigMigrationItemType: ExternalAgentConfigMigrationItemType? = nil, feedbackUploadParams: FeedbackUploadParams? = nil, feedbackUploadResponse: FeedbackUploadResponse? = nil, fileChange: FileChange? = nil, fileChangeApprovalDecision: FileChangeApprovalDecision? = nil, fileChangeOutputDeltaNotification: FileChangeOutputDeltaNotification? = nil, fileChangeRequestApprovalParams: FileChangeRequestApprovalParams? = nil, fileChangeRequestApprovalResponse: FileChangeRequestApprovalResponse? = nil, fileUpdateChange: FileUpdateChange? = nil, forcedLoginMethod: ForcedLoginMethod? = nil, fsChangedNotification: FSChangedNotification? = nil, fsCopyParams: FSCopyParams? = nil, fsCopyResponse: [String: JSONAny]? = nil, fsCreateDirectoryParams: FSCreateDirectoryParams? = nil, fsCreateDirectoryResponse: [String: JSONAny]? = nil, fsGetMetadataParams: FSGetMetadataParams? = nil, fsGetMetadataResponse: FSGetMetadataResponse? = nil, fsReadDirectoryEntry: FSReadDirectoryEntry? = nil, fsReadDirectoryParams: FSReadDirectoryParams? = nil, fsReadDirectoryResponse: FSReadDirectoryResponse? = nil, fsReadFileParams: FSReadFileParams? = nil, fsReadFileResponse: FSReadFileResponse? = nil, fsRemoveParams: FSRemoveParams? = nil, fsRemoveResponse: [String: JSONAny]? = nil, fsUnwatchParams: FSUnwatchParams? = nil, fsUnwatchResponse: [String: JSONAny]? = nil, fsWatchParams: FSWatchParams? = nil, fsWatchResponse: FSWatchResponse? = nil, fsWriteFileParams: FSWriteFileParams? = nil, fsWriteFileResponse: [String: JSONAny]? = nil, functionCallOutputBody: FunctionCallOutputBody? = nil, functionCallOutputContentItem: FunctionCallOutputContentItem? = nil, fuzzyFileSearchMatchType: FuzzyFileSearchMatchType? = nil, fuzzyFileSearchParams: FuzzyFileSearchParams? = nil, fuzzyFileSearchResponse: FuzzyFileSearchResponse? = nil, fuzzyFileSearchResult: FuzzyFileSearchResult? = nil, fuzzyFileSearchSessionCompletedNotification: FuzzyFileSearchSessionCompletedNotification? = nil, fuzzyFileSearchSessionStartParams: FuzzyFileSearchSessionStartParams? = nil, fuzzyFileSearchSessionStartResponse: [String: JSONAny]? = nil, fuzzyFileSearchSessionStopParams: FuzzyFileSearchSessionStopParams? = nil, fuzzyFileSearchSessionStopResponse: [String: JSONAny]? = nil, fuzzyFileSearchSessionUpdatedNotification: FuzzyFileSearchSessionUpdatedNotification? = nil, fuzzyFileSearchSessionUpdateParams: FuzzyFileSearchSessionUpdateParams? = nil, fuzzyFileSearchSessionUpdateResponse: [String: JSONAny]? = nil, getAccountParams: GetAccountParams? = nil, getAccountRateLimitsResponse: GetAccountRateLimitsResponse? = nil, getAccountResponse: GetAccountResponse? = nil, ghostCommit: GhostCommitClass? = nil, gitInfo: GitInfo? = nil, grantedPermissionProfile: GrantedPermissionProfile? = nil, guardianApprovalReview: GuardianApprovalReview? = nil, guardianApprovalReviewAction: GuardianApprovalReviewAction? = nil, guardianApprovalReviewStatus: GuardianApprovalReviewStatus? = nil, guardianCommandSource: GuardianCommandSource? = nil, guardianRiskLevel: GuardianRiskLevel? = nil, guardianUserAuthorization: GuardianUserAuthorization? = nil, hookCompletedNotification: HookCompletedNotification? = nil, hookEventName: HookEventName? = nil, hookExecutionMode: HookExecutionMode? = nil, hookHandlerType: HookHandlerType? = nil, hookOutputEntry: HookOutputEntry? = nil, hookOutputEntryKind: HookOutputEntryKind? = nil, hookPromptFragment: HookPromptFragment? = nil, hookRunStatus: HookRunStatus? = nil, hookRunSummary: HookRunSummary? = nil, hookScope: HookScope? = nil, hookStartedNotification: HookStartedNotification? = nil, imageDetail: ImageDetail? = nil, initializeCapabilities: InitializeCapabilities? = nil, initializeParams: InitializeParams? = nil, initializeResponse: InitializeResponse? = nil, inputModality: InputModality? = nil, itemCompletedNotification: ItemCompletedNotification? = nil, itemGuardianApprovalReviewCompletedNotification: ItemGuardianApprovalReviewCompletedNotification? = nil, itemGuardianApprovalReviewStartedNotification: ItemGuardianApprovalReviewStartedNotification? = nil, itemStartedNotification: ItemStartedNotification? = nil, jsonrpcError: JSONRPCError? = nil, jsonrpcErrorError: JSONRPCErrorError? = nil, jsonrpcMessage: JSONRPCMessage? = nil, jsonrpcNotification: JSONRPCNotification? = nil, jsonrpcRequest: JSONRPCRequest? = nil, jsonrpcResponse: JSONRPCResponse? = nil, listMcpServerStatusParams: ListMcpServerStatusParams? = nil, listMcpServerStatusResponse: ListMcpServerStatusResponse? = nil, localShellAction: LocalShellAction? = nil, localShellStatus: LocalShellStatus? = nil, loginAccountParams: CodexProtocolRootLoginAccountParams? = nil, loginAccountResponse: LoginAccountResponse? = nil, logoutAccountResponse: [String: JSONAny]? = nil, marketplaceInterface: MarketplaceInterface? = nil, marketplaceLoadErrorInfo: MarketplaceLoadErrorInfo? = nil, mcpAuthStatus: MCPAuthStatus? = nil, mcpElicitationArrayType: MCPElicitationArrayType? = nil, mcpElicitationBooleanSchema: MCPElicitationBooleanSchema? = nil, mcpElicitationBooleanType: MCPElicitationBooleanType? = nil, mcpElicitationConstOption: MCPElicitationConstOption? = nil, mcpElicitationEnumSchema: MCPElicitationEnumSchema? = nil, mcpElicitationLegacyTitledEnumSchema: MCPElicitationLegacyTitledEnumSchema? = nil, mcpElicitationMultiSelectEnumSchema: MCPElicitationMultiSelectEnumSchema? = nil, mcpElicitationNumberSchema: MCPElicitationNumberSchema? = nil, mcpElicitationNumberType: MCPElicitationNumberType? = nil, mcpElicitationObjectType: MCPElicitationObjectType? = nil, mcpElicitationPrimitiveSchema: MCPElicitationPrimitiveSchema? = nil, mcpElicitationSchema: MCPElicitationSchema? = nil, mcpElicitationSingleSelectEnumSchema: MCPElicitationSingleSelectEnumSchema? = nil, mcpElicitationStringFormat: MCPElicitationStringFormat? = nil, mcpElicitationStringSchema: MCPElicitationStringSchema? = nil, mcpElicitationStringType: MCPElicitationStringType? = nil, mcpElicitationTitledEnumItems: MCPElicitationTitledEnumItemsClass? = nil, mcpElicitationTitledMultiSelectEnumSchema: MCPElicitationTitledMultiSelectEnumSchema? = nil, mcpElicitationTitledSingleSelectEnumSchema: MCPElicitationTitledSingleSelectEnumSchema? = nil, mcpElicitationUntitledEnumItems: MCPElicitationUntitledEnumItems? = nil, mcpElicitationUntitledMultiSelectEnumSchema: MCPElicitationUntitledMultiSelectEnumSchema? = nil, mcpElicitationUntitledSingleSelectEnumSchema: MCPElicitationUntitledSingleSelectEnumSchema? = nil, mcpResourceReadParams: MCPResourceReadParams? = nil, mcpResourceReadResponse: MCPResourceReadResponse? = nil, mcpServerElicitationAction: MCPServerElicitationAction? = nil, mcpServerElicitationRequestParams: MCPServerElicitationRequestParams? = nil, mcpServerElicitationRequestResponse: MCPServerElicitationRequestResponse? = nil, mcpServerOauthLoginCompletedNotification: MCPServerOauthLoginCompletedNotification? = nil, mcpServerOauthLoginParams: MCPServerOauthLoginParams? = nil, mcpServerOauthLoginResponse: MCPServerOauthLoginResponse? = nil, mcpServerRefreshResponse: [String: JSONAny]? = nil, mcpServerStartupState: MCPServerStartupState? = nil, mcpServerStatus: MCPServerStatus? = nil, mcpServerStatusDetail: MCPServerStatusDetail? = nil, mcpServerStatusUpdatedNotification: MCPServerStatusUpdatedNotification? = nil, mcpToolCallError: MCPToolCallError? = nil, mcpToolCallProgressNotification: MCPToolCallProgressNotification? = nil, mcpToolCallResult: MCPToolCallResult? = nil, mcpToolCallStatus: ToolCallStatus? = nil, memoryCitation: MemoryCitation? = nil, memoryCitationEntry: MemoryCitationEntryElement? = nil, mergeStrategy: MergeStrategy? = nil, messagePhase: MessagePhase? = nil, mockExperimentalMethodParams: MockExperimentalMethodParams? = nil, mockExperimentalMethodResponse: MockExperimentalMethodResponse? = nil, modeKind: ModeKind? = nil, model: Model? = nil, modelAvailabilityNux: ModelAvailabilityNux? = nil, modelListParams: ModelListParams? = nil, modelListResponse: ModelListResponse? = nil, modelReroutedNotification: ModelReroutedNotification? = nil, modelRerouteReason: ModelRerouteReason? = nil, modelUpgradeInfo: ModelUpgradeInfo? = nil, networkAccess: NetworkAccess? = nil, networkApprovalContext: NetworkApprovalContext? = nil, networkApprovalProtocol: NetworkApprovalProtocol? = nil, networkDomainPermission: NetworkIon? = nil, networkPolicyAmendment: NetworkPolicyAmendmentElement? = nil, networkPolicyRuleAction: NetworkIon? = nil, networkRequirements: NetworkRequirements? = nil, networkUnixSocketPermission: NetworkUnixSocketPermission? = nil, nonSteerableTurnKind: NonSteerableTurnKind? = nil, overriddenMetadata: OverriddenMetadata? = nil, parsedCommand: ParsedCommand? = nil, patchApplyStatus: Status? = nil, patchChangeKind: PatchChangeKind? = nil, permissionGrantScope: PermissionGrantScope? = nil, permissionsRequestApprovalParams: PermissionsRequestApprovalParams? = nil, permissionsRequestApprovalResponse: PermissionsRequestApprovalResponse? = nil, personality: Personality? = nil, planDeltaNotification: PlanDeltaNotification? = nil, planType: PlanType? = nil, pluginAuthPolicy: PluginAuthPolicy? = nil, pluginDetail: PluginDetail? = nil, pluginInstallParams: PluginInstallParams? = nil, pluginInstallPolicy: PluginInstallPolicy? = nil, pluginInstallResponse: PluginInstallResponse? = nil, pluginInterface: PluginInterface? = nil, pluginListParams: PluginListParams? = nil, pluginListResponse: PluginListResponse? = nil, pluginMarketplaceEntry: PluginMarketplaceEntry? = nil, pluginReadParams: PluginReadParams? = nil, pluginReadResponse: PluginReadResponse? = nil, pluginSource: PluginSource? = nil, pluginSummary: PluginSummary? = nil, pluginUninstallParams: PluginUninstallParams? = nil, pluginUninstallResponse: [String: JSONAny]? = nil, profileV2: ProfileV2? = nil, rateLimitSnapshot: RateLimitSnapshot? = nil, rateLimitWindow: RateLimitWindow? = nil, rawResponseItemCompletedNotification: RawResponseItemCompletedNotification? = nil, readOnlyAccess: ReadOnlyAccess? = nil, realtimeConversationVersion: RealtimeConversationVersion? = nil, realtimeVoice: RealtimeVoice? = nil, realtimeVoicesList: RealtimeVoicesList? = nil, reasoningEffort: ReasoningEffort? = nil, reasoningEffortOption: ReasoningEffortOption? = nil, reasoningItemContent: ReasoningItemContent? = nil, reasoningItemReasoningSummary: ReasoningItemReasoningSummary? = nil, reasoningSummary: ReasoningSummary? = nil, reasoningSummaryPartAddedNotification: ReasoningSummaryPartAddedNotification? = nil, reasoningSummaryTextDeltaNotification: ReasoningSummaryTextDeltaNotification? = nil, reasoningTextDeltaNotification: ReasoningTextDeltaNotification? = nil, requestId: RequestId? = nil, requestPermissionProfile: RequestPermissionProfile? = nil, residencyRequirement: ResidencyRequirement? = nil, resource: Resource? = nil, resourceContent: ResourceContent? = nil, resourceTemplate: ResourceTemplate? = nil, responseItem: ResponseItem? = nil, responsesApiWebSearchAction: ResponsesApiWebSearchAction? = nil, reviewDecision: ReviewDecision? = nil, reviewDelivery: ReviewDelivery? = nil, reviewStartParams: ReviewStartParams? = nil, reviewStartResponse: ReviewStartResponse? = nil, reviewTarget: ReviewTarget? = nil, sandboxMode: SandboxMode? = nil, sandboxPolicy: SandboxPolicy? = nil, sandboxWorkspaceWrite: SandboxWorkspaceWrite? = nil, serverNotification: ServerNotification? = nil, serverRequest: ServerRequest? = nil, serverRequestResolvedNotification: ServerRequestResolvedNotification? = nil, serviceTier: ServiceTier? = nil, sessionSource: SessionSource? = nil, settings: SettingsClass? = nil, skillDependencies: SkillDependencies? = nil, skillErrorInfo: SkillErrorInfo? = nil, skillInterface: SkillInterface? = nil, skillMetadata: SkillMetadata? = nil, skillsChangedNotification: [String: JSONAny]? = nil, skillsConfigWriteParams: SkillsConfigWriteParams? = nil, skillsConfigWriteResponse: SkillsConfigWriteResponse? = nil, skillScope: SkillScope? = nil, skillsListEntry: SkillsListEntry? = nil, skillsListExtraRootsForCwd: SkillsListExtraRootsForCwd? = nil, skillsListParams: SkillsListParams? = nil, skillsListResponse: SkillsListResponse? = nil, skillSummary: SkillSummary? = nil, skillToolDependency: SkillToolDependency? = nil, subAgentSource: SubAgentSource? = nil, terminalInteractionNotification: TerminalInteractionNotification? = nil, textElement: TextElement? = nil, textPosition: TextPosition? = nil, textRange: TextRange? = nil, thread: ThreadElement? = nil, threadActiveFlag: ThreadActiveFlag? = nil, threadArchivedNotification: ThreadArchivedNotification? = nil, threadArchiveParams: ThreadArchiveParams? = nil, threadArchiveResponse: [String: JSONAny]? = nil, threadBackgroundTerminalsCleanParams: ThreadBackgroundTerminalsCleanParams? = nil, threadBackgroundTerminalsCleanResponse: [String: JSONAny]? = nil, threadClosedNotification: ThreadClosedNotification? = nil, threadCompactStartParams: ThreadCompactStartParams? = nil, threadCompactStartResponse: [String: JSONAny]? = nil, threadDecrementElicitationParams: ThreadDecrementElicitationParams? = nil, threadDecrementElicitationResponse: ThreadDecrementElicitationResponse? = nil, threadForkParams: ThreadForkParams? = nil, threadForkResponse: ThreadForkResponse? = nil, threadId: String? = nil, threadIncrementElicitationParams: ThreadIncrementElicitationParams? = nil, threadIncrementElicitationResponse: ThreadIncrementElicitationResponse? = nil, threadItem: ThreadItem? = nil, threadListParams: ThreadListParams? = nil, threadListResponse: ThreadListResponse? = nil, threadLoadedListParams: ThreadLoadedListParams? = nil, threadLoadedListResponse: ThreadLoadedListResponse? = nil, threadMetadataGitInfoUpdateParams: ThreadMetadataGitInfoUpdateParams? = nil, threadMetadataUpdateParams: ThreadMetadataUpdateParams? = nil, threadMetadataUpdateResponse: ThreadMetadataUpdateResponse? = nil, threadNameUpdatedNotification: ThreadNameUpdatedNotification? = nil, threadReadParams: ThreadReadParams? = nil, threadReadResponse: ThreadReadResponse? = nil, threadRealtimeAppendAudioParams: ThreadRealtimeAppendAudioParams? = nil, threadRealtimeAppendAudioResponse: [String: JSONAny]? = nil, threadRealtimeAppendTextParams: ThreadRealtimeAppendTextParams? = nil, threadRealtimeAppendTextResponse: [String: JSONAny]? = nil, threadRealtimeAudioChunk: ThreadRealtimeAudioChunk? = nil, threadRealtimeClosedNotification: ThreadRealtimeClosedNotification? = nil, threadRealtimeErrorNotification: ThreadRealtimeErrorNotification? = nil, threadRealtimeItemAddedNotification: ThreadRealtimeItemAddedNotification? = nil, threadRealtimeListVoicesParams: [String: JSONAny]? = nil, threadRealtimeListVoicesResponse: ThreadRealtimeListVoicesResponse? = nil, threadRealtimeOutputAudioDeltaNotification: ThreadRealtimeOutputAudioDeltaNotification? = nil, threadRealtimeSdpNotification: ThreadRealtimeSdpNotification? = nil, threadRealtimeStartedNotification: ThreadRealtimeStartedNotification? = nil, threadRealtimeStartParams: ThreadRealtimeStartParams? = nil, threadRealtimeStartResponse: [String: JSONAny]? = nil, threadRealtimeStartTransport: ThreadRealtimeStartTransport? = nil, threadRealtimeStopParams: ThreadRealtimeStopParams? = nil, threadRealtimeStopResponse: [String: JSONAny]? = nil, threadRealtimeTranscriptUpdatedNotification: ThreadRealtimeTranscriptUpdatedNotification? = nil, threadResumeParams: ThreadResumeParams? = nil, threadResumeResponse: ThreadResumeResponse? = nil, threadRollbackParams: ThreadRollbackParams? = nil, threadRollbackResponse: ThreadRollbackResponse? = nil, threadSetNameParams: ThreadSetNameParams? = nil, threadSetNameResponse: [String: JSONAny]? = nil, threadShellCommandParams: ThreadShellCommandParams? = nil, threadShellCommandResponse: [String: JSONAny]? = nil, threadSortKey: ThreadSortKey? = nil, threadSourceKind: ThreadSourceKind? = nil, threadStartedNotification: ThreadStartedNotification? = nil, threadStartParams: ThreadStartParams? = nil, threadStartResponse: ThreadStartResponse? = nil, threadStartSource: ThreadStartSource? = nil, threadStatus: ThreadStatus? = nil, threadStatusChangedNotification: ThreadStatusChangedNotification? = nil, threadTokenUsage: ThreadTokenUsage? = nil, threadTokenUsageUpdatedNotification: ThreadTokenUsageUpdatedNotification? = nil, threadUnarchivedNotification: ThreadUnarchivedNotification? = nil, threadUnarchiveParams: ThreadUnarchiveParams? = nil, threadUnarchiveResponse: ThreadUnarchiveResponse? = nil, threadUnsubscribeParams: ThreadUnsubscribeParams? = nil, threadUnsubscribeResponse: ThreadUnsubscribeResponse? = nil, threadUnsubscribeStatus: ThreadUnsubscribeStatus? = nil, tokenUsageBreakdown: TokenUsageBreakdown? = nil, tool: Tool? = nil, toolRequestUserInputAnswer: ToolRequestUserInputAnswer? = nil, toolRequestUserInputOption: ToolRequestUserInputOption? = nil, toolRequestUserInputParams: ToolRequestUserInputParams? = nil, toolRequestUserInputQuestion: ToolRequestUserInputQuestion? = nil, toolRequestUserInputResponse: ToolRequestUserInputResponse? = nil, toolsV2: ToolsV2? = nil, turn: Turn? = nil, turnCompletedNotification: TurnCompletedNotification? = nil, turnDiffUpdatedNotification: TurnDiffUpdatedNotification? = nil, turnError: TurnError? = nil, turnInterruptParams: TurnInterruptParams? = nil, turnInterruptResponse: [String: JSONAny]? = nil, turnPlanStep: TurnPlanStep? = nil, turnPlanStepStatus: TurnPlanStepStatus? = nil, turnPlanUpdatedNotification: TurnPlanUpdatedNotification? = nil, turnStartedNotification: TurnStartedNotification? = nil, turnStartParams: TurnStartParams? = nil, turnStartResponse: TurnStartResponse? = nil, turnStatus: TurnStatus? = nil, turnSteerParams: TurnSteerParams? = nil, turnSteerResponse: TurnSteerResponse? = nil, userInput: UserInput? = nil, v2: JSONAny? = nil, verbosity: Verbosity? = nil, w3CTraceContext: W3CTraceContext? = nil, webSearchAction: WebSearchAction? = nil, webSearchContextSize: Verbosity? = nil, webSearchLocation: WebSearchLocation? = nil, webSearchMode: WebSearchMode? = nil, webSearchToolConfig: WebSearchToolConfig? = nil, windowsSandboxSetupCompletedNotification: WindowsSandboxSetupCompletedNotification? = nil, windowsSandboxSetupMode: WindowsSandboxSetupMode? = nil, windowsSandboxSetupStartParams: WindowsSandboxSetupStartParams? = nil, windowsSandboxSetupStartResponse: WindowsSandboxSetupStartResponse? = nil, windowsWorldWritableWarningNotification: WindowsWorldWritableWarningNotification? = nil, writeStatus: WriteStatus? = nil) {
         self.absolutePathBuf = absolutePathBuf
         self.account = account
         self.accountLoginCompletedNotification = accountLoginCompletedNotification
@@ -2312,7 +2312,7 @@ public struct Account: Codable, Sendable {
         case planType = "planType"
     }
 
-    public init(type: AccountType, email: String?, planType: PlanType?) {
+    public init(type: AccountType, email: String? = nil, planType: PlanType? = nil) {
         self.type = type
         self.email = email
         self.planType = planType
@@ -2389,7 +2389,7 @@ public struct AccountLoginCompletedNotification: Codable, Sendable {
         case success = "success"
     }
 
-    public init(error: String?, loginId: String?, success: Bool) {
+    public init(error: String? = nil, loginId: String? = nil, success: Bool) {
         self.error = error
         self.loginId = loginId
         self.success = success
@@ -2502,7 +2502,7 @@ public struct RateLimitSnapshot: Codable, Sendable {
         case secondary = "secondary"
     }
 
-    public init(credits: CreditsSnapshot?, limitId: String?, limitName: String?, planType: PlanType?, primary: RateLimitWindow?, secondary: RateLimitWindow?) {
+    public init(credits: CreditsSnapshot? = nil, limitId: String? = nil, limitName: String? = nil, planType: PlanType? = nil, primary: RateLimitWindow? = nil, secondary: RateLimitWindow? = nil) {
         self.credits = credits
         self.limitId = limitId
         self.limitName = limitName
@@ -2569,7 +2569,7 @@ public struct CreditsSnapshot: Codable, Sendable {
         case unlimited = "unlimited"
     }
 
-    public init(balance: String?, hasCredits: Bool, unlimited: Bool) {
+    public init(balance: String? = nil, hasCredits: Bool, unlimited: Bool) {
         self.balance = balance
         self.hasCredits = hasCredits
         self.unlimited = unlimited
@@ -2627,7 +2627,7 @@ public struct RateLimitWindow: Codable, Sendable {
         case windowDurationMins = "windowDurationMins"
     }
 
-    public init(resetsAt: Int?, usedPercent: Int, windowDurationMins: Int?) {
+    public init(resetsAt: Int? = nil, usedPercent: Int, windowDurationMins: Int? = nil) {
         self.resetsAt = resetsAt
         self.usedPercent = usedPercent
         self.windowDurationMins = windowDurationMins
@@ -2683,7 +2683,7 @@ public struct AccountUpdatedNotification: Codable, Sendable {
         case planType = "planType"
     }
 
-    public init(authMode: AuthMode?, planType: PlanType?) {
+    public init(authMode: AuthMode? = nil, planType: PlanType? = nil) {
         self.authMode = authMode
         self.planType = planType
     }
@@ -2752,7 +2752,7 @@ public struct AdditionalFileSystemPermissions: Codable, Sendable {
         case write = "write"
     }
 
-    public init(read: [String]?, write: [String]?) {
+    public init(read: [String]? = nil, write: [String]? = nil) {
         self.read = read
         self.write = write
     }
@@ -2803,7 +2803,7 @@ public struct AdditionalNetworkPermissions: Codable, Sendable {
         case enabled = "enabled"
     }
 
-    public init(enabled: Bool?) {
+    public init(enabled: Bool? = nil) {
         self.enabled = enabled
     }
 }
@@ -2853,7 +2853,7 @@ public struct AdditionalPermissionProfile: Codable, Sendable {
         case network = "network"
     }
 
-    public init(fileSystem: AdditionalFileSystemPermissions?, network: AdditionalNetworkPermissions?) {
+    public init(fileSystem: AdditionalFileSystemPermissions? = nil, network: AdditionalNetworkPermissions? = nil) {
         self.fileSystem = fileSystem
         self.network = network
     }
@@ -2967,7 +2967,7 @@ public struct AnalyticsConfig: Codable, Sendable {
         case enabled = "enabled"
     }
 
-    public init(enabled: Bool?) {
+    public init(enabled: Bool? = nil) {
         self.enabled = enabled
     }
 }
@@ -3026,7 +3026,7 @@ public struct AppBranding: Codable, Sendable {
         case website = "website"
     }
 
-    public init(category: String?, developer: String?, isDiscoverableApp: Bool, privacyPolicy: String?, termsOfService: String?, website: String?) {
+    public init(category: String? = nil, developer: String? = nil, isDiscoverableApp: Bool, privacyPolicy: String? = nil, termsOfService: String? = nil, website: String? = nil) {
         self.category = category
         self.developer = developer
         self.isDiscoverableApp = isDiscoverableApp
@@ -3099,7 +3099,7 @@ public struct AppConfig: Codable, Sendable {
         case tools = "tools"
     }
 
-    public init(defaultToolsApprovalMode: AppToolApproval?, defaultToolsEnabled: Bool?, destructiveEnabled: Bool?, enabled: Bool?, openWorldEnabled: Bool?, tools: [String: JSONAny]?) {
+    public init(defaultToolsApprovalMode: AppToolApproval? = nil, defaultToolsEnabled: Bool? = nil, destructiveEnabled: Bool? = nil, enabled: Bool? = nil, openWorldEnabled: Bool? = nil, tools: [String: JSONAny]? = nil) {
         self.defaultToolsApprovalMode = defaultToolsApprovalMode
         self.defaultToolsEnabled = defaultToolsEnabled
         self.destructiveEnabled = destructiveEnabled
@@ -3195,7 +3195,7 @@ public struct AppInfo: Codable, Sendable {
         case pluginDisplayNames = "pluginDisplayNames"
     }
 
-    public init(appMetadata: AppMetadata?, branding: AppBranding?, description: String?, distributionChannel: String?, id: String, installUrl: String?, isAccessible: Bool?, isEnabled: Bool?, labels: [String: String]?, logoUrl: String?, logoUrlDark: String?, name: String, pluginDisplayNames: [String]?) {
+    public init(appMetadata: AppMetadata? = nil, branding: AppBranding? = nil, description: String? = nil, distributionChannel: String? = nil, id: String, installUrl: String? = nil, isAccessible: Bool? = nil, isEnabled: Bool? = nil, labels: [String: String]? = nil, logoUrl: String? = nil, logoUrlDark: String? = nil, name: String, pluginDisplayNames: [String]? = nil) {
         self.appMetadata = appMetadata
         self.branding = branding
         self.description = description
@@ -3301,7 +3301,7 @@ public struct AppMetadata: Codable, Sendable {
         case versionNotes = "versionNotes"
     }
 
-    public init(categories: [String]?, developer: String?, firstPartyRequiresInstall: Bool?, firstPartyType: String?, review: AppReview?, screenshots: [AppScreenshot]?, seoDescription: String?, showInComposerWhenUnlinked: Bool?, subCategories: [String]?, version: String?, versionId: String?, versionNotes: String?) {
+    public init(categories: [String]? = nil, developer: String? = nil, firstPartyRequiresInstall: Bool? = nil, firstPartyType: String? = nil, review: AppReview? = nil, screenshots: [AppScreenshot]? = nil, seoDescription: String? = nil, showInComposerWhenUnlinked: Bool? = nil, subCategories: [String]? = nil, version: String? = nil, versionId: String? = nil, versionNotes: String? = nil) {
         self.categories = categories
         self.developer = developer
         self.firstPartyRequiresInstall = firstPartyRequiresInstall
@@ -3434,7 +3434,7 @@ public struct AppScreenshot: Codable, Sendable {
         case userPrompt = "userPrompt"
     }
 
-    public init(fileId: String?, url: String?, userPrompt: String) {
+    public init(fileId: String? = nil, url: String? = nil, userPrompt: String) {
         self.fileId = fileId
         self.url = url
         self.userPrompt = userPrompt
@@ -3546,7 +3546,7 @@ public struct AppSummary: Codable, Sendable {
         case needsAuth = "needsAuth"
     }
 
-    public init(description: String?, id: String, installUrl: String?, name: String, needsAuth: Bool) {
+    public init(description: String? = nil, id: String, installUrl: String? = nil, name: String, needsAuth: Bool) {
         self.description = description
         self.id = id
         self.installUrl = installUrl
@@ -3608,7 +3608,7 @@ public struct AppToolConfig: Codable, Sendable {
         case enabled = "enabled"
     }
 
-    public init(approvalMode: AppToolApproval?, enabled: Bool?) {
+    public init(approvalMode: AppToolApproval? = nil, enabled: Bool? = nil) {
         self.approvalMode = approvalMode
         self.enabled = enabled
     }
@@ -3672,7 +3672,7 @@ public struct ApplyPatchApprovalParams: Codable, Sendable {
         case reason = "reason"
     }
 
-    public init(callId: String, conversationId: String, fileChanges: [String: FileChange], grantRoot: String?, reason: String?) {
+    public init(callId: String, conversationId: String, fileChanges: [String: FileChange], grantRoot: String? = nil, reason: String? = nil) {
         self.callId = callId
         self.conversationId = conversationId
         self.fileChanges = fileChanges
@@ -3738,7 +3738,7 @@ public struct FileChange: Codable, Sendable {
         case unifiedDiff = "unified_diff"
     }
 
-    public init(content: String?, type: FileChangeType, movePath: String?, unifiedDiff: String?) {
+    public init(content: String? = nil, type: FileChangeType, movePath: String? = nil, unifiedDiff: String? = nil) {
         self.content = content
         self.type = type
         self.movePath = movePath
@@ -3885,7 +3885,7 @@ public struct PolicyAmendmentReviewDecision: Codable, Sendable {
         case networkPolicyAmendment = "network_policy_amendment"
     }
 
-    public init(approvedExecpolicyAmendment: ApprovedExecpolicyAmendment?, networkPolicyAmendment: NetworkPolicyAmendment?) {
+    public init(approvedExecpolicyAmendment: ApprovedExecpolicyAmendment? = nil, networkPolicyAmendment: NetworkPolicyAmendment? = nil) {
         self.approvedExecpolicyAmendment = approvedExecpolicyAmendment
         self.networkPolicyAmendment = networkPolicyAmendment
     }
@@ -4118,7 +4118,7 @@ public struct AppsConfig: Codable, Sendable {
         case appsConfigDefault = "_default"
     }
 
-    public init(appsConfigDefault: AppsDefaultConfig?) {
+    public init(appsConfigDefault: AppsDefaultConfig? = nil) {
         self.appsConfigDefault = appsConfigDefault
     }
 }
@@ -4170,7 +4170,7 @@ public struct AppsDefaultConfig: Codable, Sendable {
         case openWorldEnabled = "open_world_enabled"
     }
 
-    public init(destructiveEnabled: Bool?, enabled: Bool?, openWorldEnabled: Bool?) {
+    public init(destructiveEnabled: Bool? = nil, enabled: Bool? = nil, openWorldEnabled: Bool? = nil) {
         self.destructiveEnabled = destructiveEnabled
         self.enabled = enabled
         self.openWorldEnabled = openWorldEnabled
@@ -4235,7 +4235,7 @@ public struct AppsListParams: Codable, Sendable {
         case threadId = "threadId"
     }
 
-    public init(cursor: String?, forceRefetch: Bool?, limit: Int?, threadId: String?) {
+    public init(cursor: String? = nil, forceRefetch: Bool? = nil, limit: Int? = nil, threadId: String? = nil) {
         self.cursor = cursor
         self.forceRefetch = forceRefetch
         self.limit = limit
@@ -4297,7 +4297,7 @@ public struct AppsListResponse: Codable, Sendable {
         case nextCursor = "nextCursor"
     }
 
-    public init(data: [AppInfo], nextCursor: String?) {
+    public init(data: [AppInfo], nextCursor: String? = nil) {
         self.data = data
         self.nextCursor = nextCursor
     }
@@ -4432,7 +4432,7 @@ public struct PurpleGranular: Codable, Sendable {
         case skillApproval = "skill_approval"
     }
 
-    public init(mcpElicitations: Bool, requestPermissions: Bool?, rules: Bool, sandboxApproval: Bool, skillApproval: Bool?) {
+    public init(mcpElicitations: Bool, requestPermissions: Bool? = nil, rules: Bool, sandboxApproval: Bool, skillApproval: Bool? = nil) {
         self.mcpElicitations = mcpElicitations
         self.requestPermissions = requestPermissions
         self.rules = rules
@@ -4668,7 +4668,7 @@ public struct ChatgptAuthTokensRefreshParams: Codable, Sendable {
         case reason = "reason"
     }
 
-    public init(previousAccountId: String?, reason: ChatgptAuthTokensRefreshReason) {
+    public init(previousAccountId: String? = nil, reason: ChatgptAuthTokensRefreshReason) {
         self.previousAccountId = previousAccountId
         self.reason = reason
     }
@@ -4728,7 +4728,7 @@ public struct ChatgptAuthTokensRefreshResponse: Codable, Sendable {
         case chatgptPlanType = "chatgptPlanType"
     }
 
-    public init(accessToken: String, chatgptAccountId: String, chatgptPlanType: String?) {
+    public init(accessToken: String, chatgptAccountId: String, chatgptPlanType: String? = nil) {
         self.accessToken = accessToken
         self.chatgptAccountId = chatgptAccountId
         self.chatgptPlanType = chatgptPlanType
@@ -4786,7 +4786,7 @@ public struct ClientInfo: Codable, Sendable {
         case version = "version"
     }
 
-    public init(name: String, title: String?, version: String) {
+    public init(name: String, title: String? = nil, version: String) {
         self.name = name
         self.title = title
         self.version = version
@@ -4920,7 +4920,7 @@ public struct ClientRequest: Codable, Sendable {
         case params = "params"
     }
 
-    public init(id: RequestId, method: ClientRequestMethod, params: ClientRequestLoginAccountParams?) {
+    public init(id: RequestId, method: ClientRequestMethod, params: ClientRequestLoginAccountParams? = nil) {
         self.id = id
         self.method = method
         self.params = params
@@ -5559,7 +5559,7 @@ public struct ClientRequestLoginAccountParams: Codable, Sendable {
         case roots = "roots"
     }
 
-    public init(capabilities: InitializeCapabilities?, clientInfo: ClientInfo?, approvalPolicy: ApprovalPolicy?, approvalsReviewer: ApprovalsReviewer?, baseInstructions: String?, config: [String: JSONAny]?, cwd: String?, developerInstructions: String?, dynamicTools: [DynamicToolElement]?, ephemeral: Bool?, experimentalRawEvents: Bool?, mockExperimentalField: String?, model: String?, modelProvider: String?, persistExtendedHistory: Bool?, personality: Personality?, sandbox: SandboxMode?, serviceName: String?, serviceTier: ServiceTier?, sessionStartSource: ThreadStartSource?, history: [HistoryElement]?, path: String?, threadId: String?, name: String?, gitInfo: LoginAccountParamsGitInfo?, command: Command?, numTurns: Int?, archived: Bool?, cursor: String?, limit: Int?, modelProviders: [String]?, searchTerm: String?, sortKey: ThreadSortKey?, sourceKinds: [ThreadSourceKind]?, includeTurns: Bool?, cwds: [String]?, forceReload: Bool?, perCwdExtraUserRoots: [PerCwdExtraUserRootElement]?, forceRemoteSync: Bool?, marketplacePath: String?, pluginName: String?, forceRefetch: Bool?, dataBase64: String?, recursive: Bool?, force: Bool?, destinationPath: String?, sourcePath: String?, watchId: String?, enabled: Bool?, pluginId: String?, collaborationMode: CollaborationModeClass?, effort: ReasoningEffort?, input: [InputElement]?, outputSchema: JSONAny?, responsesapiClientMetadata: [String: String]?, sandboxPolicy: LoginAccountParamsDangerFullAccessSandboxPolicy?, summary: ReasoningSummary?, expectedTurnId: String?, turnId: String?, prompt: String?, sessionId: String?, transport: LoginAccountParamsWebsocketThreadRealtimeStartTransport?, voice: RealtimeVoice?, audio: Audio?, text: String?, delivery: ReviewDelivery?, target: TargetClass?, includeHidden: Bool?, enablement: [String: Bool]?, value: JSONAny?, scopes: [String]?, timeoutSecs: Int?, detail: MCPServerStatusDetail?, server: String?, uri: String?, mode: WindowsSandboxSetupMode?, apiKey: String?, type: LoginAccountParamsType?, accessToken: String?, chatgptAccountId: String?, chatgptPlanType: String?, loginId: String?, classification: String?, extraLogFiles: [String]?, includeLogs: Bool?, reason: String?, disableOutputCap: Bool?, disableTimeout: Bool?, env: [String: String?]?, outputBytesCap: Int?, processId: String?, size: SizeClass?, streamStdin: Bool?, streamStdoutStderr: Bool?, timeoutMs: Int?, tty: Bool?, closeStdin: Bool?, deltaBase64: String?, includeLayers: Bool?, includeHome: Bool?, migrationItems: [MigrationItemElement]?, expectedVersion: String?, filePath: String?, keyPath: String?, mergeStrategy: MergeStrategy?, edits: [EditElement]?, reloadUserConfig: Bool?, refreshToken: Bool?, cancellationToken: String?, query: String?, roots: [String]?) {
+    public init(capabilities: InitializeCapabilities? = nil, clientInfo: ClientInfo? = nil, approvalPolicy: ApprovalPolicy? = nil, approvalsReviewer: ApprovalsReviewer? = nil, baseInstructions: String? = nil, config: [String: JSONAny]? = nil, cwd: String? = nil, developerInstructions: String? = nil, dynamicTools: [DynamicToolElement]? = nil, ephemeral: Bool? = nil, experimentalRawEvents: Bool? = nil, mockExperimentalField: String? = nil, model: String? = nil, modelProvider: String? = nil, persistExtendedHistory: Bool? = nil, personality: Personality? = nil, sandbox: SandboxMode? = nil, serviceName: String? = nil, serviceTier: ServiceTier? = nil, sessionStartSource: ThreadStartSource? = nil, history: [HistoryElement]? = nil, path: String? = nil, threadId: String? = nil, name: String? = nil, gitInfo: LoginAccountParamsGitInfo? = nil, command: Command? = nil, numTurns: Int? = nil, archived: Bool? = nil, cursor: String? = nil, limit: Int? = nil, modelProviders: [String]? = nil, searchTerm: String? = nil, sortKey: ThreadSortKey? = nil, sourceKinds: [ThreadSourceKind]? = nil, includeTurns: Bool? = nil, cwds: [String]? = nil, forceReload: Bool? = nil, perCwdExtraUserRoots: [PerCwdExtraUserRootElement]? = nil, forceRemoteSync: Bool? = nil, marketplacePath: String? = nil, pluginName: String? = nil, forceRefetch: Bool? = nil, dataBase64: String? = nil, recursive: Bool? = nil, force: Bool? = nil, destinationPath: String? = nil, sourcePath: String? = nil, watchId: String? = nil, enabled: Bool? = nil, pluginId: String? = nil, collaborationMode: CollaborationModeClass? = nil, effort: ReasoningEffort? = nil, input: [InputElement]? = nil, outputSchema: JSONAny? = nil, responsesapiClientMetadata: [String: String]? = nil, sandboxPolicy: LoginAccountParamsDangerFullAccessSandboxPolicy? = nil, summary: ReasoningSummary? = nil, expectedTurnId: String? = nil, turnId: String? = nil, prompt: String? = nil, sessionId: String? = nil, transport: LoginAccountParamsWebsocketThreadRealtimeStartTransport? = nil, voice: RealtimeVoice? = nil, audio: Audio? = nil, text: String? = nil, delivery: ReviewDelivery? = nil, target: TargetClass? = nil, includeHidden: Bool? = nil, enablement: [String: Bool]? = nil, value: JSONAny? = nil, scopes: [String]? = nil, timeoutSecs: Int? = nil, detail: MCPServerStatusDetail? = nil, server: String? = nil, uri: String? = nil, mode: WindowsSandboxSetupMode? = nil, apiKey: String? = nil, type: LoginAccountParamsType? = nil, accessToken: String? = nil, chatgptAccountId: String? = nil, chatgptPlanType: String? = nil, loginId: String? = nil, classification: String? = nil, extraLogFiles: [String]? = nil, includeLogs: Bool? = nil, reason: String? = nil, disableOutputCap: Bool? = nil, disableTimeout: Bool? = nil, env: [String: String?]? = nil, outputBytesCap: Int? = nil, processId: String? = nil, size: SizeClass? = nil, streamStdin: Bool? = nil, streamStdoutStderr: Bool? = nil, timeoutMs: Int? = nil, tty: Bool? = nil, closeStdin: Bool? = nil, deltaBase64: String? = nil, includeLayers: Bool? = nil, includeHome: Bool? = nil, migrationItems: [MigrationItemElement]? = nil, expectedVersion: String? = nil, filePath: String? = nil, keyPath: String? = nil, mergeStrategy: MergeStrategy? = nil, edits: [EditElement]? = nil, reloadUserConfig: Bool? = nil, refreshToken: Bool? = nil, cancellationToken: String? = nil, query: String? = nil, roots: [String]? = nil) {
         self.capabilities = capabilities
         self.clientInfo = clientInfo
         self.approvalPolicy = approvalPolicy
@@ -6028,7 +6028,7 @@ public struct FluffyGranular: Codable, Sendable {
         case skillApproval = "skill_approval"
     }
 
-    public init(mcpElicitations: Bool, requestPermissions: Bool?, rules: Bool, sandboxApproval: Bool, skillApproval: Bool?) {
+    public init(mcpElicitations: Bool, requestPermissions: Bool? = nil, rules: Bool, sandboxApproval: Bool, skillApproval: Bool? = nil) {
         self.mcpElicitations = mcpElicitations
         self.requestPermissions = requestPermissions
         self.rules = rules
@@ -6097,7 +6097,7 @@ public struct Audio: Codable, Sendable {
         case samplesPerChannel = "samplesPerChannel"
     }
 
-    public init(data: String, itemId: String?, numChannels: Int, sampleRate: Int, samplesPerChannel: Int?) {
+    public init(data: String, itemId: String? = nil, numChannels: Int, sampleRate: Int, samplesPerChannel: Int? = nil) {
         self.data = data
         self.itemId = itemId
         self.numChannels = numChannels
@@ -6163,7 +6163,7 @@ public struct InitializeCapabilities: Codable, Sendable {
         case optOutNotificationMethods = "optOutNotificationMethods"
     }
 
-    public init(experimentalApi: Bool?, optOutNotificationMethods: [String]?) {
+    public init(experimentalApi: Bool? = nil, optOutNotificationMethods: [String]? = nil) {
         self.experimentalApi = experimentalApi
         self.optOutNotificationMethods = optOutNotificationMethods
     }
@@ -6279,7 +6279,7 @@ public struct Settings: Codable, Sendable {
         case reasoningEffort = "reasoning_effort"
     }
 
-    public init(developerInstructions: String?, model: String, reasoningEffort: ReasoningEffort?) {
+    public init(developerInstructions: String? = nil, model: String, reasoningEffort: ReasoningEffort? = nil) {
         self.developerInstructions = developerInstructions
         self.model = model
         self.reasoningEffort = reasoningEffort
@@ -6388,7 +6388,7 @@ public struct DynamicToolElement: Codable, Sendable {
         case name = "name"
     }
 
-    public init(deferLoading: Bool?, description: String, inputSchema: JSONAny, name: String) {
+    public init(deferLoading: Bool? = nil, description: String, inputSchema: JSONAny, name: String) {
         self.deferLoading = deferLoading
         self.description = description
         self.inputSchema = inputSchema
@@ -6518,7 +6518,7 @@ public struct LoginAccountParamsGitInfo: Codable, Sendable {
         case sha = "sha"
     }
 
-    public init(branch: String?, originUrl: String?, sha: String?) {
+    public init(branch: String? = nil, originUrl: String? = nil, sha: String? = nil) {
         self.branch = branch
         self.originUrl = originUrl
         self.sha = sha
@@ -6614,7 +6614,7 @@ public struct HistoryElement: Codable, Sendable {
         case ghostCommit = "ghost_commit"
     }
 
-    public init(content: [InputTextContentItem]?, endTurn: Bool?, id: String?, phase: MessagePhase?, role: String?, type: ResponseItemType, encryptedContent: String?, summary: [SummaryTextReasoningItemReasoningSummary]?, action: HistorySearchResponsesApiWebSearchAction?, callId: String?, status: String?, arguments: JSONAny?, name: String?, namespace: String?, execution: String?, output: Output?, input: String?, tools: [JSONAny]?, result: String?, revisedPrompt: String?, ghostCommit: GhostCommit?) {
+    public init(content: [InputTextContentItem]? = nil, endTurn: Bool? = nil, id: String? = nil, phase: MessagePhase? = nil, role: String? = nil, type: ResponseItemType, encryptedContent: String? = nil, summary: [SummaryTextReasoningItemReasoningSummary]? = nil, action: HistorySearchResponsesApiWebSearchAction? = nil, callId: String? = nil, status: String? = nil, arguments: JSONAny? = nil, name: String? = nil, namespace: String? = nil, execution: String? = nil, output: Output? = nil, input: String? = nil, tools: [JSONAny]? = nil, result: String? = nil, revisedPrompt: String? = nil, ghostCommit: GhostCommit? = nil) {
         self.content = content
         self.endTurn = endTurn
         self.id = id
@@ -6740,7 +6740,7 @@ public struct HistorySearchResponsesApiWebSearchAction: Codable, Sendable {
         case pattern = "pattern"
     }
 
-    public init(command: [String]?, env: [String: String]?, timeoutMs: Int?, type: SearchResponsesApiWebSearchActionType, user: String?, workingDirectory: String?, queries: [String]?, query: String?, url: String?, pattern: String?) {
+    public init(command: [String]? = nil, env: [String: String]? = nil, timeoutMs: Int? = nil, type: SearchResponsesApiWebSearchActionType, user: String? = nil, workingDirectory: String? = nil, queries: [String]? = nil, query: String? = nil, url: String? = nil, pattern: String? = nil) {
         self.command = command
         self.env = env
         self.timeoutMs = timeoutMs
@@ -6827,7 +6827,7 @@ public struct InputTextContentItem: Codable, Sendable {
         case imageUrl = "image_url"
     }
 
-    public init(text: String?, type: ContentType, imageUrl: String?) {
+    public init(text: String? = nil, type: ContentType, imageUrl: String? = nil) {
         self.text = text
         self.type = type
         self.imageUrl = imageUrl
@@ -6896,7 +6896,7 @@ public struct GhostCommit: Codable, Sendable {
         case preexistingUntrackedFiles = "preexisting_untracked_files"
     }
 
-    public init(id: String, parent: String?, preexistingUntrackedDirs: [String], preexistingUntrackedFiles: [String]) {
+    public init(id: String, parent: String? = nil, preexistingUntrackedDirs: [String], preexistingUntrackedFiles: [String]) {
         self.id = id
         self.parent = parent
         self.preexistingUntrackedDirs = preexistingUntrackedDirs
@@ -6989,7 +6989,7 @@ public struct InputFunctionCallOutputContentItem: Codable, Sendable {
         case imageUrl = "image_url"
     }
 
-    public init(text: String?, type: InputFunctionCallOutputContentItemType, detail: ImageDetail?, imageUrl: String?) {
+    public init(text: String? = nil, type: InputFunctionCallOutputContentItemType, detail: ImageDetail? = nil, imageUrl: String? = nil) {
         self.text = text
         self.type = type
         self.detail = detail
@@ -7158,7 +7158,7 @@ public struct InputElement: Codable, Sendable {
         case name = "name"
     }
 
-    public init(text: String?, textElements: [TextElementElement]?, type: UserInputType, url: String?, path: String?, name: String?) {
+    public init(text: String? = nil, textElements: [TextElementElement]? = nil, type: UserInputType, url: String? = nil, path: String? = nil, name: String? = nil) {
         self.text = text
         self.textElements = textElements
         self.type = type
@@ -7225,7 +7225,7 @@ public struct TextElementElement: Codable, Sendable {
         case placeholder = "placeholder"
     }
 
-    public init(byteRange: PurpleByteRange, placeholder: String?) {
+    public init(byteRange: PurpleByteRange, placeholder: String? = nil) {
         self.byteRange = byteRange
         self.placeholder = placeholder
     }
@@ -7343,7 +7343,7 @@ public struct MigrationItemElement: Codable, Sendable {
         case itemType = "itemType"
     }
 
-    public init(cwd: String?, description: String, itemType: ExternalAgentConfigMigrationItemType) {
+    public init(cwd: String? = nil, description: String, itemType: ExternalAgentConfigMigrationItemType) {
         self.cwd = cwd
         self.description = description
         self.itemType = itemType
@@ -7486,7 +7486,7 @@ public struct LoginAccountParamsDangerFullAccessSandboxPolicy: Codable, Sendable
         case writableRoots = "writableRoots"
     }
 
-    public init(type: SandboxPolicyType, access: AccessClass?, networkAccess: NetworkAccessUnion?, excludeSlashTmp: Bool?, excludeTmpdirEnvVar: Bool?, readOnlyAccess: AccessClass?, writableRoots: [String]?) {
+    public init(type: SandboxPolicyType, access: AccessClass? = nil, networkAccess: NetworkAccessUnion? = nil, excludeSlashTmp: Bool? = nil, excludeTmpdirEnvVar: Bool? = nil, readOnlyAccess: AccessClass? = nil, writableRoots: [String]? = nil) {
         self.type = type
         self.access = access
         self.networkAccess = networkAccess
@@ -7556,7 +7556,7 @@ public struct AccessClass: Codable, Sendable {
         case type = "type"
     }
 
-    public init(includePlatformDefaults: Bool?, readableRoots: [String]?, type: ReadOnlyAccessType) {
+    public init(includePlatformDefaults: Bool? = nil, readableRoots: [String]? = nil, type: ReadOnlyAccessType) {
         self.includePlatformDefaults = includePlatformDefaults
         self.readableRoots = readableRoots
         self.type = type
@@ -7769,7 +7769,7 @@ public struct TargetClass: Codable, Sendable {
         case instructions = "instructions"
     }
 
-    public init(type: ReviewTargetType, branch: String?, sha: String?, title: String?, instructions: String?) {
+    public init(type: ReviewTargetType, branch: String? = nil, sha: String? = nil, title: String? = nil, instructions: String? = nil) {
         self.type = type
         self.branch = branch
         self.sha = sha
@@ -7840,7 +7840,7 @@ public struct LoginAccountParamsWebsocketThreadRealtimeStartTransport: Codable, 
         case sdp = "sdp"
     }
 
-    public init(type: WebThreadRealtimeStartTransportType, sdp: String?) {
+    public init(type: WebThreadRealtimeStartTransportType, sdp: String? = nil) {
         self.type = type
         self.sdp = sdp
     }
@@ -7973,7 +7973,7 @@ public struct CodexErrorInfoHttpConnectionFailedCodexErrorInfo: Codable, Sendabl
         case activeTurnNotSteerable = "activeTurnNotSteerable"
     }
 
-    public init(httpConnectionFailed: PurpleHttpConnectionFailed?, responseStreamConnectionFailed: PurpleResponseStreamConnectionFailed?, responseStreamDisconnected: PurpleResponseStreamDisconnected?, responseTooManyFailedAttempts: PurpleResponseTooManyFailedAttempts?, activeTurnNotSteerable: PurpleActiveTurnNotSteerable?) {
+    public init(httpConnectionFailed: PurpleHttpConnectionFailed? = nil, responseStreamConnectionFailed: PurpleResponseStreamConnectionFailed? = nil, responseStreamDisconnected: PurpleResponseStreamDisconnected? = nil, responseTooManyFailedAttempts: PurpleResponseTooManyFailedAttempts? = nil, activeTurnNotSteerable: PurpleActiveTurnNotSteerable? = nil) {
         self.httpConnectionFailed = httpConnectionFailed
         self.responseStreamConnectionFailed = responseStreamConnectionFailed
         self.responseStreamDisconnected = responseStreamDisconnected
@@ -8086,7 +8086,7 @@ public struct PurpleHttpConnectionFailed: Codable, Sendable {
         case httpStatusCode = "httpStatusCode"
     }
 
-    public init(httpStatusCode: Int?) {
+    public init(httpStatusCode: Int? = nil) {
         self.httpStatusCode = httpStatusCode
     }
 }
@@ -8134,7 +8134,7 @@ public struct PurpleResponseStreamConnectionFailed: Codable, Sendable {
         case httpStatusCode = "httpStatusCode"
     }
 
-    public init(httpStatusCode: Int?) {
+    public init(httpStatusCode: Int? = nil) {
         self.httpStatusCode = httpStatusCode
     }
 }
@@ -8182,7 +8182,7 @@ public struct PurpleResponseStreamDisconnected: Codable, Sendable {
         case httpStatusCode = "httpStatusCode"
     }
 
-    public init(httpStatusCode: Int?) {
+    public init(httpStatusCode: Int? = nil) {
         self.httpStatusCode = httpStatusCode
     }
 }
@@ -8230,7 +8230,7 @@ public struct PurpleResponseTooManyFailedAttempts: Codable, Sendable {
         case httpStatusCode = "httpStatusCode"
     }
 
-    public init(httpStatusCode: Int?) {
+    public init(httpStatusCode: Int? = nil) {
         self.httpStatusCode = httpStatusCode
     }
 }
@@ -8292,7 +8292,7 @@ public struct CollabAgentState: Codable, Sendable {
         case status = "status"
     }
 
-    public init(message: String?, status: CollabAgentStatus) {
+    public init(message: String? = nil, status: CollabAgentStatus) {
         self.message = message
         self.status = status
     }
@@ -8428,7 +8428,7 @@ public struct SettingsClass: Codable, Sendable {
         case reasoningEffort = "reasoning_effort"
     }
 
-    public init(developerInstructions: String?, model: String, reasoningEffort: ReasoningEffort?) {
+    public init(developerInstructions: String? = nil, model: String, reasoningEffort: ReasoningEffort? = nil) {
         self.developerInstructions = developerInstructions
         self.model = model
         self.reasoningEffort = reasoningEffort
@@ -8538,7 +8538,7 @@ public struct CollaborationModeMask: Codable, Sendable {
         case reasoningEffort = "reasoning_effort"
     }
 
-    public init(mode: ModeKind?, model: String?, name: String, reasoningEffort: ReasoningEffort?) {
+    public init(mode: ModeKind? = nil, model: String? = nil, name: String, reasoningEffort: ReasoningEffort? = nil) {
         self.mode = mode
         self.model = model
         self.name = name
@@ -8603,7 +8603,7 @@ public struct CommandAction: Codable, Sendable {
         case query = "query"
     }
 
-    public init(command: String, name: String?, path: String?, type: CommandActionType, query: String?) {
+    public init(command: String, name: String? = nil, path: String? = nil, type: CommandActionType, query: String? = nil) {
         self.command = command
         self.name = name
         self.path = path
@@ -8821,7 +8821,7 @@ public struct CommandExecParams: Codable, Sendable {
         case tty = "tty"
     }
 
-    public init(command: [String], cwd: String?, disableOutputCap: Bool?, disableTimeout: Bool?, env: [String: String?]?, outputBytesCap: Int?, processId: String?, sandboxPolicy: CommandExecParamsDangerFullAccessSandboxPolicy?, size: CommandExecTerminalSize?, streamStdin: Bool?, streamStdoutStderr: Bool?, timeoutMs: Int?, tty: Bool?) {
+    public init(command: [String], cwd: String? = nil, disableOutputCap: Bool? = nil, disableTimeout: Bool? = nil, env: [String: String?]? = nil, outputBytesCap: Int? = nil, processId: String? = nil, sandboxPolicy: CommandExecParamsDangerFullAccessSandboxPolicy? = nil, size: CommandExecTerminalSize? = nil, streamStdin: Bool? = nil, streamStdoutStderr: Bool? = nil, timeoutMs: Int? = nil, tty: Bool? = nil) {
         self.command = command
         self.cwd = cwd
         self.disableOutputCap = disableOutputCap
@@ -8917,7 +8917,7 @@ public struct CommandExecParamsDangerFullAccessSandboxPolicy: Codable, Sendable 
         case writableRoots = "writableRoots"
     }
 
-    public init(type: SandboxPolicyType, access: ReadOnlyAccess?, networkAccess: NetworkAccessUnion?, excludeSlashTmp: Bool?, excludeTmpdirEnvVar: Bool?, readOnlyAccess: ReadOnlyAccess?, writableRoots: [String]?) {
+    public init(type: SandboxPolicyType, access: ReadOnlyAccess? = nil, networkAccess: NetworkAccessUnion? = nil, excludeSlashTmp: Bool? = nil, excludeTmpdirEnvVar: Bool? = nil, readOnlyAccess: ReadOnlyAccess? = nil, writableRoots: [String]? = nil) {
         self.type = type
         self.access = access
         self.networkAccess = networkAccess
@@ -8987,7 +8987,7 @@ public struct ReadOnlyAccess: Codable, Sendable {
         case type = "type"
     }
 
-    public init(includePlatformDefaults: Bool?, readableRoots: [String]?, type: ReadOnlyAccessType) {
+    public init(includePlatformDefaults: Bool? = nil, readableRoots: [String]? = nil, type: ReadOnlyAccessType) {
         self.includePlatformDefaults = includePlatformDefaults
         self.readableRoots = readableRoots
         self.type = type
@@ -9279,7 +9279,7 @@ public struct CommandExecWriteParams: Codable, Sendable {
         case processId = "processId"
     }
 
-    public init(closeStdin: Bool?, deltaBase64: String?, processId: String) {
+    public init(closeStdin: Bool? = nil, deltaBase64: String? = nil, processId: String) {
         self.closeStdin = closeStdin
         self.deltaBase64 = deltaBase64
         self.processId = processId
@@ -9367,7 +9367,7 @@ public struct PolicyAmendmentCommandExecutionApprovalDecision: Codable, Sendable
         case applyNetworkPolicyAmendment = "applyNetworkPolicyAmendment"
     }
 
-    public init(acceptWithExecpolicyAmendment: AcceptWithExecpolicyAmendment?, applyNetworkPolicyAmendment: ApplyNetworkPolicyAmendment?) {
+    public init(acceptWithExecpolicyAmendment: AcceptWithExecpolicyAmendment? = nil, applyNetworkPolicyAmendment: ApplyNetworkPolicyAmendment? = nil) {
         self.acceptWithExecpolicyAmendment = acceptWithExecpolicyAmendment
         self.applyNetworkPolicyAmendment = applyNetworkPolicyAmendment
     }
@@ -9641,7 +9641,7 @@ public struct CommandExecutionRequestApprovalParams: Codable, Sendable {
         case turnId = "turnId"
     }
 
-    public init(additionalPermissions: AdditionalPermissionProfile?, approvalId: String?, availableDecisions: [CommandExecutionApprovalDecision]?, command: String?, commandActions: [CommandActionElement]?, cwd: String?, itemId: String, networkApprovalContext: NetworkApprovalContext?, proposedExecpolicyAmendment: [String]?, proposedNetworkPolicyAmendments: [NetworkPolicyAmendmentElement]?, reason: String?, threadId: String, turnId: String) {
+    public init(additionalPermissions: AdditionalPermissionProfile? = nil, approvalId: String? = nil, availableDecisions: [CommandExecutionApprovalDecision]? = nil, command: String? = nil, commandActions: [CommandActionElement]? = nil, cwd: String? = nil, itemId: String, networkApprovalContext: NetworkApprovalContext? = nil, proposedExecpolicyAmendment: [String]? = nil, proposedNetworkPolicyAmendments: [NetworkPolicyAmendmentElement]? = nil, reason: String? = nil, threadId: String, turnId: String) {
         self.additionalPermissions = additionalPermissions
         self.approvalId = approvalId
         self.availableDecisions = availableDecisions
@@ -9733,7 +9733,7 @@ public struct CommandActionElement: Codable, Sendable {
         case query = "query"
     }
 
-    public init(command: String, name: String?, path: String?, type: CommandActionType, query: String?) {
+    public init(command: String, name: String? = nil, path: String? = nil, type: CommandActionType, query: String? = nil) {
         self.command = command
         self.name = name
         self.path = path
@@ -9962,7 +9962,7 @@ public struct Config: Codable, Sendable {
         case webSearch = "web_search"
     }
 
-    public init(analytics: AnalyticsConfig?, approvalPolicy: ApprovalPolicyUnion?, approvalsReviewer: ApprovalsReviewer?, apps: AppsConfig?, compactPrompt: String?, developerInstructions: String?, forcedChatgptWorkspaceId: String?, forcedLoginMethod: ForcedLoginMethod?, instructions: String?, model: String?, modelAutoCompactTokenLimit: Int?, modelContextWindow: Int?, modelProvider: String?, modelReasoningEffort: ReasoningEffort?, modelReasoningSummary: ReasoningSummary?, modelVerbosity: Verbosity?, profile: String?, profiles: [String: ProfileV2]?, reviewModel: String?, sandboxMode: SandboxMode?, sandboxWorkspaceWrite: SandboxWorkspaceWrite?, serviceTier: ServiceTier?, tools: ToolsV2?, webSearch: WebSearchMode?) {
+    public init(analytics: AnalyticsConfig? = nil, approvalPolicy: ApprovalPolicyUnion? = nil, approvalsReviewer: ApprovalsReviewer? = nil, apps: AppsConfig? = nil, compactPrompt: String? = nil, developerInstructions: String? = nil, forcedChatgptWorkspaceId: String? = nil, forcedLoginMethod: ForcedLoginMethod? = nil, instructions: String? = nil, model: String? = nil, modelAutoCompactTokenLimit: Int? = nil, modelContextWindow: Int? = nil, modelProvider: String? = nil, modelReasoningEffort: ReasoningEffort? = nil, modelReasoningSummary: ReasoningSummary? = nil, modelVerbosity: Verbosity? = nil, profile: String? = nil, profiles: [String: ProfileV2]? = nil, reviewModel: String? = nil, sandboxMode: SandboxMode? = nil, sandboxWorkspaceWrite: SandboxWorkspaceWrite? = nil, serviceTier: ServiceTier? = nil, tools: ToolsV2? = nil, webSearch: WebSearchMode? = nil) {
         self.analytics = analytics
         self.approvalPolicy = approvalPolicy
         self.approvalsReviewer = approvalsReviewer
@@ -10149,7 +10149,7 @@ public struct ProfileV2: Codable, Sendable {
         case webSearch = "web_search"
     }
 
-    public init(approvalPolicy: ApprovalPolicyUnion?, approvalsReviewer: ApprovalsReviewer?, chatgptBaseUrl: String?, model: String?, modelProvider: String?, modelReasoningEffort: ReasoningEffort?, modelReasoningSummary: ReasoningSummary?, modelVerbosity: Verbosity?, serviceTier: ServiceTier?, tools: ToolsV2?, webSearch: WebSearchMode?) {
+    public init(approvalPolicy: ApprovalPolicyUnion? = nil, approvalsReviewer: ApprovalsReviewer? = nil, chatgptBaseUrl: String? = nil, model: String? = nil, modelProvider: String? = nil, modelReasoningEffort: ReasoningEffort? = nil, modelReasoningSummary: ReasoningSummary? = nil, modelVerbosity: Verbosity? = nil, serviceTier: ServiceTier? = nil, tools: ToolsV2? = nil, webSearch: WebSearchMode? = nil) {
         self.approvalPolicy = approvalPolicy
         self.approvalsReviewer = approvalsReviewer
         self.chatgptBaseUrl = chatgptBaseUrl
@@ -10229,7 +10229,7 @@ public struct ToolsV2: Codable, Sendable {
         case webSearch = "web_search"
     }
 
-    public init(viewImage: Bool?, webSearch: WebSearchToolConfig?) {
+    public init(viewImage: Bool? = nil, webSearch: WebSearchToolConfig? = nil) {
         self.viewImage = viewImage
         self.webSearch = webSearch
     }
@@ -10284,7 +10284,7 @@ public struct WebSearchToolConfig: Codable, Sendable {
         case location = "location"
     }
 
-    public init(allowedDomains: [String]?, contextSize: Verbosity?, location: WebSearchLocation?) {
+    public init(allowedDomains: [String]? = nil, contextSize: Verbosity? = nil, location: WebSearchLocation? = nil) {
         self.allowedDomains = allowedDomains
         self.contextSize = contextSize
         self.location = location
@@ -10344,7 +10344,7 @@ public struct WebSearchLocation: Codable, Sendable {
         case timezone = "timezone"
     }
 
-    public init(city: String?, country: String?, region: String?, timezone: String?) {
+    public init(city: String? = nil, country: String? = nil, region: String? = nil, timezone: String? = nil) {
         self.city = city
         self.country = country
         self.region = region
@@ -10413,7 +10413,7 @@ public struct SandboxWorkspaceWrite: Codable, Sendable {
         case writableRoots = "writable_roots"
     }
 
-    public init(excludeSlashTmp: Bool?, excludeTmpdirEnvVar: Bool?, networkAccess: Bool?, writableRoots: [String]?) {
+    public init(excludeSlashTmp: Bool? = nil, excludeTmpdirEnvVar: Bool? = nil, networkAccess: Bool? = nil, writableRoots: [String]? = nil) {
         self.excludeSlashTmp = excludeSlashTmp
         self.excludeTmpdirEnvVar = excludeTmpdirEnvVar
         self.networkAccess = networkAccess
@@ -10478,7 +10478,7 @@ public struct ConfigBatchWriteParams: Codable, Sendable {
         case reloadUserConfig = "reloadUserConfig"
     }
 
-    public init(edits: [ConfigEdit], expectedVersion: String?, filePath: String?, reloadUserConfig: Bool?) {
+    public init(edits: [ConfigEdit], expectedVersion: String? = nil, filePath: String? = nil, reloadUserConfig: Bool? = nil) {
         self.edits = edits
         self.expectedVersion = expectedVersion
         self.filePath = filePath
@@ -10599,7 +10599,7 @@ public struct ConfigLayer: Codable, Sendable {
         case version = "version"
     }
 
-    public init(config: JSONAny, disabledReason: String?, name: ConfigLayerSource, version: String) {
+    public init(config: JSONAny, disabledReason: String? = nil, name: ConfigLayerSource, version: String) {
         self.config = config
         self.disabledReason = disabledReason
         self.name = name
@@ -10683,7 +10683,7 @@ public struct ConfigLayerSource: Codable, Sendable {
         case dotCodexFolder = "dotCodexFolder"
     }
 
-    public init(domain: String?, key: String?, type: ConfigLayerSourceType, file: String?, dotCodexFolder: String?) {
+    public init(domain: String? = nil, key: String? = nil, type: ConfigLayerSourceType, file: String? = nil, dotCodexFolder: String? = nil) {
         self.domain = domain
         self.key = key
         self.type = type
@@ -10811,7 +10811,7 @@ public struct ConfigReadParams: Codable, Sendable {
         case includeLayers = "includeLayers"
     }
 
-    public init(cwd: String?, includeLayers: Bool?) {
+    public init(cwd: String? = nil, includeLayers: Bool? = nil) {
         self.cwd = cwd
         self.includeLayers = includeLayers
     }
@@ -10866,7 +10866,7 @@ public struct ConfigReadResponse: Codable, Sendable {
         case origins = "origins"
     }
 
-    public init(config: Config, layers: [ConfigLayer]?, origins: [String: ConfigLayerMetadata]) {
+    public init(config: Config, layers: [ConfigLayer]? = nil, origins: [String: ConfigLayerMetadata]) {
         self.config = config
         self.layers = layers
         self.origins = origins
@@ -10932,7 +10932,7 @@ public struct ConfigRequirements: Codable, Sendable {
         case network = "network"
     }
 
-    public init(allowedApprovalPolicies: [AskForApproval]?, allowedApprovalsReviewers: [ApprovalsReviewer]?, allowedSandboxModes: [SandboxMode]?, allowedWebSearchModes: [WebSearchMode]?, enforceResidency: ResidencyRequirement?, featureRequirements: [String: Bool]?, network: NetworkRequirements?) {
+    public init(allowedApprovalPolicies: [AskForApproval]? = nil, allowedApprovalsReviewers: [ApprovalsReviewer]? = nil, allowedSandboxModes: [SandboxMode]? = nil, allowedWebSearchModes: [WebSearchMode]? = nil, enforceResidency: ResidencyRequirement? = nil, featureRequirements: [String: Bool]? = nil, network: NetworkRequirements? = nil) {
         self.allowedApprovalPolicies = allowedApprovalPolicies
         self.allowedApprovalsReviewers = allowedApprovalsReviewers
         self.allowedSandboxModes = allowedSandboxModes
@@ -11035,7 +11035,7 @@ public struct NetworkRequirements: Codable, Sendable {
         case unixSockets = "unixSockets"
     }
 
-    public init(allowedDomains: [String]?, allowLocalBinding: Bool?, allowUnixSockets: [String]?, allowUpstreamProxy: Bool?, dangerFullAccessDenylistOnly: Bool?, dangerouslyAllowAllUnixSockets: Bool?, dangerouslyAllowNonLoopbackProxy: Bool?, deniedDomains: [String]?, domains: [String: NetworkIon]?, enabled: Bool?, httpPort: Int?, managedAllowedDomainsOnly: Bool?, socksPort: Int?, unixSockets: [String: NetworkUnixSocketPermission]?) {
+    public init(allowedDomains: [String]? = nil, allowLocalBinding: Bool? = nil, allowUnixSockets: [String]? = nil, allowUpstreamProxy: Bool? = nil, dangerFullAccessDenylistOnly: Bool? = nil, dangerouslyAllowAllUnixSockets: Bool? = nil, dangerouslyAllowNonLoopbackProxy: Bool? = nil, deniedDomains: [String]? = nil, domains: [String: NetworkIon]? = nil, enabled: Bool? = nil, httpPort: Int? = nil, managedAllowedDomainsOnly: Bool? = nil, socksPort: Int? = nil, unixSockets: [String: NetworkUnixSocketPermission]? = nil) {
         self.allowedDomains = allowedDomains
         self.allowLocalBinding = allowLocalBinding
         self.allowUnixSockets = allowUnixSockets
@@ -11128,7 +11128,7 @@ public struct ConfigRequirementsReadResponse: Codable, Sendable {
         case requirements = "requirements"
     }
 
-    public init(requirements: ConfigRequirements?) {
+    public init(requirements: ConfigRequirements? = nil) {
         self.requirements = requirements
     }
 }
@@ -11185,7 +11185,7 @@ public struct ConfigValueWriteParams: Codable, Sendable {
         case value = "value"
     }
 
-    public init(expectedVersion: String?, filePath: String?, keyPath: String, mergeStrategy: MergeStrategy, value: JSONAny) {
+    public init(expectedVersion: String? = nil, filePath: String? = nil, keyPath: String, mergeStrategy: MergeStrategy, value: JSONAny) {
         self.expectedVersion = expectedVersion
         self.filePath = filePath
         self.keyPath = keyPath
@@ -11255,7 +11255,7 @@ public struct ConfigWarningNotification: Codable, Sendable {
         case summary = "summary"
     }
 
-    public init(details: String?, path: String?, range: TextRange?, summary: String) {
+    public init(details: String? = nil, path: String? = nil, range: TextRange? = nil, summary: String) {
         self.details = details
         self.path = path
         self.range = range
@@ -11427,7 +11427,7 @@ public struct ConfigWriteResponse: Codable, Sendable {
         case version = "version"
     }
 
-    public init(filePath: String, overriddenMetadata: OverriddenMetadata?, status: WriteStatus, version: String) {
+    public init(filePath: String, overriddenMetadata: OverriddenMetadata? = nil, status: WriteStatus, version: String) {
         self.filePath = filePath
         self.overriddenMetadata = overriddenMetadata
         self.status = status
@@ -11551,7 +11551,7 @@ public struct ContentItem: Codable, Sendable {
         case imageUrl = "image_url"
     }
 
-    public init(text: String?, type: ContentItemType, imageUrl: String?) {
+    public init(text: String? = nil, type: ContentItemType, imageUrl: String? = nil) {
         self.text = text
         self.type = type
         self.imageUrl = imageUrl
@@ -11669,7 +11669,7 @@ public struct DeprecationNoticeNotification: Codable, Sendable {
         case summary = "summary"
     }
 
-    public init(details: String?, summary: String) {
+    public init(details: String? = nil, summary: String) {
         self.details = details
         self.summary = summary
     }
@@ -11724,7 +11724,7 @@ public struct DynamicToolCallOutputContentItem: Codable, Sendable {
         case imageUrl = "imageUrl"
     }
 
-    public init(text: String?, type: InputDynamicToolCallOutputContentItemType, imageUrl: String?) {
+    public init(text: String? = nil, type: InputDynamicToolCallOutputContentItemType, imageUrl: String? = nil) {
         self.text = text
         self.type = type
         self.imageUrl = imageUrl
@@ -11908,7 +11908,7 @@ public struct InputDynamicToolCallOutputContentItem: Codable, Sendable {
         case imageUrl = "imageUrl"
     }
 
-    public init(text: String?, type: InputDynamicToolCallOutputContentItemType, imageUrl: String?) {
+    public init(text: String? = nil, type: InputDynamicToolCallOutputContentItemType, imageUrl: String? = nil) {
         self.text = text
         self.type = type
         self.imageUrl = imageUrl
@@ -11968,7 +11968,7 @@ public struct DynamicToolSpec: Codable, Sendable {
         case name = "name"
     }
 
-    public init(deferLoading: Bool?, description: String, inputSchema: JSONAny, name: String) {
+    public init(deferLoading: Bool? = nil, description: String, inputSchema: JSONAny, name: String) {
         self.deferLoading = deferLoading
         self.description = description
         self.inputSchema = inputSchema
@@ -12092,7 +12092,7 @@ public struct TurnError: Codable, Sendable {
         case message = "message"
     }
 
-    public init(additionalDetails: String?, codexErrorInfo: TurnErrorCodexErrorInfo?, message: String) {
+    public init(additionalDetails: String? = nil, codexErrorInfo: TurnErrorCodexErrorInfo? = nil, message: String) {
         self.additionalDetails = additionalDetails
         self.codexErrorInfo = codexErrorInfo
         self.message = message
@@ -12197,7 +12197,7 @@ public struct PurpleCodexErrorInfo: Codable, Sendable {
         case activeTurnNotSteerable = "activeTurnNotSteerable"
     }
 
-    public init(httpConnectionFailed: PurpleHttpConnectionFailed?, responseStreamConnectionFailed: PurpleResponseStreamConnectionFailed?, responseStreamDisconnected: PurpleResponseStreamDisconnected?, responseTooManyFailedAttempts: PurpleResponseTooManyFailedAttempts?, activeTurnNotSteerable: PurpleActiveTurnNotSteerable?) {
+    public init(httpConnectionFailed: PurpleHttpConnectionFailed? = nil, responseStreamConnectionFailed: PurpleResponseStreamConnectionFailed? = nil, responseStreamDisconnected: PurpleResponseStreamDisconnected? = nil, responseTooManyFailedAttempts: PurpleResponseTooManyFailedAttempts? = nil, activeTurnNotSteerable: PurpleActiveTurnNotSteerable? = nil) {
         self.httpConnectionFailed = httpConnectionFailed
         self.responseStreamConnectionFailed = responseStreamConnectionFailed
         self.responseStreamDisconnected = responseStreamDisconnected
@@ -12272,7 +12272,7 @@ public struct ExecCommandApprovalParams: Codable, Sendable {
         case reason = "reason"
     }
 
-    public init(approvalId: String?, callId: String, command: [String], conversationId: String, cwd: String, parsedCmd: [ParsedCommand], reason: String?) {
+    public init(approvalId: String? = nil, callId: String, command: [String], conversationId: String, cwd: String, parsedCmd: [ParsedCommand], reason: String? = nil) {
         self.approvalId = approvalId
         self.callId = callId
         self.command = command
@@ -12349,7 +12349,7 @@ public struct ParsedCommand: Codable, Sendable {
         case query = "query"
     }
 
-    public init(cmd: String, name: String?, path: String?, type: ParsedCommandType, query: String?) {
+    public init(cmd: String, name: String? = nil, path: String? = nil, type: ParsedCommandType, query: String? = nil) {
         self.cmd = cmd
         self.name = name
         self.path = path
@@ -12485,7 +12485,7 @@ public struct ExperimentalFeature: Codable, Sendable {
         case stage = "stage"
     }
 
-    public init(announcement: String?, defaultEnabled: Bool, description: String?, displayName: String?, enabled: Bool, name: String, stage: ExperimentalFeatureStage) {
+    public init(announcement: String? = nil, defaultEnabled: Bool, description: String? = nil, displayName: String? = nil, enabled: Bool, name: String, stage: ExperimentalFeatureStage) {
         self.announcement = announcement
         self.defaultEnabled = defaultEnabled
         self.description = description
@@ -12675,7 +12675,7 @@ public struct ExperimentalFeatureListParams: Codable, Sendable {
         case limit = "limit"
     }
 
-    public init(cursor: String?, limit: Int?) {
+    public init(cursor: String? = nil, limit: Int? = nil) {
         self.cursor = cursor
         self.limit = limit
     }
@@ -12730,7 +12730,7 @@ public struct ExperimentalFeatureListResponse: Codable, Sendable {
         case nextCursor = "nextCursor"
     }
 
-    public init(data: [ExperimentalFeature], nextCursor: String?) {
+    public init(data: [ExperimentalFeature], nextCursor: String? = nil) {
         self.data = data
         self.nextCursor = nextCursor
     }
@@ -12785,7 +12785,7 @@ public struct ExternalAgentConfigDetectParams: Codable, Sendable {
         case includeHome = "includeHome"
     }
 
-    public init(cwds: [String]?, includeHome: Bool?) {
+    public init(cwds: [String]? = nil, includeHome: Bool? = nil) {
         self.cwds = cwds
         self.includeHome = includeHome
     }
@@ -12889,7 +12889,7 @@ public struct ExternalAgentConfigMigrationItem: Codable, Sendable {
         case itemType = "itemType"
     }
 
-    public init(cwd: String?, description: String, itemType: ExternalAgentConfigMigrationItemType) {
+    public init(cwd: String? = nil, description: String, itemType: ExternalAgentConfigMigrationItemType) {
         self.cwd = cwd
         self.description = description
         self.itemType = itemType
@@ -12999,7 +12999,7 @@ public struct FeedbackUploadParams: Codable, Sendable {
         case threadId = "threadId"
     }
 
-    public init(classification: String, extraLogFiles: [String]?, includeLogs: Bool, reason: String?, threadId: String?) {
+    public init(classification: String, extraLogFiles: [String]? = nil, includeLogs: Bool, reason: String? = nil, threadId: String? = nil) {
         self.classification = classification
         self.extraLogFiles = extraLogFiles
         self.includeLogs = includeLogs
@@ -13181,7 +13181,7 @@ public struct FileChangeRequestApprovalParams: Codable, Sendable {
         case turnId = "turnId"
     }
 
-    public init(grantRoot: String?, itemId: String, reason: String?, threadId: String, turnId: String) {
+    public init(grantRoot: String? = nil, itemId: String, reason: String? = nil, threadId: String, turnId: String) {
         self.grantRoot = grantRoot
         self.itemId = itemId
         self.reason = reason
@@ -13349,7 +13349,7 @@ public struct PatchChangeKind: Codable, Sendable {
         case movePath = "move_path"
     }
 
-    public init(type: FileChangeType, movePath: String?) {
+    public init(type: FileChangeType, movePath: String? = nil) {
         self.type = type
         self.movePath = movePath
     }
@@ -13464,7 +13464,7 @@ public struct FSCopyParams: Codable, Sendable {
         case sourcePath = "sourcePath"
     }
 
-    public init(destinationPath: String, recursive: Bool?, sourcePath: String) {
+    public init(destinationPath: String, recursive: Bool? = nil, sourcePath: String) {
         self.destinationPath = destinationPath
         self.recursive = recursive
         self.sourcePath = sourcePath
@@ -13523,7 +13523,7 @@ public struct FSCreateDirectoryParams: Codable, Sendable {
         case recursive = "recursive"
     }
 
-    public init(path: String, recursive: Bool?) {
+    public init(path: String, recursive: Bool? = nil) {
         self.path = path
         self.recursive = recursive
     }
@@ -13962,7 +13962,7 @@ public struct FSRemoveParams: Codable, Sendable {
         case recursive = "recursive"
     }
 
-    public init(force: Bool?, path: String, recursive: Bool?) {
+    public init(force: Bool? = nil, path: String, recursive: Bool? = nil) {
         self.force = force
         self.path = path
         self.recursive = recursive
@@ -14264,7 +14264,7 @@ public struct FunctionCallOutputContentItem: Codable, Sendable {
         case imageUrl = "image_url"
     }
 
-    public init(text: String?, type: InputFunctionCallOutputContentItemType, detail: ImageDetail?, imageUrl: String?) {
+    public init(text: String? = nil, type: InputFunctionCallOutputContentItemType, detail: ImageDetail? = nil, imageUrl: String? = nil) {
         self.text = text
         self.type = type
         self.detail = detail
@@ -14330,7 +14330,7 @@ public struct FuzzyFileSearchParams: Codable, Sendable {
         case roots = "roots"
     }
 
-    public init(cancellationToken: String?, query: String, roots: [String]) {
+    public init(cancellationToken: String? = nil, query: String, roots: [String]) {
         self.cancellationToken = cancellationToken
         self.query = query
         self.roots = roots
@@ -14443,7 +14443,7 @@ public struct FuzzyFileSearchResult: Codable, Sendable {
         case score = "score"
     }
 
-    public init(fileName: String, indices: [Int]?, matchType: FuzzyFileSearchMatchType, path: String, root: String, score: Int) {
+    public init(fileName: String, indices: [Int]? = nil, matchType: FuzzyFileSearchMatchType, path: String, root: String, score: Int) {
         self.fileName = fileName
         self.indices = indices
         self.matchType = matchType
@@ -14771,7 +14771,7 @@ public struct GetAccountParams: Codable, Sendable {
         case refreshToken = "refreshToken"
     }
 
-    public init(refreshToken: Bool?) {
+    public init(refreshToken: Bool? = nil) {
         self.refreshToken = refreshToken
     }
 }
@@ -14823,7 +14823,7 @@ public struct GetAccountRateLimitsResponse: Codable, Sendable {
         case rateLimitsByLimitId = "rateLimitsByLimitId"
     }
 
-    public init(rateLimits: RateLimitSnapshot, rateLimitsByLimitId: [String: RateLimitSnapshot]?) {
+    public init(rateLimits: RateLimitSnapshot, rateLimitsByLimitId: [String: RateLimitSnapshot]? = nil) {
         self.rateLimits = rateLimits
         self.rateLimitsByLimitId = rateLimitsByLimitId
     }
@@ -14876,7 +14876,7 @@ public struct GetAccountResponse: Codable, Sendable {
         case requiresOpenaiAuth = "requiresOpenaiAuth"
     }
 
-    public init(account: APIKeyAccountClass?, requiresOpenaiAuth: Bool) {
+    public init(account: APIKeyAccountClass? = nil, requiresOpenaiAuth: Bool) {
         self.account = account
         self.requiresOpenaiAuth = requiresOpenaiAuth
     }
@@ -14931,7 +14931,7 @@ public struct APIKeyAccountClass: Codable, Sendable {
         case planType = "planType"
     }
 
-    public init(type: AccountType, email: String?, planType: PlanType?) {
+    public init(type: AccountType, email: String? = nil, planType: PlanType? = nil) {
         self.type = type
         self.email = email
         self.planType = planType
@@ -14992,7 +14992,7 @@ public struct GhostCommitClass: Codable, Sendable {
         case preexistingUntrackedFiles = "preexisting_untracked_files"
     }
 
-    public init(id: String, parent: String?, preexistingUntrackedDirs: [String], preexistingUntrackedFiles: [String]) {
+    public init(id: String, parent: String? = nil, preexistingUntrackedDirs: [String], preexistingUntrackedFiles: [String]) {
         self.id = id
         self.parent = parent
         self.preexistingUntrackedDirs = preexistingUntrackedDirs
@@ -15053,7 +15053,7 @@ public struct GitInfo: Codable, Sendable {
         case sha = "sha"
     }
 
-    public init(branch: String?, originUrl: String?, sha: String?) {
+    public init(branch: String? = nil, originUrl: String? = nil, sha: String? = nil) {
         self.branch = branch
         self.originUrl = originUrl
         self.sha = sha
@@ -15109,7 +15109,7 @@ public struct GrantedPermissionProfile: Codable, Sendable {
         case network = "network"
     }
 
-    public init(fileSystem: AdditionalFileSystemPermissions?, network: AdditionalNetworkPermissions?) {
+    public init(fileSystem: AdditionalFileSystemPermissions? = nil, network: AdditionalNetworkPermissions? = nil) {
         self.fileSystem = fileSystem
         self.network = network
     }
@@ -15168,7 +15168,7 @@ public struct GuardianApprovalReview: Codable, Sendable {
         case userAuthorization = "userAuthorization"
     }
 
-    public init(rationale: String?, riskLevel: GuardianRiskLevel?, status: GuardianApprovalReviewStatus, userAuthorization: GuardianUserAuthorization?) {
+    public init(rationale: String? = nil, riskLevel: GuardianRiskLevel? = nil, status: GuardianApprovalReviewStatus, userAuthorization: GuardianUserAuthorization? = nil) {
         self.rationale = rationale
         self.riskLevel = riskLevel
         self.status = status
@@ -15279,7 +15279,7 @@ public struct GuardianApprovalReviewAction: Codable, Sendable {
         case toolTitle = "toolTitle"
     }
 
-    public init(command: String?, cwd: String?, source: GuardianCommandSource?, type: GuardianApprovalReviewActionType, argv: [String]?, program: String?, files: [String]?, host: String?, port: Int?, guardianApprovalReviewActionProtocol: NetworkApprovalProtocol?, target: String?, connectorId: String?, connectorName: String?, server: String?, toolName: String?, toolTitle: String?) {
+    public init(command: String? = nil, cwd: String? = nil, source: GuardianCommandSource? = nil, type: GuardianApprovalReviewActionType, argv: [String]? = nil, program: String? = nil, files: [String]? = nil, host: String? = nil, port: Int? = nil, guardianApprovalReviewActionProtocol: NetworkApprovalProtocol? = nil, target: String? = nil, connectorId: String? = nil, connectorName: String? = nil, server: String? = nil, toolName: String? = nil, toolTitle: String? = nil) {
         self.command = command
         self.cwd = cwd
         self.source = source
@@ -15389,7 +15389,7 @@ public struct HookCompletedNotification: Codable, Sendable {
         case turnId = "turnId"
     }
 
-    public init(run: HookRunSummary, threadId: String, turnId: String?) {
+    public init(run: HookRunSummary, threadId: String, turnId: String? = nil) {
         self.run = run
         self.threadId = threadId
         self.turnId = turnId
@@ -15467,7 +15467,7 @@ public struct HookRunSummary: Codable, Sendable {
         case statusMessage = "statusMessage"
     }
 
-    public init(completedAt: Int?, displayOrder: Int, durationMs: Int?, entries: [HookOutputEntry], eventName: HookEventName, executionMode: HookExecutionMode, handlerType: HookHandlerType, id: String, scope: HookScope, sourcePath: String, startedAt: Int, status: HookRunStatus, statusMessage: String?) {
+    public init(completedAt: Int? = nil, displayOrder: Int, durationMs: Int? = nil, entries: [HookOutputEntry], eventName: HookEventName, executionMode: HookExecutionMode, handlerType: HookHandlerType, id: String, scope: HookScope, sourcePath: String, startedAt: Int, status: HookRunStatus, statusMessage: String? = nil) {
         self.completedAt = completedAt
         self.displayOrder = displayOrder
         self.durationMs = durationMs
@@ -15701,7 +15701,7 @@ public struct HookStartedNotification: Codable, Sendable {
         case turnId = "turnId"
     }
 
-    public init(run: HookRunSummary, threadId: String, turnId: String?) {
+    public init(run: HookRunSummary, threadId: String, turnId: String? = nil) {
         self.run = run
         self.threadId = threadId
         self.turnId = turnId
@@ -15757,7 +15757,7 @@ public struct InitializeParams: Codable, Sendable {
         case clientInfo = "clientInfo"
     }
 
-    public init(capabilities: InitializeCapabilities?, clientInfo: ClientInfo) {
+    public init(capabilities: InitializeCapabilities? = nil, clientInfo: ClientInfo) {
         self.capabilities = capabilities
         self.clientInfo = clientInfo
     }
@@ -16040,7 +16040,7 @@ public struct ThreadItem: Codable, Sendable {
         case review = "review"
     }
 
-    public init(content: [ThreadItemContent]?, id: String, type: ThreadItemType, fragments: [HookPromptFragment]?, memoryCitation: MemoryCitation?, phase: MessagePhase?, text: String?, summary: [String]?, aggregatedOutput: String?, command: String?, commandActions: [CommandAction]?, cwd: String?, durationMs: Int?, exitCode: Int?, processId: String?, source: CommandExecutionSource?, status: String?, changes: [FileUpdateChange]?, arguments: JSONAny?, error: MCPToolCallError?, result: ThreadItemResult?, server: String?, tool: String?, contentItems: [DynamicToolCallOutputContentItem]?, success: Bool?, agentsStates: [String: CollabAgentState]?, model: String?, prompt: String?, reasoningEffort: ReasoningEffort?, receiverThreadIds: [String]?, senderThreadId: String?, action: ThreadItemSearchWebSearchAction?, query: String?, path: String?, revisedPrompt: String?, savedPath: String?, review: String?) {
+    public init(content: [ThreadItemContent]? = nil, id: String, type: ThreadItemType, fragments: [HookPromptFragment]? = nil, memoryCitation: MemoryCitation? = nil, phase: MessagePhase? = nil, text: String? = nil, summary: [String]? = nil, aggregatedOutput: String? = nil, command: String? = nil, commandActions: [CommandAction]? = nil, cwd: String? = nil, durationMs: Int? = nil, exitCode: Int? = nil, processId: String? = nil, source: CommandExecutionSource? = nil, status: String? = nil, changes: [FileUpdateChange]? = nil, arguments: JSONAny? = nil, error: MCPToolCallError? = nil, result: ThreadItemResult? = nil, server: String? = nil, tool: String? = nil, contentItems: [DynamicToolCallOutputContentItem]? = nil, success: Bool? = nil, agentsStates: [String: CollabAgentState]? = nil, model: String? = nil, prompt: String? = nil, reasoningEffort: ReasoningEffort? = nil, receiverThreadIds: [String]? = nil, senderThreadId: String? = nil, action: ThreadItemSearchWebSearchAction? = nil, query: String? = nil, path: String? = nil, revisedPrompt: String? = nil, savedPath: String? = nil, review: String? = nil) {
         self.content = content
         self.id = id
         self.type = type
@@ -16204,7 +16204,7 @@ public struct ThreadItemSearchWebSearchAction: Codable, Sendable {
         case pattern = "pattern"
     }
 
-    public init(queries: [String]?, query: String?, type: WebSearchActionType, url: String?, pattern: String?) {
+    public init(queries: [String]? = nil, query: String? = nil, type: WebSearchActionType, url: String? = nil, pattern: String? = nil) {
         self.queries = queries
         self.query = query
         self.type = type
@@ -16310,7 +16310,7 @@ public struct UserInput: Codable, Sendable {
         case name = "name"
     }
 
-    public init(text: String?, textElements: [TextElement]?, type: UserInputType, url: String?, path: String?, name: String?) {
+    public init(text: String? = nil, textElements: [TextElement]? = nil, type: UserInputType, url: String? = nil, path: String? = nil, name: String? = nil) {
         self.text = text
         self.textElements = textElements
         self.type = type
@@ -16377,7 +16377,7 @@ public struct TextElement: Codable, Sendable {
         case placeholder = "placeholder"
     }
 
-    public init(byteRange: ByteRange, placeholder: String?) {
+    public init(byteRange: ByteRange, placeholder: String? = nil) {
         self.byteRange = byteRange
         self.placeholder = placeholder
     }
@@ -16631,7 +16631,7 @@ public struct MCPToolCallResult: Codable, Sendable {
         case structuredContent = "structuredContent"
     }
 
-    public init(meta: JSONAny?, content: [JSONAny], structuredContent: JSONAny?) {
+    public init(meta: JSONAny? = nil, content: [JSONAny], structuredContent: JSONAny? = nil) {
         self.meta = meta
         self.content = content
         self.structuredContent = structuredContent
@@ -16730,7 +16730,7 @@ public struct ItemGuardianApprovalReviewCompletedNotification: Codable, Sendable
         case turnId = "turnId"
     }
 
-    public init(action: GuardianApprovalReviewAction, decisionSource: AutoReviewDecisionSource, review: GuardianApprovalReview, reviewId: String, targetItemId: String?, threadId: String, turnId: String) {
+    public init(action: GuardianApprovalReviewAction, decisionSource: AutoReviewDecisionSource, review: GuardianApprovalReview, reviewId: String, targetItemId: String? = nil, threadId: String, turnId: String) {
         self.action = action
         self.decisionSource = decisionSource
         self.review = review
@@ -16820,7 +16820,7 @@ public struct ItemGuardianApprovalReviewStartedNotification: Codable, Sendable {
         case turnId = "turnId"
     }
 
-    public init(action: GuardianApprovalReviewAction, review: GuardianApprovalReview, reviewId: String, targetItemId: String?, threadId: String, turnId: String) {
+    public init(action: GuardianApprovalReviewAction, review: GuardianApprovalReview, reviewId: String, targetItemId: String? = nil, threadId: String, turnId: String) {
         self.action = action
         self.review = review
         self.reviewId = reviewId
@@ -16999,7 +16999,7 @@ public struct JSONRPCErrorError: Codable, Sendable {
         case message = "message"
     }
 
-    public init(code: Int, data: JSONAny?, message: String) {
+    public init(code: Int, data: JSONAny? = nil, message: String) {
         self.code = code
         self.data = data
         self.message = message
@@ -17074,7 +17074,7 @@ public struct JSONRPCMessage: Codable, Sendable {
         case error = "error"
     }
 
-    public init(id: RequestId?, method: String?, params: JSONAny?, trace: W3CTraceContext?, result: JSONAny?, error: JSONRPCErrorError?) {
+    public init(id: RequestId? = nil, method: String? = nil, params: JSONAny? = nil, trace: W3CTraceContext? = nil, result: JSONAny? = nil, error: JSONRPCErrorError? = nil) {
         self.id = id
         self.method = method
         self.params = params
@@ -17139,7 +17139,7 @@ public struct W3CTraceContext: Codable, Sendable {
         case tracestate = "tracestate"
     }
 
-    public init(traceparent: String?, tracestate: String?) {
+    public init(traceparent: String? = nil, tracestate: String? = nil) {
         self.traceparent = traceparent
         self.tracestate = tracestate
     }
@@ -17193,7 +17193,7 @@ public struct JSONRPCNotification: Codable, Sendable {
         case params = "params"
     }
 
-    public init(method: String, params: JSONAny?) {
+    public init(method: String, params: JSONAny? = nil) {
         self.method = method
         self.params = params
     }
@@ -17252,7 +17252,7 @@ public struct JSONRPCRequest: Codable, Sendable {
         case trace = "trace"
     }
 
-    public init(id: RequestId, method: String, params: JSONAny?, trace: W3CTraceContext?) {
+    public init(id: RequestId, method: String, params: JSONAny? = nil, trace: W3CTraceContext? = nil) {
         self.id = id
         self.method = method
         self.params = params
@@ -17371,7 +17371,7 @@ public struct ListMcpServerStatusParams: Codable, Sendable {
         case limit = "limit"
     }
 
-    public init(cursor: String?, detail: MCPServerStatusDetail?, limit: Int?) {
+    public init(cursor: String? = nil, detail: MCPServerStatusDetail? = nil, limit: Int? = nil) {
         self.cursor = cursor
         self.detail = detail
         self.limit = limit
@@ -17429,7 +17429,7 @@ public struct ListMcpServerStatusResponse: Codable, Sendable {
         case nextCursor = "nextCursor"
     }
 
-    public init(data: [MCPServerStatus], nextCursor: String?) {
+    public init(data: [MCPServerStatus], nextCursor: String? = nil) {
         self.data = data
         self.nextCursor = nextCursor
     }
@@ -17566,7 +17566,7 @@ public struct ResourceTemplate: Codable, Sendable {
         case uriTemplate = "uriTemplate"
     }
 
-    public init(annotations: JSONAny?, description: String?, mimeType: String?, name: String, title: String?, uriTemplate: String) {
+    public init(annotations: JSONAny? = nil, description: String? = nil, mimeType: String? = nil, name: String, title: String? = nil, uriTemplate: String) {
         self.annotations = annotations
         self.description = description
         self.mimeType = mimeType
@@ -17646,7 +17646,7 @@ public struct Resource: Codable, Sendable {
         case uri = "uri"
     }
 
-    public init(meta: JSONAny?, annotations: JSONAny?, description: String?, icons: [JSONAny]?, mimeType: String?, name: String, size: Int?, title: String?, uri: String) {
+    public init(meta: JSONAny? = nil, annotations: JSONAny? = nil, description: String? = nil, icons: [JSONAny]? = nil, mimeType: String? = nil, name: String, size: Int? = nil, title: String? = nil, uri: String) {
         self.meta = meta
         self.annotations = annotations
         self.description = description
@@ -17733,7 +17733,7 @@ public struct Tool: Codable, Sendable {
         case title = "title"
     }
 
-    public init(meta: JSONAny?, annotations: JSONAny?, description: String?, icons: [JSONAny]?, inputSchema: JSONAny, name: String, outputSchema: JSONAny?, title: String?) {
+    public init(meta: JSONAny? = nil, annotations: JSONAny? = nil, description: String? = nil, icons: [JSONAny]? = nil, inputSchema: JSONAny, name: String, outputSchema: JSONAny? = nil, title: String? = nil) {
         self.meta = meta
         self.annotations = annotations
         self.description = description
@@ -17812,7 +17812,7 @@ public struct LocalShellAction: Codable, Sendable {
         case workingDirectory = "working_directory"
     }
 
-    public init(command: [String], env: [String: String]?, timeoutMs: Int?, type: LocalShellActionType, user: String?, workingDirectory: String?) {
+    public init(command: [String], env: [String: String]? = nil, timeoutMs: Int? = nil, type: LocalShellActionType, user: String? = nil, workingDirectory: String? = nil) {
         self.command = command
         self.env = env
         self.timeoutMs = timeoutMs
@@ -17902,7 +17902,7 @@ public struct CodexProtocolRootLoginAccountParams: Codable, Sendable {
         case chatgptPlanType = "chatgptPlanType"
     }
 
-    public init(apiKey: String?, type: LoginAccountParamsType, accessToken: String?, chatgptAccountId: String?, chatgptPlanType: String?) {
+    public init(apiKey: String? = nil, type: LoginAccountParamsType, accessToken: String? = nil, chatgptAccountId: String? = nil, chatgptPlanType: String? = nil) {
         self.apiKey = apiKey
         self.type = type
         self.accessToken = accessToken
@@ -17973,7 +17973,7 @@ public struct LoginAccountResponse: Codable, Sendable {
         case verificationUrl = "verificationUrl"
     }
 
-    public init(type: LoginAccountParamsType, authUrl: String?, loginId: String?, userCode: String?, verificationUrl: String?) {
+    public init(type: LoginAccountParamsType, authUrl: String? = nil, loginId: String? = nil, userCode: String? = nil, verificationUrl: String? = nil) {
         self.type = type
         self.authUrl = authUrl
         self.loginId = loginId
@@ -18033,7 +18033,7 @@ public struct MarketplaceInterface: Codable, Sendable {
         case displayName = "displayName"
     }
 
-    public init(displayName: String?) {
+    public init(displayName: String? = nil) {
         self.displayName = displayName
     }
 }
@@ -18144,7 +18144,7 @@ public struct MCPElicitationBooleanSchema: Codable, Sendable {
         case type = "type"
     }
 
-    public init(mcpElicitationBooleanSchemaDefault: Bool?, description: String?, title: String?, type: MCPElicitationBooleanType) {
+    public init(mcpElicitationBooleanSchemaDefault: Bool? = nil, description: String? = nil, title: String? = nil, type: MCPElicitationBooleanType) {
         self.mcpElicitationBooleanSchemaDefault = mcpElicitationBooleanSchemaDefault
         self.description = description
         self.title = title
@@ -18276,7 +18276,7 @@ public struct MCPElicitationEnumSchema: Codable, Sendable {
         case enumNames = "enumNames"
     }
 
-    public init(mcpElicitationEnumSchemaDefault: CommandUnion?, description: String?, mcpElicitationEnumSchemaEnum: [String]?, title: String?, type: MCPElicitationEnumSchemaType, oneOf: [MCPElicitationConstOption]?, items: MCPElicitationTitledEnumItems?, maxItems: Int?, minItems: Int?, enumNames: [String]?) {
+    public init(mcpElicitationEnumSchemaDefault: CommandUnion? = nil, description: String? = nil, mcpElicitationEnumSchemaEnum: [String]? = nil, title: String? = nil, type: MCPElicitationEnumSchemaType, oneOf: [MCPElicitationConstOption]? = nil, items: MCPElicitationTitledEnumItems? = nil, maxItems: Int? = nil, minItems: Int? = nil, enumNames: [String]? = nil) {
         self.mcpElicitationEnumSchemaDefault = mcpElicitationEnumSchemaDefault
         self.description = description
         self.mcpElicitationEnumSchemaEnum = mcpElicitationEnumSchemaEnum
@@ -18355,7 +18355,7 @@ public struct MCPElicitationTitledEnumItems: Codable, Sendable {
         case anyOf = "anyOf"
     }
 
-    public init(mcpElicitationTitledEnumItemsEnum: [String]?, type: MCPElicitationStringType?, anyOf: [MCPElicitationConstOption]?) {
+    public init(mcpElicitationTitledEnumItemsEnum: [String]? = nil, type: MCPElicitationStringType? = nil, anyOf: [MCPElicitationConstOption]? = nil) {
         self.mcpElicitationTitledEnumItemsEnum = mcpElicitationTitledEnumItemsEnum
         self.type = type
         self.anyOf = anyOf
@@ -18463,7 +18463,7 @@ public struct MCPElicitationLegacyTitledEnumSchema: Codable, Sendable {
         case type = "type"
     }
 
-    public init(mcpElicitationLegacyTitledEnumSchemaDefault: String?, description: String?, mcpElicitationLegacyTitledEnumSchemaEnum: [String], enumNames: [String]?, title: String?, type: MCPElicitationStringType) {
+    public init(mcpElicitationLegacyTitledEnumSchemaDefault: String? = nil, description: String? = nil, mcpElicitationLegacyTitledEnumSchemaEnum: [String], enumNames: [String]? = nil, title: String? = nil, type: MCPElicitationStringType) {
         self.mcpElicitationLegacyTitledEnumSchemaDefault = mcpElicitationLegacyTitledEnumSchemaDefault
         self.description = description
         self.mcpElicitationLegacyTitledEnumSchemaEnum = mcpElicitationLegacyTitledEnumSchemaEnum
@@ -18538,7 +18538,7 @@ public struct MCPElicitationMultiSelectEnumSchema: Codable, Sendable {
         case type = "type"
     }
 
-    public init(mcpElicitationMultiSelectEnumSchemaDefault: [String]?, description: String?, items: MCPElicitationTitledEnumItems, maxItems: Int?, minItems: Int?, title: String?, type: MCPElicitationArrayType) {
+    public init(mcpElicitationMultiSelectEnumSchemaDefault: [String]? = nil, description: String? = nil, items: MCPElicitationTitledEnumItems, maxItems: Int? = nil, minItems: Int? = nil, title: String? = nil, type: MCPElicitationArrayType) {
         self.mcpElicitationMultiSelectEnumSchemaDefault = mcpElicitationMultiSelectEnumSchemaDefault
         self.description = description
         self.items = items
@@ -18614,7 +18614,7 @@ public struct MCPElicitationNumberSchema: Codable, Sendable {
         case type = "type"
     }
 
-    public init(mcpElicitationNumberSchemaDefault: Double?, description: String?, maximum: Double?, minimum: Double?, title: String?, type: MCPElicitationNumberType) {
+    public init(mcpElicitationNumberSchemaDefault: Double? = nil, description: String? = nil, maximum: Double? = nil, minimum: Double? = nil, title: String? = nil, type: MCPElicitationNumberType) {
         self.mcpElicitationNumberSchemaDefault = mcpElicitationNumberSchemaDefault
         self.description = description
         self.maximum = maximum
@@ -18714,7 +18714,7 @@ public struct MCPElicitationPrimitiveSchema: Codable, Sendable {
         case minimum = "minimum"
     }
 
-    public init(mcpElicitationPrimitiveSchemaDefault: MCPElicitationPrimitiveSchemaDefault?, description: String?, mcpElicitationPrimitiveSchemaEnum: [String]?, title: String?, type: MCPElicitationPrimitiveSchemaType, oneOf: [MCPElicitationConstOption]?, items: MCPElicitationTitledEnumItems?, maxItems: Int?, minItems: Int?, enumNames: [String]?, format: MCPElicitationStringFormat?, maxLength: Int?, minLength: Int?, maximum: Double?, minimum: Double?) {
+    public init(mcpElicitationPrimitiveSchemaDefault: MCPElicitationPrimitiveSchemaDefault? = nil, description: String? = nil, mcpElicitationPrimitiveSchemaEnum: [String]? = nil, title: String? = nil, type: MCPElicitationPrimitiveSchemaType, oneOf: [MCPElicitationConstOption]? = nil, items: MCPElicitationTitledEnumItems? = nil, maxItems: Int? = nil, minItems: Int? = nil, enumNames: [String]? = nil, format: MCPElicitationStringFormat? = nil, maxLength: Int? = nil, minLength: Int? = nil, maximum: Double? = nil, minimum: Double? = nil) {
         self.mcpElicitationPrimitiveSchemaDefault = mcpElicitationPrimitiveSchemaDefault
         self.description = description
         self.mcpElicitationPrimitiveSchemaEnum = mcpElicitationPrimitiveSchemaEnum
@@ -18878,7 +18878,7 @@ public struct MCPElicitationSchema: Codable, Sendable {
         case type = "type"
     }
 
-    public init(schema: String?, properties: [String: MCPElicitationPrimitiveSchema], mcpElicitationSchemaRequired: [String]?, type: MCPElicitationObjectType) {
+    public init(schema: String? = nil, properties: [String: MCPElicitationPrimitiveSchema], mcpElicitationSchemaRequired: [String]? = nil, type: MCPElicitationObjectType) {
         self.schema = schema
         self.properties = properties
         self.mcpElicitationSchemaRequired = mcpElicitationSchemaRequired
@@ -18945,7 +18945,7 @@ public struct MCPElicitationSingleSelectEnumSchema: Codable, Sendable {
         case oneOf = "oneOf"
     }
 
-    public init(mcpElicitationSingleSelectEnumSchemaDefault: String?, description: String?, mcpElicitationSingleSelectEnumSchemaEnum: [String]?, title: String?, type: MCPElicitationStringType, oneOf: [MCPElicitationConstOption]?) {
+    public init(mcpElicitationSingleSelectEnumSchemaDefault: String? = nil, description: String? = nil, mcpElicitationSingleSelectEnumSchemaEnum: [String]? = nil, title: String? = nil, type: MCPElicitationStringType, oneOf: [MCPElicitationConstOption]? = nil) {
         self.mcpElicitationSingleSelectEnumSchemaDefault = mcpElicitationSingleSelectEnumSchemaDefault
         self.description = description
         self.mcpElicitationSingleSelectEnumSchemaEnum = mcpElicitationSingleSelectEnumSchemaEnum
@@ -19020,7 +19020,7 @@ public struct MCPElicitationStringSchema: Codable, Sendable {
         case type = "type"
     }
 
-    public init(mcpElicitationStringSchemaDefault: String?, description: String?, format: MCPElicitationStringFormat?, maxLength: Int?, minLength: Int?, title: String?, type: MCPElicitationStringType) {
+    public init(mcpElicitationStringSchemaDefault: String? = nil, description: String? = nil, format: MCPElicitationStringFormat? = nil, maxLength: Int? = nil, minLength: Int? = nil, title: String? = nil, type: MCPElicitationStringType) {
         self.mcpElicitationStringSchemaDefault = mcpElicitationStringSchemaDefault
         self.description = description
         self.format = format
@@ -19146,7 +19146,7 @@ public struct MCPElicitationTitledMultiSelectEnumSchema: Codable, Sendable {
         case type = "type"
     }
 
-    public init(mcpElicitationTitledMultiSelectEnumSchemaDefault: [String]?, description: String?, items: MCPElicitationTitledEnumItemsClass, maxItems: Int?, minItems: Int?, title: String?, type: MCPElicitationArrayType) {
+    public init(mcpElicitationTitledMultiSelectEnumSchemaDefault: [String]? = nil, description: String? = nil, items: MCPElicitationTitledEnumItemsClass, maxItems: Int? = nil, minItems: Int? = nil, title: String? = nil, type: MCPElicitationArrayType) {
         self.mcpElicitationTitledMultiSelectEnumSchemaDefault = mcpElicitationTitledMultiSelectEnumSchemaDefault
         self.description = description
         self.items = items
@@ -19220,7 +19220,7 @@ public struct MCPElicitationTitledSingleSelectEnumSchema: Codable, Sendable {
         case type = "type"
     }
 
-    public init(mcpElicitationTitledSingleSelectEnumSchemaDefault: String?, description: String?, oneOf: [MCPElicitationConstOption], title: String?, type: MCPElicitationStringType) {
+    public init(mcpElicitationTitledSingleSelectEnumSchemaDefault: String? = nil, description: String? = nil, oneOf: [MCPElicitationConstOption], title: String? = nil, type: MCPElicitationStringType) {
         self.mcpElicitationTitledSingleSelectEnumSchemaDefault = mcpElicitationTitledSingleSelectEnumSchemaDefault
         self.description = description
         self.oneOf = oneOf
@@ -19345,7 +19345,7 @@ public struct MCPElicitationUntitledMultiSelectEnumSchema: Codable, Sendable {
         case type = "type"
     }
 
-    public init(mcpElicitationUntitledMultiSelectEnumSchemaDefault: [String]?, description: String?, items: MCPElicitationUntitledEnumItems, maxItems: Int?, minItems: Int?, title: String?, type: MCPElicitationArrayType) {
+    public init(mcpElicitationUntitledMultiSelectEnumSchemaDefault: [String]? = nil, description: String? = nil, items: MCPElicitationUntitledEnumItems, maxItems: Int? = nil, minItems: Int? = nil, title: String? = nil, type: MCPElicitationArrayType) {
         self.mcpElicitationUntitledMultiSelectEnumSchemaDefault = mcpElicitationUntitledMultiSelectEnumSchemaDefault
         self.description = description
         self.items = items
@@ -19419,7 +19419,7 @@ public struct MCPElicitationUntitledSingleSelectEnumSchema: Codable, Sendable {
         case type = "type"
     }
 
-    public init(mcpElicitationUntitledSingleSelectEnumSchemaDefault: String?, description: String?, mcpElicitationUntitledSingleSelectEnumSchemaEnum: [String], title: String?, type: MCPElicitationStringType) {
+    public init(mcpElicitationUntitledSingleSelectEnumSchemaDefault: String? = nil, description: String? = nil, mcpElicitationUntitledSingleSelectEnumSchemaEnum: [String], title: String? = nil, type: MCPElicitationStringType) {
         self.mcpElicitationUntitledSingleSelectEnumSchemaDefault = mcpElicitationUntitledSingleSelectEnumSchemaDefault
         self.description = description
         self.mcpElicitationUntitledSingleSelectEnumSchemaEnum = mcpElicitationUntitledSingleSelectEnumSchemaEnum
@@ -19595,7 +19595,7 @@ public struct ResourceContent: Codable, Sendable {
         case blob = "blob"
     }
 
-    public init(meta: JSONAny?, mimeType: String?, text: String?, uri: String, blob: String?) {
+    public init(meta: JSONAny? = nil, mimeType: String? = nil, text: String? = nil, uri: String, blob: String? = nil) {
         self.meta = meta
         self.mimeType = mimeType
         self.text = text
@@ -19683,7 +19683,7 @@ public struct MCPServerElicitationRequestParams: Codable, Sendable {
         case url = "url"
     }
 
-    public init(serverName: String, threadId: String, turnId: String?, meta: JSONAny?, message: String, mode: Mode, requestedSchema: MCPElicitationSchema?, elicitationId: String?, url: String?) {
+    public init(serverName: String, threadId: String, turnId: String? = nil, meta: JSONAny? = nil, message: String, mode: Mode, requestedSchema: MCPElicitationSchema? = nil, elicitationId: String? = nil, url: String? = nil) {
         self.serverName = serverName
         self.threadId = threadId
         self.turnId = turnId
@@ -19769,7 +19769,7 @@ public struct MCPServerElicitationRequestResponse: Codable, Sendable {
         case content = "content"
     }
 
-    public init(meta: JSONAny?, action: MCPServerElicitationAction, content: JSONAny?) {
+    public init(meta: JSONAny? = nil, action: MCPServerElicitationAction, content: JSONAny? = nil) {
         self.meta = meta
         self.action = action
         self.content = content
@@ -19827,7 +19827,7 @@ public struct MCPServerOauthLoginCompletedNotification: Codable, Sendable {
         case success = "success"
     }
 
-    public init(error: String?, name: String, success: Bool) {
+    public init(error: String? = nil, name: String, success: Bool) {
         self.error = error
         self.name = name
         self.success = success
@@ -19885,7 +19885,7 @@ public struct MCPServerOauthLoginParams: Codable, Sendable {
         case timeoutSecs = "timeoutSecs"
     }
 
-    public init(name: String, scopes: [String]?, timeoutSecs: Int?) {
+    public init(name: String, scopes: [String]? = nil, timeoutSecs: Int? = nil) {
         self.name = name
         self.scopes = scopes
         self.timeoutSecs = timeoutSecs
@@ -19998,7 +19998,7 @@ public struct MCPServerStatusUpdatedNotification: Codable, Sendable {
         case status = "status"
     }
 
-    public init(error: String?, name: String, status: MCPServerStartupState) {
+    public init(error: String? = nil, name: String, status: MCPServerStartupState) {
         self.error = error
         self.name = name
         self.status = status
@@ -20116,7 +20116,7 @@ public struct MockExperimentalMethodParams: Codable, Sendable {
         case value = "value"
     }
 
-    public init(value: String?) {
+    public init(value: String? = nil) {
         self.value = value
     }
 }
@@ -20165,7 +20165,7 @@ public struct MockExperimentalMethodResponse: Codable, Sendable {
         case echoed = "echoed"
     }
 
-    public init(echoed: String?) {
+    public init(echoed: String? = nil) {
         self.echoed = echoed
     }
 }
@@ -20239,7 +20239,7 @@ public struct Model: Codable, Sendable {
         case upgradeInfo = "upgradeInfo"
     }
 
-    public init(additionalSpeedTiers: [String]?, availabilityNux: ModelAvailabilityNux?, defaultReasoningEffort: ReasoningEffort, description: String, displayName: String, hidden: Bool, id: String, inputModalities: [InputModality]?, isDefault: Bool, model: String, supportedReasoningEfforts: [ReasoningEffortOption], supportsPersonality: Bool?, upgrade: String?, upgradeInfo: ModelUpgradeInfo?) {
+    public init(additionalSpeedTiers: [String]? = nil, availabilityNux: ModelAvailabilityNux? = nil, defaultReasoningEffort: ReasoningEffort, description: String, displayName: String, hidden: Bool, id: String, inputModalities: [InputModality]? = nil, isDefault: Bool, model: String, supportedReasoningEfforts: [ReasoningEffortOption], supportsPersonality: Bool? = nil, upgrade: String? = nil, upgradeInfo: ModelUpgradeInfo? = nil) {
         self.additionalSpeedTiers = additionalSpeedTiers
         self.availabilityNux = availabilityNux
         self.defaultReasoningEffort = defaultReasoningEffort
@@ -20433,7 +20433,7 @@ public struct ModelUpgradeInfo: Codable, Sendable {
         case upgradeCopy = "upgradeCopy"
     }
 
-    public init(migrationMarkdown: String?, model: String, modelLink: String?, upgradeCopy: String?) {
+    public init(migrationMarkdown: String? = nil, model: String, modelLink: String? = nil, upgradeCopy: String? = nil) {
         self.migrationMarkdown = migrationMarkdown
         self.model = model
         self.modelLink = modelLink
@@ -20497,7 +20497,7 @@ public struct ModelListParams: Codable, Sendable {
         case limit = "limit"
     }
 
-    public init(cursor: String?, includeHidden: Bool?, limit: Int?) {
+    public init(cursor: String? = nil, includeHidden: Bool? = nil, limit: Int? = nil) {
         self.cursor = cursor
         self.includeHidden = includeHidden
         self.limit = limit
@@ -20555,7 +20555,7 @@ public struct ModelListResponse: Codable, Sendable {
         case nextCursor = "nextCursor"
     }
 
-    public init(data: [Model], nextCursor: String?) {
+    public init(data: [Model], nextCursor: String? = nil) {
         self.data = data
         self.nextCursor = nextCursor
     }
@@ -20691,7 +20691,7 @@ public struct PermissionsRequestApprovalParams: Codable, Sendable {
         case turnId = "turnId"
     }
 
-    public init(itemId: String, permissions: RequestPermissionProfile, reason: String?, threadId: String, turnId: String) {
+    public init(itemId: String, permissions: RequestPermissionProfile, reason: String? = nil, threadId: String, turnId: String) {
         self.itemId = itemId
         self.permissions = permissions
         self.reason = reason
@@ -20753,7 +20753,7 @@ public struct RequestPermissionProfile: Codable, Sendable {
         case network = "network"
     }
 
-    public init(fileSystem: AdditionalFileSystemPermissions?, network: AdditionalNetworkPermissions?) {
+    public init(fileSystem: AdditionalFileSystemPermissions? = nil, network: AdditionalNetworkPermissions? = nil) {
         self.fileSystem = fileSystem
         self.network = network
     }
@@ -20806,7 +20806,7 @@ public struct PermissionsRequestApprovalResponse: Codable, Sendable {
         case scope = "scope"
     }
 
-    public init(permissions: GrantedPermissionProfile, scope: PermissionGrantScope?) {
+    public init(permissions: GrantedPermissionProfile, scope: PermissionGrantScope? = nil) {
         self.permissions = permissions
         self.scope = scope
     }
@@ -20939,7 +20939,7 @@ public struct PluginDetail: Codable, Sendable {
         case summary = "summary"
     }
 
-    public init(apps: [AppSummary], description: String?, marketplaceName: String, marketplacePath: String, mcpServers: [String], skills: [SkillSummary], summary: PluginSummary) {
+    public init(apps: [AppSummary], description: String? = nil, marketplaceName: String, marketplacePath: String, mcpServers: [String], skills: [SkillSummary], summary: PluginSummary) {
         self.apps = apps
         self.description = description
         self.marketplaceName = marketplaceName
@@ -21015,7 +21015,7 @@ public struct SkillSummary: Codable, Sendable {
         case shortDescription = "shortDescription"
     }
 
-    public init(description: String, enabled: Bool, interface: SkillInterface?, name: String, path: String, shortDescription: String?) {
+    public init(description: String, enabled: Bool, interface: SkillInterface? = nil, name: String, path: String, shortDescription: String? = nil) {
         self.description = description
         self.enabled = enabled
         self.interface = interface
@@ -21088,7 +21088,7 @@ public struct SkillInterface: Codable, Sendable {
         case shortDescription = "shortDescription"
     }
 
-    public init(brandColor: String?, defaultPrompt: String?, displayName: String?, iconLarge: String?, iconSmall: String?, shortDescription: String?) {
+    public init(brandColor: String? = nil, defaultPrompt: String? = nil, displayName: String? = nil, iconLarge: String? = nil, iconSmall: String? = nil, shortDescription: String? = nil) {
         self.brandColor = brandColor
         self.defaultPrompt = defaultPrompt
         self.displayName = displayName
@@ -21165,7 +21165,7 @@ public struct PluginSummary: Codable, Sendable {
         case source = "source"
     }
 
-    public init(authPolicy: PluginAuthPolicy, enabled: Bool, id: String, installed: Bool, installPolicy: PluginInstallPolicy, interface: PluginInterface?, name: String, source: PluginSource) {
+    public init(authPolicy: PluginAuthPolicy, enabled: Bool, id: String, installed: Bool, installPolicy: PluginInstallPolicy, interface: PluginInterface? = nil, name: String, source: PluginSource) {
         self.authPolicy = authPolicy
         self.enabled = enabled
         self.id = id
@@ -21268,7 +21268,7 @@ public struct PluginInterface: Codable, Sendable {
         case websiteUrl = "websiteUrl"
     }
 
-    public init(brandColor: String?, capabilities: [String], category: String?, composerIcon: String?, defaultPrompt: [String]?, developerName: String?, displayName: String?, logo: String?, longDescription: String?, privacyPolicyUrl: String?, screenshots: [String], shortDescription: String?, termsOfServiceUrl: String?, websiteUrl: String?) {
+    public init(brandColor: String? = nil, capabilities: [String], category: String? = nil, composerIcon: String? = nil, defaultPrompt: [String]? = nil, developerName: String? = nil, displayName: String? = nil, logo: String? = nil, longDescription: String? = nil, privacyPolicyUrl: String? = nil, screenshots: [String], shortDescription: String? = nil, termsOfServiceUrl: String? = nil, websiteUrl: String? = nil) {
         self.brandColor = brandColor
         self.capabilities = capabilities
         self.category = category
@@ -21417,7 +21417,7 @@ public struct PluginInstallParams: Codable, Sendable {
         case pluginName = "pluginName"
     }
 
-    public init(forceRemoteSync: Bool?, marketplacePath: String, pluginName: String) {
+    public init(forceRemoteSync: Bool? = nil, marketplacePath: String, pluginName: String) {
         self.forceRemoteSync = forceRemoteSync
         self.marketplacePath = marketplacePath
         self.pluginName = pluginName
@@ -21530,7 +21530,7 @@ public struct PluginListParams: Codable, Sendable {
         case forceRemoteSync = "forceRemoteSync"
     }
 
-    public init(cwds: [String]?, forceRemoteSync: Bool?) {
+    public init(cwds: [String]? = nil, forceRemoteSync: Bool? = nil) {
         self.cwds = cwds
         self.forceRemoteSync = forceRemoteSync
     }
@@ -21587,7 +21587,7 @@ public struct PluginListResponse: Codable, Sendable {
         case remoteSyncError = "remoteSyncError"
     }
 
-    public init(featuredPluginIds: [String]?, marketplaceLoadErrors: [MarketplaceLoadErrorInfo]?, marketplaces: [PluginMarketplaceEntry], remoteSyncError: String?) {
+    public init(featuredPluginIds: [String]? = nil, marketplaceLoadErrors: [MarketplaceLoadErrorInfo]? = nil, marketplaces: [PluginMarketplaceEntry], remoteSyncError: String? = nil) {
         self.featuredPluginIds = featuredPluginIds
         self.marketplaceLoadErrors = marketplaceLoadErrors
         self.marketplaces = marketplaces
@@ -21650,7 +21650,7 @@ public struct PluginMarketplaceEntry: Codable, Sendable {
         case plugins = "plugins"
     }
 
-    public init(interface: MarketplaceInterface?, name: String, path: String, plugins: [PluginSummary]) {
+    public init(interface: MarketplaceInterface? = nil, name: String, path: String, plugins: [PluginSummary]) {
         self.interface = interface
         self.name = name
         self.path = path
@@ -21811,7 +21811,7 @@ public struct PluginUninstallParams: Codable, Sendable {
         case pluginId = "pluginId"
     }
 
-    public init(forceRemoteSync: Bool?, pluginId: String) {
+    public init(forceRemoteSync: Bool? = nil, pluginId: String) {
         self.forceRemoteSync = forceRemoteSync
         self.pluginId = pluginId
     }
@@ -21962,7 +21962,7 @@ public struct ResponseItem: Codable, Sendable {
         case ghostCommit = "ghost_commit"
     }
 
-    public init(content: [ContentElement]?, endTurn: Bool?, id: String?, phase: MessagePhase?, role: String?, type: ResponseItemType, encryptedContent: String?, summary: [ReasoningItemReasoningSummary]?, action: ResponseItemSearchResponsesApiWebSearchAction?, callId: String?, status: String?, arguments: JSONAny?, name: String?, namespace: String?, execution: String?, output: FunctionCallOutputBody?, input: String?, tools: [JSONAny]?, result: String?, revisedPrompt: String?, ghostCommit: GhostCommitClass?) {
+    public init(content: [ContentElement]? = nil, endTurn: Bool? = nil, id: String? = nil, phase: MessagePhase? = nil, role: String? = nil, type: ResponseItemType, encryptedContent: String? = nil, summary: [ReasoningItemReasoningSummary]? = nil, action: ResponseItemSearchResponsesApiWebSearchAction? = nil, callId: String? = nil, status: String? = nil, arguments: JSONAny? = nil, name: String? = nil, namespace: String? = nil, execution: String? = nil, output: FunctionCallOutputBody? = nil, input: String? = nil, tools: [JSONAny]? = nil, result: String? = nil, revisedPrompt: String? = nil, ghostCommit: GhostCommitClass? = nil) {
         self.content = content
         self.endTurn = endTurn
         self.id = id
@@ -22088,7 +22088,7 @@ public struct ResponseItemSearchResponsesApiWebSearchAction: Codable, Sendable {
         case pattern = "pattern"
     }
 
-    public init(command: [String]?, env: [String: String]?, timeoutMs: Int?, type: SearchResponsesApiWebSearchActionType, user: String?, workingDirectory: String?, queries: [String]?, query: String?, url: String?, pattern: String?) {
+    public init(command: [String]? = nil, env: [String: String]? = nil, timeoutMs: Int? = nil, type: SearchResponsesApiWebSearchActionType, user: String? = nil, workingDirectory: String? = nil, queries: [String]? = nil, query: String? = nil, url: String? = nil, pattern: String? = nil) {
         self.command = command
         self.env = env
         self.timeoutMs = timeoutMs
@@ -22167,7 +22167,7 @@ public struct ContentElement: Codable, Sendable {
         case imageUrl = "image_url"
     }
 
-    public init(text: String?, type: ContentType, imageUrl: String?) {
+    public init(text: String? = nil, type: ContentType, imageUrl: String? = nil) {
         self.text = text
         self.type = type
         self.imageUrl = imageUrl
@@ -22607,7 +22607,7 @@ public struct ResponsesApiWebSearchAction: Codable, Sendable {
         case pattern = "pattern"
     }
 
-    public init(queries: [String]?, query: String?, type: ResponsesApiWebSearchActionType, url: String?, pattern: String?) {
+    public init(queries: [String]? = nil, query: String? = nil, type: ResponsesApiWebSearchActionType, url: String? = nil, pattern: String? = nil) {
         self.queries = queries
         self.query = query
         self.type = type
@@ -22680,7 +22680,7 @@ public struct ReviewStartParams: Codable, Sendable {
         case threadId = "threadId"
     }
 
-    public init(delivery: ReviewDelivery?, target: ReviewTarget, threadId: String) {
+    public init(delivery: ReviewDelivery? = nil, target: ReviewTarget, threadId: String) {
         self.delivery = delivery
         self.target = target
         self.threadId = threadId
@@ -22750,7 +22750,7 @@ public struct ReviewTarget: Codable, Sendable {
         case instructions = "instructions"
     }
 
-    public init(type: ReviewTargetType, branch: String?, sha: String?, title: String?, instructions: String?) {
+    public init(type: ReviewTargetType, branch: String? = nil, sha: String? = nil, title: String? = nil, instructions: String? = nil) {
         self.type = type
         self.branch = branch
         self.sha = sha
@@ -22885,7 +22885,7 @@ public struct Turn: Codable, Sendable {
         case status = "status"
     }
 
-    public init(completedAt: Int?, durationMs: Int?, error: TurnError?, id: String, items: [ThreadItem], startedAt: Int?, status: TurnStatus) {
+    public init(completedAt: Int? = nil, durationMs: Int? = nil, error: TurnError? = nil, id: String, items: [ThreadItem], startedAt: Int? = nil, status: TurnStatus) {
         self.completedAt = completedAt
         self.durationMs = durationMs
         self.error = error
@@ -22970,7 +22970,7 @@ public struct SandboxPolicy: Codable, Sendable {
         case writableRoots = "writableRoots"
     }
 
-    public init(type: SandboxPolicyType, access: ReadOnlyAccess?, networkAccess: NetworkAccessUnion?, excludeSlashTmp: Bool?, excludeTmpdirEnvVar: Bool?, readOnlyAccess: ReadOnlyAccess?, writableRoots: [String]?) {
+    public init(type: SandboxPolicyType, access: ReadOnlyAccess? = nil, networkAccess: NetworkAccessUnion? = nil, excludeSlashTmp: Bool? = nil, excludeTmpdirEnvVar: Bool? = nil, readOnlyAccess: ReadOnlyAccess? = nil, writableRoots: [String]? = nil) {
         self.type = type
         self.access = access
         self.networkAccess = networkAccess
@@ -23335,7 +23335,7 @@ public struct ParamsClass: Codable, Sendable {
         case loginId = "loginId"
     }
 
-    public init(error: ErrorUnion?, threadId: String?, turnId: String?, willRetry: Bool?, thread: Thread?, status: StatusUnion?, threadName: String?, tokenUsage: TokenUsage?, turn: TurnElement?, run: Run?, diff: String?, explanation: String?, plan: [PlanElement]?, item: JSONAny?, action: ActionClass?, review: Review?, reviewId: String?, targetItemId: String?, decisionSource: AutoReviewDecisionSource?, delta: String?, itemId: String?, capReached: Bool?, deltaBase64: String?, processId: String?, stream: CommandExecOutputStream?, stdin: String?, requestId: RequestId?, message: String?, name: String?, success: Bool?, authMode: AuthMode?, planType: PlanType?, rateLimits: RateLimits?, data: [DatumElement]?, changedPaths: [String]?, watchId: String?, summaryIndex: Int?, contentIndex: Int?, fromModel: String?, reason: String?, toModel: String?, details: String?, summary: String?, path: String?, range: RangeClass?, files: [FuzzyFileSearchResult]?, query: String?, sessionId: String?, version: RealtimeConversationVersion?, role: String?, text: String?, audio: Audio?, sdp: String?, extraCount: Int?, failedScan: Bool?, samplePaths: [String]?, mode: WindowsSandboxSetupMode?, loginId: String?) {
+    public init(error: ErrorUnion? = nil, threadId: String? = nil, turnId: String? = nil, willRetry: Bool? = nil, thread: Thread? = nil, status: StatusUnion? = nil, threadName: String? = nil, tokenUsage: TokenUsage? = nil, turn: TurnElement? = nil, run: Run? = nil, diff: String? = nil, explanation: String? = nil, plan: [PlanElement]? = nil, item: JSONAny? = nil, action: ActionClass? = nil, review: Review? = nil, reviewId: String? = nil, targetItemId: String? = nil, decisionSource: AutoReviewDecisionSource? = nil, delta: String? = nil, itemId: String? = nil, capReached: Bool? = nil, deltaBase64: String? = nil, processId: String? = nil, stream: CommandExecOutputStream? = nil, stdin: String? = nil, requestId: RequestId? = nil, message: String? = nil, name: String? = nil, success: Bool? = nil, authMode: AuthMode? = nil, planType: PlanType? = nil, rateLimits: RateLimits? = nil, data: [DatumElement]? = nil, changedPaths: [String]? = nil, watchId: String? = nil, summaryIndex: Int? = nil, contentIndex: Int? = nil, fromModel: String? = nil, reason: String? = nil, toModel: String? = nil, details: String? = nil, summary: String? = nil, path: String? = nil, range: RangeClass? = nil, files: [FuzzyFileSearchResult]? = nil, query: String? = nil, sessionId: String? = nil, version: RealtimeConversationVersion? = nil, role: String? = nil, text: String? = nil, audio: Audio? = nil, sdp: String? = nil, extraCount: Int? = nil, failedScan: Bool? = nil, samplePaths: [String]? = nil, mode: WindowsSandboxSetupMode? = nil, loginId: String? = nil) {
         self.error = error
         self.threadId = threadId
         self.turnId = turnId
@@ -23584,7 +23584,7 @@ public struct ActionClass: Codable, Sendable {
         case toolTitle = "toolTitle"
     }
 
-    public init(command: String?, cwd: String?, source: GuardianCommandSource?, type: GuardianApprovalReviewActionType, argv: [String]?, program: String?, files: [String]?, host: String?, port: Int?, guardianApprovalReviewActionProtocol: NetworkApprovalProtocol?, target: String?, connectorId: String?, connectorName: String?, server: String?, toolName: String?, toolTitle: String?) {
+    public init(command: String? = nil, cwd: String? = nil, source: GuardianCommandSource? = nil, type: GuardianApprovalReviewActionType, argv: [String]? = nil, program: String? = nil, files: [String]? = nil, host: String? = nil, port: Int? = nil, guardianApprovalReviewActionProtocol: NetworkApprovalProtocol? = nil, target: String? = nil, connectorId: String? = nil, connectorName: String? = nil, server: String? = nil, toolName: String? = nil, toolTitle: String? = nil) {
         self.command = command
         self.cwd = cwd
         self.source = source
@@ -23704,7 +23704,7 @@ public struct DatumElement: Codable, Sendable {
         case pluginDisplayNames = "pluginDisplayNames"
     }
 
-    public init(appMetadata: AppMetadataClass?, branding: BrandingClass?, description: String?, distributionChannel: String?, id: String, installUrl: String?, isAccessible: Bool?, isEnabled: Bool?, labels: [String: String]?, logoUrl: String?, logoUrlDark: String?, name: String, pluginDisplayNames: [String]?) {
+    public init(appMetadata: AppMetadataClass? = nil, branding: BrandingClass? = nil, description: String? = nil, distributionChannel: String? = nil, id: String, installUrl: String? = nil, isAccessible: Bool? = nil, isEnabled: Bool? = nil, labels: [String: String]? = nil, logoUrl: String? = nil, logoUrlDark: String? = nil, name: String, pluginDisplayNames: [String]? = nil) {
         self.appMetadata = appMetadata
         self.branding = branding
         self.description = description
@@ -23810,7 +23810,7 @@ public struct AppMetadataClass: Codable, Sendable {
         case versionNotes = "versionNotes"
     }
 
-    public init(categories: [String]?, developer: String?, firstPartyRequiresInstall: Bool?, firstPartyType: String?, review: ReviewClass?, screenshots: [ScreenshotElement]?, seoDescription: String?, showInComposerWhenUnlinked: Bool?, subCategories: [String]?, version: String?, versionId: String?, versionNotes: String?) {
+    public init(categories: [String]? = nil, developer: String? = nil, firstPartyRequiresInstall: Bool? = nil, firstPartyType: String? = nil, review: ReviewClass? = nil, screenshots: [ScreenshotElement]? = nil, seoDescription: String? = nil, showInComposerWhenUnlinked: Bool? = nil, subCategories: [String]? = nil, version: String? = nil, versionId: String? = nil, versionNotes: String? = nil) {
         self.categories = categories
         self.developer = developer
         self.firstPartyRequiresInstall = firstPartyRequiresInstall
@@ -23943,7 +23943,7 @@ public struct ScreenshotElement: Codable, Sendable {
         case userPrompt = "userPrompt"
     }
 
-    public init(fileId: String?, url: String?, userPrompt: String) {
+    public init(fileId: String? = nil, url: String? = nil, userPrompt: String) {
         self.fileId = fileId
         self.url = url
         self.userPrompt = userPrompt
@@ -24008,7 +24008,7 @@ public struct BrandingClass: Codable, Sendable {
         case website = "website"
     }
 
-    public init(category: String?, developer: String?, isDiscoverableApp: Bool, privacyPolicy: String?, termsOfService: String?, website: String?) {
+    public init(category: String? = nil, developer: String? = nil, isDiscoverableApp: Bool, privacyPolicy: String? = nil, termsOfService: String? = nil, website: String? = nil) {
         self.category = category
         self.developer = developer
         self.isDiscoverableApp = isDiscoverableApp
@@ -24110,7 +24110,7 @@ public struct ErrorError: Codable, Sendable {
         case message = "message"
     }
 
-    public init(additionalDetails: String?, codexErrorInfo: ErrorCodexErrorInfo?, message: String) {
+    public init(additionalDetails: String? = nil, codexErrorInfo: ErrorCodexErrorInfo? = nil, message: String) {
         self.additionalDetails = additionalDetails
         self.codexErrorInfo = codexErrorInfo
         self.message = message
@@ -24215,7 +24215,7 @@ public struct FluffyCodexErrorInfo: Codable, Sendable {
         case activeTurnNotSteerable = "activeTurnNotSteerable"
     }
 
-    public init(httpConnectionFailed: FluffyHttpConnectionFailed?, responseStreamConnectionFailed: FluffyResponseStreamConnectionFailed?, responseStreamDisconnected: FluffyResponseStreamDisconnected?, responseTooManyFailedAttempts: FluffyResponseTooManyFailedAttempts?, activeTurnNotSteerable: FluffyActiveTurnNotSteerable?) {
+    public init(httpConnectionFailed: FluffyHttpConnectionFailed? = nil, responseStreamConnectionFailed: FluffyResponseStreamConnectionFailed? = nil, responseStreamDisconnected: FluffyResponseStreamDisconnected? = nil, responseTooManyFailedAttempts: FluffyResponseTooManyFailedAttempts? = nil, activeTurnNotSteerable: FluffyActiveTurnNotSteerable? = nil) {
         self.httpConnectionFailed = httpConnectionFailed
         self.responseStreamConnectionFailed = responseStreamConnectionFailed
         self.responseStreamDisconnected = responseStreamDisconnected
@@ -24323,7 +24323,7 @@ public struct FluffyHttpConnectionFailed: Codable, Sendable {
         case httpStatusCode = "httpStatusCode"
     }
 
-    public init(httpStatusCode: Int?) {
+    public init(httpStatusCode: Int? = nil) {
         self.httpStatusCode = httpStatusCode
     }
 }
@@ -24371,7 +24371,7 @@ public struct FluffyResponseStreamConnectionFailed: Codable, Sendable {
         case httpStatusCode = "httpStatusCode"
     }
 
-    public init(httpStatusCode: Int?) {
+    public init(httpStatusCode: Int? = nil) {
         self.httpStatusCode = httpStatusCode
     }
 }
@@ -24419,7 +24419,7 @@ public struct FluffyResponseStreamDisconnected: Codable, Sendable {
         case httpStatusCode = "httpStatusCode"
     }
 
-    public init(httpStatusCode: Int?) {
+    public init(httpStatusCode: Int? = nil) {
         self.httpStatusCode = httpStatusCode
     }
 }
@@ -24467,7 +24467,7 @@ public struct FluffyResponseTooManyFailedAttempts: Codable, Sendable {
         case httpStatusCode = "httpStatusCode"
     }
 
-    public init(httpStatusCode: Int?) {
+    public init(httpStatusCode: Int? = nil) {
         self.httpStatusCode = httpStatusCode
     }
 }
@@ -24692,7 +24692,7 @@ public struct RateLimits: Codable, Sendable {
         case secondary = "secondary"
     }
 
-    public init(credits: CreditsClass?, limitId: String?, limitName: String?, planType: PlanType?, primary: PrimaryClass?, secondary: PrimaryClass?) {
+    public init(credits: CreditsClass? = nil, limitId: String? = nil, limitName: String? = nil, planType: PlanType? = nil, primary: PrimaryClass? = nil, secondary: PrimaryClass? = nil) {
         self.credits = credits
         self.limitId = limitId
         self.limitName = limitName
@@ -24759,7 +24759,7 @@ public struct CreditsClass: Codable, Sendable {
         case unlimited = "unlimited"
     }
 
-    public init(balance: String?, hasCredits: Bool, unlimited: Bool) {
+    public init(balance: String? = nil, hasCredits: Bool, unlimited: Bool) {
         self.balance = balance
         self.hasCredits = hasCredits
         self.unlimited = unlimited
@@ -24817,7 +24817,7 @@ public struct PrimaryClass: Codable, Sendable {
         case windowDurationMins = "windowDurationMins"
     }
 
-    public init(resetsAt: Int?, usedPercent: Int, windowDurationMins: Int?) {
+    public init(resetsAt: Int? = nil, usedPercent: Int, windowDurationMins: Int? = nil) {
         self.resetsAt = resetsAt
         self.usedPercent = usedPercent
         self.windowDurationMins = windowDurationMins
@@ -24879,7 +24879,7 @@ public struct Review: Codable, Sendable {
         case userAuthorization = "userAuthorization"
     }
 
-    public init(rationale: String?, riskLevel: GuardianRiskLevel?, status: GuardianApprovalReviewStatus, userAuthorization: GuardianUserAuthorization?) {
+    public init(rationale: String? = nil, riskLevel: GuardianRiskLevel? = nil, status: GuardianApprovalReviewStatus, userAuthorization: GuardianUserAuthorization? = nil) {
         self.rationale = rationale
         self.riskLevel = riskLevel
         self.status = status
@@ -24960,7 +24960,7 @@ public struct Run: Codable, Sendable {
         case statusMessage = "statusMessage"
     }
 
-    public init(completedAt: Int?, displayOrder: Int, durationMs: Int?, entries: [RunEntry], eventName: HookEventName, executionMode: HookExecutionMode, handlerType: HookHandlerType, id: String, scope: HookScope, sourcePath: String, startedAt: Int, status: HookRunStatus, statusMessage: String?) {
+    public init(completedAt: Int? = nil, displayOrder: Int, durationMs: Int? = nil, entries: [RunEntry], eventName: HookEventName, executionMode: HookExecutionMode, handlerType: HookHandlerType, id: String, scope: HookScope, sourcePath: String, startedAt: Int, status: HookRunStatus, statusMessage: String? = nil) {
         self.completedAt = completedAt
         self.displayOrder = displayOrder
         self.durationMs = durationMs
@@ -25128,7 +25128,7 @@ public struct StatusClass: Codable, Sendable {
         case activeFlags = "activeFlags"
     }
 
-    public init(type: ThreadStatusType, activeFlags: [ThreadActiveFlag]?) {
+    public init(type: ThreadStatusType, activeFlags: [ThreadActiveFlag]? = nil) {
         self.type = type
         self.activeFlags = activeFlags
     }
@@ -25241,7 +25241,7 @@ public struct Thread: Codable, Sendable {
         case updatedAt = "updatedAt"
     }
 
-    public init(agentNickname: String?, agentRole: String?, cliVersion: String, createdAt: Int, cwd: String, ephemeral: Bool, forkedFromId: String?, gitInfo: ThreadGitInfo?, id: String, modelProvider: String, name: String?, path: String?, preview: String, source: Source, status: StatusClass, turns: [TurnElement], updatedAt: Int) {
+    public init(agentNickname: String? = nil, agentRole: String? = nil, cliVersion: String, createdAt: Int, cwd: String, ephemeral: Bool, forkedFromId: String? = nil, gitInfo: ThreadGitInfo? = nil, id: String, modelProvider: String, name: String? = nil, path: String? = nil, preview: String, source: Source, status: StatusClass, turns: [TurnElement], updatedAt: Int) {
         self.agentNickname = agentNickname
         self.agentRole = agentRole
         self.cliVersion = cliVersion
@@ -25341,7 +25341,7 @@ public struct ThreadGitInfo: Codable, Sendable {
         case sha = "sha"
     }
 
-    public init(branch: String?, originUrl: String?, sha: String?) {
+    public init(branch: String? = nil, originUrl: String? = nil, sha: String? = nil) {
         self.branch = branch
         self.originUrl = originUrl
         self.sha = sha
@@ -25426,7 +25426,7 @@ public struct SourceCustomSessionSource: Codable, Sendable {
         case subAgent = "subAgent"
     }
 
-    public init(custom: String?, subAgent: SubAgent?) {
+    public init(custom: String? = nil, subAgent: SubAgent? = nil) {
         self.custom = custom
         self.subAgent = subAgent
     }
@@ -25507,7 +25507,7 @@ public struct SubAgentThreadSpawnSubAgentSource: Codable, Sendable {
         case other = "other"
     }
 
-    public init(threadSpawn: PurpleThreadSpawn?, other: String?) {
+    public init(threadSpawn: PurpleThreadSpawn? = nil, other: String? = nil) {
         self.threadSpawn = threadSpawn
         self.other = other
     }
@@ -25566,7 +25566,7 @@ public struct PurpleThreadSpawn: Codable, Sendable {
         case parentThreadId = "parent_thread_id"
     }
 
-    public init(agentNickname: String?, agentPath: String?, agentRole: String?, depth: Int, parentThreadId: String) {
+    public init(agentNickname: String? = nil, agentPath: String? = nil, agentRole: String? = nil, depth: Int, parentThreadId: String) {
         self.agentNickname = agentNickname
         self.agentPath = agentPath
         self.agentRole = agentRole
@@ -25658,7 +25658,7 @@ public struct TurnElement: Codable, Sendable {
         case status = "status"
     }
 
-    public init(completedAt: Int?, durationMs: Int?, error: ErrorError?, id: String, items: [ItemElement], startedAt: Int?, status: TurnStatus) {
+    public init(completedAt: Int? = nil, durationMs: Int? = nil, error: ErrorError? = nil, id: String, items: [ItemElement], startedAt: Int? = nil, status: TurnStatus) {
         self.completedAt = completedAt
         self.durationMs = durationMs
         self.error = error
@@ -25821,7 +25821,7 @@ public struct ItemElement: Codable, Sendable {
         case review = "review"
     }
 
-    public init(content: [ItemContent]?, id: String, type: ThreadItemType, fragments: [FragmentElement]?, memoryCitation: MemoryCitationClass?, phase: MessagePhase?, text: String?, summary: [String]?, aggregatedOutput: String?, command: String?, commandActions: [CommandActionElement]?, cwd: String?, durationMs: Int?, exitCode: Int?, processId: String?, source: CommandExecutionSource?, status: String?, changes: [ChangeElement]?, arguments: JSONAny?, error: ErrorClass?, result: ItemResult?, server: String?, tool: String?, contentItems: [InputDynamicToolCallOutputContentItem]?, success: Bool?, agentsStates: [String: AgentsStateValue]?, model: String?, prompt: String?, reasoningEffort: ReasoningEffort?, receiverThreadIds: [String]?, senderThreadId: String?, action: ItemSearchWebSearchAction?, query: String?, path: String?, revisedPrompt: String?, savedPath: String?, review: String?) {
+    public init(content: [ItemContent]? = nil, id: String, type: ThreadItemType, fragments: [FragmentElement]? = nil, memoryCitation: MemoryCitationClass? = nil, phase: MessagePhase? = nil, text: String? = nil, summary: [String]? = nil, aggregatedOutput: String? = nil, command: String? = nil, commandActions: [CommandActionElement]? = nil, cwd: String? = nil, durationMs: Int? = nil, exitCode: Int? = nil, processId: String? = nil, source: CommandExecutionSource? = nil, status: String? = nil, changes: [ChangeElement]? = nil, arguments: JSONAny? = nil, error: ErrorClass? = nil, result: ItemResult? = nil, server: String? = nil, tool: String? = nil, contentItems: [InputDynamicToolCallOutputContentItem]? = nil, success: Bool? = nil, agentsStates: [String: AgentsStateValue]? = nil, model: String? = nil, prompt: String? = nil, reasoningEffort: ReasoningEffort? = nil, receiverThreadIds: [String]? = nil, senderThreadId: String? = nil, action: ItemSearchWebSearchAction? = nil, query: String? = nil, path: String? = nil, revisedPrompt: String? = nil, savedPath: String? = nil, review: String? = nil) {
         self.content = content
         self.id = id
         self.type = type
@@ -25985,7 +25985,7 @@ public struct ItemSearchWebSearchAction: Codable, Sendable {
         case pattern = "pattern"
     }
 
-    public init(queries: [String]?, query: String?, type: WebSearchActionType, url: String?, pattern: String?) {
+    public init(queries: [String]? = nil, query: String? = nil, type: WebSearchActionType, url: String? = nil, pattern: String? = nil) {
         self.queries = queries
         self.query = query
         self.type = type
@@ -26047,7 +26047,7 @@ public struct AgentsStateValue: Codable, Sendable {
         case status = "status"
     }
 
-    public init(message: String?, status: CollabAgentStatus) {
+    public init(message: String? = nil, status: CollabAgentStatus) {
         self.message = message
         self.status = status
     }
@@ -26158,7 +26158,7 @@ public struct KindClass: Codable, Sendable {
         case movePath = "move_path"
     }
 
-    public init(type: FileChangeType, movePath: String?) {
+    public init(type: FileChangeType, movePath: String? = nil) {
         self.type = type
         self.movePath = movePath
     }
@@ -26493,7 +26493,7 @@ public struct ResultClass: Codable, Sendable {
         case structuredContent = "structuredContent"
     }
 
-    public init(meta: JSONAny?, content: [JSONAny], structuredContent: JSONAny?) {
+    public init(meta: JSONAny? = nil, content: [JSONAny], structuredContent: JSONAny? = nil) {
         self.meta = meta
         self.content = content
         self.structuredContent = structuredContent
@@ -26551,7 +26551,7 @@ public struct TokenUsage: Codable, Sendable {
         case total = "total"
     }
 
-    public init(last: Last, modelContextWindow: Int?, total: Last) {
+    public init(last: Last, modelContextWindow: Int? = nil, total: Last) {
         self.last = last
         self.modelContextWindow = modelContextWindow
         self.total = total
@@ -26866,7 +26866,7 @@ public struct ServerRequestParams: Codable, Sendable {
         case parsedCmd = "parsedCmd"
     }
 
-    public init(additionalPermissions: AdditionalPermissionProfile?, approvalId: String?, availableDecisions: [CommandExecutionApprovalDecision]?, command: CommandUnion?, commandActions: [CommandActionElement]?, cwd: String?, itemId: String?, networkApprovalContext: NetworkApprovalContext?, proposedExecpolicyAmendment: [String]?, proposedNetworkPolicyAmendments: [NetworkPolicyAmendmentElement]?, reason: String?, threadId: String?, turnId: String?, grantRoot: String?, questions: [ToolRequestUserInputQuestion]?, serverName: String?, meta: JSONAny?, message: String?, mode: Mode?, requestedSchema: MCPElicitationSchema?, elicitationId: String?, url: String?, permissions: RequestPermissionProfile?, arguments: JSONAny?, callId: String?, tool: String?, previousAccountId: String?, conversationId: String?, fileChanges: [String: FileChange]?, parsedCmd: [ParsedCommand]?) {
+    public init(additionalPermissions: AdditionalPermissionProfile? = nil, approvalId: String? = nil, availableDecisions: [CommandExecutionApprovalDecision]? = nil, command: CommandUnion? = nil, commandActions: [CommandActionElement]? = nil, cwd: String? = nil, itemId: String? = nil, networkApprovalContext: NetworkApprovalContext? = nil, proposedExecpolicyAmendment: [String]? = nil, proposedNetworkPolicyAmendments: [NetworkPolicyAmendmentElement]? = nil, reason: String? = nil, threadId: String? = nil, turnId: String? = nil, grantRoot: String? = nil, questions: [ToolRequestUserInputQuestion]? = nil, serverName: String? = nil, meta: JSONAny? = nil, message: String? = nil, mode: Mode? = nil, requestedSchema: MCPElicitationSchema? = nil, elicitationId: String? = nil, url: String? = nil, permissions: RequestPermissionProfile? = nil, arguments: JSONAny? = nil, callId: String? = nil, tool: String? = nil, previousAccountId: String? = nil, conversationId: String? = nil, fileChanges: [String: FileChange]? = nil, parsedCmd: [ParsedCommand]? = nil) {
         self.additionalPermissions = additionalPermissions
         self.approvalId = approvalId
         self.availableDecisions = availableDecisions
@@ -27012,7 +27012,7 @@ public struct ToolRequestUserInputQuestion: Codable, Sendable {
         case question = "question"
     }
 
-    public init(header: String, id: String, isOther: Bool?, isSecret: Bool?, options: [ToolRequestUserInputOption]?, question: String) {
+    public init(header: String, id: String, isOther: Bool? = nil, isSecret: Bool? = nil, options: [ToolRequestUserInputOption]? = nil, question: String) {
         self.header = header
         self.id = id
         self.isOther = isOther
@@ -27213,7 +27213,7 @@ public struct SessionSourceCustomSessionSource: Codable, Sendable {
         case subAgent = "subAgent"
     }
 
-    public init(custom: String?, subAgent: SubAgentSource?) {
+    public init(custom: String? = nil, subAgent: SubAgentSource? = nil) {
         self.custom = custom
         self.subAgent = subAgent
     }
@@ -27294,7 +27294,7 @@ public struct SubAgentSourceThreadSpawnSubAgentSource: Codable, Sendable {
         case other = "other"
     }
 
-    public init(threadSpawn: FluffyThreadSpawn?, other: String?) {
+    public init(threadSpawn: FluffyThreadSpawn? = nil, other: String? = nil) {
         self.threadSpawn = threadSpawn
         self.other = other
     }
@@ -27353,7 +27353,7 @@ public struct FluffyThreadSpawn: Codable, Sendable {
         case parentThreadId = "parent_thread_id"
     }
 
-    public init(agentNickname: String?, agentPath: String?, agentRole: String?, depth: Int, parentThreadId: String) {
+    public init(agentNickname: String? = nil, agentPath: String? = nil, agentRole: String? = nil, depth: Int, parentThreadId: String) {
         self.agentNickname = agentNickname
         self.agentPath = agentPath
         self.agentRole = agentRole
@@ -27471,7 +27471,7 @@ public struct SkillToolDependency: Codable, Sendable {
         case value = "value"
     }
 
-    public init(command: String?, description: String?, transport: String?, type: String, url: String?, value: String) {
+    public init(command: String? = nil, description: String? = nil, transport: String? = nil, type: String, url: String? = nil, value: String) {
         self.command = command
         self.description = description
         self.transport = transport
@@ -27602,7 +27602,7 @@ public struct SkillMetadata: Codable, Sendable {
         case shortDescription = "shortDescription"
     }
 
-    public init(dependencies: SkillDependencies?, description: String, enabled: Bool, interface: SkillInterface?, name: String, path: String, scope: SkillScope, shortDescription: String?) {
+    public init(dependencies: SkillDependencies? = nil, description: String, enabled: Bool, interface: SkillInterface? = nil, name: String, path: String, scope: SkillScope, shortDescription: String? = nil) {
         self.dependencies = dependencies
         self.description = description
         self.enabled = enabled
@@ -27684,7 +27684,7 @@ public struct SkillsConfigWriteParams: Codable, Sendable {
         case path = "path"
     }
 
-    public init(enabled: Bool, name: String?, path: String?) {
+    public init(enabled: Bool, name: String? = nil, path: String? = nil) {
         self.enabled = enabled
         self.name = name
         self.path = path
@@ -27904,7 +27904,7 @@ public struct SkillsListParams: Codable, Sendable {
         case perCwdExtraUserRoots = "perCwdExtraUserRoots"
     }
 
-    public init(cwds: [String]?, forceReload: Bool?, perCwdExtraUserRoots: [SkillsListExtraRootsForCwd]?) {
+    public init(cwds: [String]? = nil, forceReload: Bool? = nil, perCwdExtraUserRoots: [SkillsListExtraRootsForCwd]? = nil) {
         self.cwds = cwds
         self.forceReload = forceReload
         self.perCwdExtraUserRoots = perCwdExtraUserRoots
@@ -28129,7 +28129,7 @@ public struct ThreadElement: Codable, Sendable {
         case updatedAt = "updatedAt"
     }
 
-    public init(agentNickname: String?, agentRole: String?, cliVersion: String, createdAt: Int, cwd: String, ephemeral: Bool, forkedFromId: String?, gitInfo: GitInfo?, id: String, modelProvider: String, name: String?, path: String?, preview: String, source: SessionSource, status: ThreadStatus, turns: [Turn], updatedAt: Int) {
+    public init(agentNickname: String? = nil, agentRole: String? = nil, cliVersion: String, createdAt: Int, cwd: String, ephemeral: Bool, forkedFromId: String? = nil, gitInfo: GitInfo? = nil, id: String, modelProvider: String, name: String? = nil, path: String? = nil, preview: String, source: SessionSource, status: ThreadStatus, turns: [Turn], updatedAt: Int) {
         self.agentNickname = agentNickname
         self.agentRole = agentRole
         self.cliVersion = cliVersion
@@ -28228,7 +28228,7 @@ public struct ThreadStatus: Codable, Sendable {
         case activeFlags = "activeFlags"
     }
 
-    public init(type: ThreadStatusType, activeFlags: [ThreadActiveFlag]?) {
+    public init(type: ThreadStatusType, activeFlags: [ThreadActiveFlag]? = nil) {
         self.type = type
         self.activeFlags = activeFlags
     }
@@ -28665,7 +28665,7 @@ public struct ThreadForkParams: Codable, Sendable {
         case threadId = "threadId"
     }
 
-    public init(approvalPolicy: ApprovalPolicyUnion?, approvalsReviewer: ApprovalsReviewer?, baseInstructions: String?, config: [String: JSONAny]?, cwd: String?, developerInstructions: String?, ephemeral: Bool?, model: String?, modelProvider: String?, path: String?, persistExtendedHistory: Bool?, sandbox: SandboxMode?, serviceTier: ServiceTier?, threadId: String) {
+    public init(approvalPolicy: ApprovalPolicyUnion? = nil, approvalsReviewer: ApprovalsReviewer? = nil, baseInstructions: String? = nil, config: [String: JSONAny]? = nil, cwd: String? = nil, developerInstructions: String? = nil, ephemeral: Bool? = nil, model: String? = nil, modelProvider: String? = nil, path: String? = nil, persistExtendedHistory: Bool? = nil, sandbox: SandboxMode? = nil, serviceTier: ServiceTier? = nil, threadId: String) {
         self.approvalPolicy = approvalPolicy
         self.approvalsReviewer = approvalsReviewer
         self.baseInstructions = baseInstructions
@@ -28769,7 +28769,7 @@ public struct ThreadForkResponse: Codable, Sendable {
         case thread = "thread"
     }
 
-    public init(approvalPolicy: AskForApproval, approvalsReviewer: ApprovalsReviewer, cwd: String, model: String, modelProvider: String, reasoningEffort: ReasoningEffort?, sandbox: SandboxPolicy, serviceTier: ServiceTier?, thread: ThreadElement) {
+    public init(approvalPolicy: AskForApproval, approvalsReviewer: ApprovalsReviewer, cwd: String, model: String, modelProvider: String, reasoningEffort: ReasoningEffort? = nil, sandbox: SandboxPolicy, serviceTier: ServiceTier? = nil, thread: ThreadElement) {
         self.approvalPolicy = approvalPolicy
         self.approvalsReviewer = approvalsReviewer
         self.cwd = cwd
@@ -28973,7 +28973,7 @@ public struct ThreadListParams: Codable, Sendable {
         case sourceKinds = "sourceKinds"
     }
 
-    public init(archived: Bool?, cursor: String?, cwd: String?, limit: Int?, modelProviders: [String]?, searchTerm: String?, sortKey: ThreadSortKey?, sourceKinds: [ThreadSourceKind]?) {
+    public init(archived: Bool? = nil, cursor: String? = nil, cwd: String? = nil, limit: Int? = nil, modelProviders: [String]? = nil, searchTerm: String? = nil, sortKey: ThreadSortKey? = nil, sourceKinds: [ThreadSourceKind]? = nil) {
         self.archived = archived
         self.cursor = cursor
         self.cwd = cwd
@@ -29046,7 +29046,7 @@ public struct ThreadListResponse: Codable, Sendable {
         case nextCursor = "nextCursor"
     }
 
-    public init(data: [ThreadElement], nextCursor: String?) {
+    public init(data: [ThreadElement], nextCursor: String? = nil) {
         self.data = data
         self.nextCursor = nextCursor
     }
@@ -29101,7 +29101,7 @@ public struct ThreadLoadedListParams: Codable, Sendable {
         case limit = "limit"
     }
 
-    public init(cursor: String?, limit: Int?) {
+    public init(cursor: String? = nil, limit: Int? = nil) {
         self.cursor = cursor
         self.limit = limit
     }
@@ -29157,7 +29157,7 @@ public struct ThreadLoadedListResponse: Codable, Sendable {
         case nextCursor = "nextCursor"
     }
 
-    public init(data: [String], nextCursor: String?) {
+    public init(data: [String], nextCursor: String? = nil) {
         self.data = data
         self.nextCursor = nextCursor
     }
@@ -29218,7 +29218,7 @@ public struct ThreadMetadataGitInfoUpdateParams: Codable, Sendable {
         case sha = "sha"
     }
 
-    public init(branch: String?, originUrl: String?, sha: String?) {
+    public init(branch: String? = nil, originUrl: String? = nil, sha: String? = nil) {
         self.branch = branch
         self.originUrl = originUrl
         self.sha = sha
@@ -29276,7 +29276,7 @@ public struct ThreadMetadataUpdateParams: Codable, Sendable {
         case threadId = "threadId"
     }
 
-    public init(gitInfo: ThreadMetadataGitInfoUpdateParams?, threadId: String) {
+    public init(gitInfo: ThreadMetadataGitInfoUpdateParams? = nil, threadId: String) {
         self.gitInfo = gitInfo
         self.threadId = threadId
     }
@@ -29377,7 +29377,7 @@ public struct ThreadNameUpdatedNotification: Codable, Sendable {
         case threadName = "threadName"
     }
 
-    public init(threadId: String, threadName: String?) {
+    public init(threadId: String, threadName: String? = nil) {
         self.threadId = threadId
         self.threadName = threadName
     }
@@ -29431,7 +29431,7 @@ public struct ThreadReadParams: Codable, Sendable {
         case threadId = "threadId"
     }
 
-    public init(includeTurns: Bool?, threadId: String) {
+    public init(includeTurns: Bool? = nil, threadId: String) {
         self.includeTurns = includeTurns
         self.threadId = threadId
     }
@@ -29593,7 +29593,7 @@ public struct ThreadRealtimeAudioChunk: Codable, Sendable {
         case samplesPerChannel = "samplesPerChannel"
     }
 
-    public init(data: String, itemId: String?, numChannels: Int, sampleRate: Int, samplesPerChannel: Int?) {
+    public init(data: String, itemId: String? = nil, numChannels: Int, sampleRate: Int, samplesPerChannel: Int? = nil) {
         self.data = data
         self.itemId = itemId
         self.numChannels = numChannels
@@ -29710,7 +29710,7 @@ public struct ThreadRealtimeClosedNotification: Codable, Sendable {
         case threadId = "threadId"
     }
 
-    public init(reason: String?, threadId: String) {
+    public init(reason: String? = nil, threadId: String) {
         self.reason = reason
         self.threadId = threadId
     }
@@ -30035,7 +30035,7 @@ public struct ThreadRealtimeStartParams: Codable, Sendable {
         case voice = "voice"
     }
 
-    public init(prompt: String?, sessionId: String?, threadId: String, transport: ThreadRealtimeStartParamsWebsocketThreadRealtimeStartTransport?, voice: RealtimeVoice?) {
+    public init(prompt: String? = nil, sessionId: String? = nil, threadId: String, transport: ThreadRealtimeStartParamsWebsocketThreadRealtimeStartTransport? = nil, voice: RealtimeVoice? = nil) {
         self.prompt = prompt
         self.sessionId = sessionId
         self.threadId = threadId
@@ -30099,7 +30099,7 @@ public struct ThreadRealtimeStartParamsWebsocketThreadRealtimeStartTransport: Co
         case sdp = "sdp"
     }
 
-    public init(type: WebThreadRealtimeStartTransportType, sdp: String?) {
+    public init(type: WebThreadRealtimeStartTransportType, sdp: String? = nil) {
         self.type = type
         self.sdp = sdp
     }
@@ -30155,7 +30155,7 @@ public struct ThreadRealtimeStartTransport: Codable, Sendable {
         case sdp = "sdp"
     }
 
-    public init(type: WebThreadRealtimeStartTransportType, sdp: String?) {
+    public init(type: WebThreadRealtimeStartTransportType, sdp: String? = nil) {
         self.type = type
         self.sdp = sdp
     }
@@ -30211,7 +30211,7 @@ public struct ThreadRealtimeStartedNotification: Codable, Sendable {
         case version = "version"
     }
 
-    public init(sessionId: String?, threadId: String, version: RealtimeConversationVersion) {
+    public init(sessionId: String? = nil, threadId: String, version: RealtimeConversationVersion) {
         self.sessionId = sessionId
         self.threadId = threadId
         self.version = version
@@ -30418,7 +30418,7 @@ public struct ThreadResumeParams: Codable, Sendable {
         case threadId = "threadId"
     }
 
-    public init(approvalPolicy: ApprovalPolicyUnion?, approvalsReviewer: ApprovalsReviewer?, baseInstructions: String?, config: [String: JSONAny]?, cwd: String?, developerInstructions: String?, history: [ResponseItem]?, model: String?, modelProvider: String?, path: String?, persistExtendedHistory: Bool?, personality: Personality?, sandbox: SandboxMode?, serviceTier: ServiceTier?, threadId: String) {
+    public init(approvalPolicy: ApprovalPolicyUnion? = nil, approvalsReviewer: ApprovalsReviewer? = nil, baseInstructions: String? = nil, config: [String: JSONAny]? = nil, cwd: String? = nil, developerInstructions: String? = nil, history: [ResponseItem]? = nil, model: String? = nil, modelProvider: String? = nil, path: String? = nil, persistExtendedHistory: Bool? = nil, personality: Personality? = nil, sandbox: SandboxMode? = nil, serviceTier: ServiceTier? = nil, threadId: String) {
         self.approvalPolicy = approvalPolicy
         self.approvalsReviewer = approvalsReviewer
         self.baseInstructions = baseInstructions
@@ -30525,7 +30525,7 @@ public struct ThreadResumeResponse: Codable, Sendable {
         case thread = "thread"
     }
 
-    public init(approvalPolicy: AskForApproval, approvalsReviewer: ApprovalsReviewer, cwd: String, model: String, modelProvider: String, reasoningEffort: ReasoningEffort?, sandbox: SandboxPolicy, serviceTier: ServiceTier?, thread: ThreadElement) {
+    public init(approvalPolicy: AskForApproval, approvalsReviewer: ApprovalsReviewer, cwd: String, model: String, modelProvider: String, reasoningEffort: ReasoningEffort? = nil, sandbox: SandboxPolicy, serviceTier: ServiceTier? = nil, thread: ThreadElement) {
         self.approvalPolicy = approvalPolicy
         self.approvalsReviewer = approvalsReviewer
         self.cwd = cwd
@@ -30858,7 +30858,7 @@ public struct ThreadStartParams: Codable, Sendable {
         case sessionStartSource = "sessionStartSource"
     }
 
-    public init(approvalPolicy: ApprovalPolicyUnion?, approvalsReviewer: ApprovalsReviewer?, baseInstructions: String?, config: [String: JSONAny]?, cwd: String?, developerInstructions: String?, dynamicTools: [DynamicToolSpec]?, ephemeral: Bool?, experimentalRawEvents: Bool?, mockExperimentalField: String?, model: String?, modelProvider: String?, persistExtendedHistory: Bool?, personality: Personality?, sandbox: SandboxMode?, serviceName: String?, serviceTier: ServiceTier?, sessionStartSource: ThreadStartSource?) {
+    public init(approvalPolicy: ApprovalPolicyUnion? = nil, approvalsReviewer: ApprovalsReviewer? = nil, baseInstructions: String? = nil, config: [String: JSONAny]? = nil, cwd: String? = nil, developerInstructions: String? = nil, dynamicTools: [DynamicToolSpec]? = nil, ephemeral: Bool? = nil, experimentalRawEvents: Bool? = nil, mockExperimentalField: String? = nil, model: String? = nil, modelProvider: String? = nil, persistExtendedHistory: Bool? = nil, personality: Personality? = nil, sandbox: SandboxMode? = nil, serviceName: String? = nil, serviceTier: ServiceTier? = nil, sessionStartSource: ThreadStartSource? = nil) {
         self.approvalPolicy = approvalPolicy
         self.approvalsReviewer = approvalsReviewer
         self.baseInstructions = baseInstructions
@@ -30974,7 +30974,7 @@ public struct ThreadStartResponse: Codable, Sendable {
         case thread = "thread"
     }
 
-    public init(approvalPolicy: AskForApproval, approvalsReviewer: ApprovalsReviewer, cwd: String, model: String, modelProvider: String, reasoningEffort: ReasoningEffort?, sandbox: SandboxPolicy, serviceTier: ServiceTier?, thread: ThreadElement) {
+    public init(approvalPolicy: AskForApproval, approvalsReviewer: ApprovalsReviewer, cwd: String, model: String, modelProvider: String, reasoningEffort: ReasoningEffort? = nil, sandbox: SandboxPolicy, serviceTier: ServiceTier? = nil, thread: ThreadElement) {
         self.approvalPolicy = approvalPolicy
         self.approvalsReviewer = approvalsReviewer
         self.cwd = cwd
@@ -31151,7 +31151,7 @@ public struct ThreadTokenUsage: Codable, Sendable {
         case total = "total"
     }
 
-    public init(last: TokenUsageBreakdown, modelContextWindow: Int?, total: TokenUsageBreakdown) {
+    public init(last: TokenUsageBreakdown, modelContextWindow: Int? = nil, total: TokenUsageBreakdown) {
         self.last = last
         self.modelContextWindow = modelContextWindow
         self.total = total
@@ -31964,7 +31964,7 @@ public struct TurnPlanUpdatedNotification: Codable, Sendable {
         case turnId = "turnId"
     }
 
-    public init(explanation: String?, plan: [TurnPlanStep], threadId: String, turnId: String) {
+    public init(explanation: String? = nil, plan: [TurnPlanStep], threadId: String, turnId: String) {
         self.explanation = explanation
         self.plan = plan
         self.threadId = threadId
@@ -32063,7 +32063,7 @@ public struct TurnStartParams: Codable, Sendable {
         case threadId = "threadId"
     }
 
-    public init(approvalPolicy: ApprovalPolicyUnion?, approvalsReviewer: ApprovalsReviewer?, collaborationMode: CollaborationMode?, cwd: String?, effort: ReasoningEffort?, input: [UserInput], model: String?, outputSchema: JSONAny?, personality: Personality?, responsesapiClientMetadata: [String: String]?, sandboxPolicy: CommandExecParamsDangerFullAccessSandboxPolicy?, serviceTier: ServiceTier?, summary: ReasoningSummary?, threadId: String) {
+    public init(approvalPolicy: ApprovalPolicyUnion? = nil, approvalsReviewer: ApprovalsReviewer? = nil, collaborationMode: CollaborationMode? = nil, cwd: String? = nil, effort: ReasoningEffort? = nil, input: [UserInput], model: String? = nil, outputSchema: JSONAny? = nil, personality: Personality? = nil, responsesapiClientMetadata: [String: String]? = nil, sandboxPolicy: CommandExecParamsDangerFullAccessSandboxPolicy? = nil, serviceTier: ServiceTier? = nil, summary: ReasoningSummary? = nil, threadId: String) {
         self.approvalPolicy = approvalPolicy
         self.approvalsReviewer = approvalsReviewer
         self.collaborationMode = collaborationMode
@@ -32260,7 +32260,7 @@ public struct TurnSteerParams: Codable, Sendable {
         case threadId = "threadId"
     }
 
-    public init(expectedTurnId: String, input: [UserInput], responsesapiClientMetadata: [String: String]?, threadId: String) {
+    public init(expectedTurnId: String, input: [UserInput], responsesapiClientMetadata: [String: String]? = nil, threadId: String) {
         self.expectedTurnId = expectedTurnId
         self.input = input
         self.responsesapiClientMetadata = responsesapiClientMetadata
@@ -32373,7 +32373,7 @@ public struct WebSearchAction: Codable, Sendable {
         case pattern = "pattern"
     }
 
-    public init(queries: [String]?, query: String?, type: WebSearchActionType, url: String?, pattern: String?) {
+    public init(queries: [String]? = nil, query: String? = nil, type: WebSearchActionType, url: String? = nil, pattern: String? = nil) {
         self.queries = queries
         self.query = query
         self.type = type
@@ -32437,7 +32437,7 @@ public struct WindowsSandboxSetupCompletedNotification: Codable, Sendable {
         case success = "success"
     }
 
-    public init(error: String?, mode: WindowsSandboxSetupMode, success: Bool) {
+    public init(error: String? = nil, mode: WindowsSandboxSetupMode, success: Bool) {
         self.error = error
         self.mode = mode
         self.success = success
@@ -32493,7 +32493,7 @@ public struct WindowsSandboxSetupStartParams: Codable, Sendable {
         case mode = "mode"
     }
 
-    public init(cwd: String?, mode: WindowsSandboxSetupMode) {
+    public init(cwd: String? = nil, mode: WindowsSandboxSetupMode) {
         self.cwd = cwd
         self.mode = mode
     }

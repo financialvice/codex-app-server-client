@@ -20,6 +20,10 @@ let package = Package(
             name: "CodexAppServerProtocol",
             targets: ["CodexAppServerProtocol"]
         ),
+        .executable(
+            name: "CodexAppServerExample",
+            targets: ["CodexAppServerExample"]
+        ),
     ],
     targets: [
         .target(
@@ -32,6 +36,10 @@ let package = Package(
         .target(
             name: "CodexAppServer",
             dependencies: ["CodexAppServerClient", "CodexAppServerProtocol"]
+        ),
+        .executableTarget(
+            name: "CodexAppServerExample",
+            dependencies: ["CodexAppServer"]
         ),
         .testTarget(
             name: "CodexAppServerTests",

@@ -2,6 +2,10 @@
 
 Minimal Swift Package Manager client for `codex app-server`.
 
+OpenAI Codex is open source:
+
+- https://github.com/openai/codex
+
 This package is intentionally opinionated:
 
 - generated from a pinned Codex version
@@ -45,6 +49,18 @@ Current pinned Codex version: `0.120.0`
     url: "https://github.com/financialvice/CodexAppServer.git",
     exact: "0.120.0"
 )
+```
+
+## Example
+
+A minimal end-to-end example executable lives in:
+
+- `Sources/CodexAppServerExample/main.swift`
+
+Run it with:
+
+```bash
+swift run CodexAppServerExample
 ```
 
 ## Local Managed Example
