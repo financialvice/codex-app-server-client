@@ -8,6 +8,33 @@ When you connect with `CodexConnection.localManaged`, the client captures the st
 
 `.processLog` is macOS-only and only fires for `.localManaged` connections. Remote connections do not produce this event.
 
+> Important: codex emits 4–5 banner lines on startup and then nothing else unless
+> `RUST_LOG` is set in the child process environment. With `RUST_LOG` unset, only
+> `ERROR`-level events surface; the process appears silent during normal operation.
+> Set `RUST_LOG=info` (or `RUST_LOG=debug`) via ``LocalServerOptions/environment``
+> to get meaningful runtime tracing — websocket dispatch, JSON-RPC routing, thread
+> lifecycle, tool execution. Optionally pair with `LOG_FORMAT=json` for
+> machine-parseable lines.
+>
+> ```swift
+> CodexConnection.localManaged(LocalServerOptions(
+>     environment: ["RUST_LOG": "info"]
+> ))
+> ```
+>
+> The startup banner is delivered to every subscriber via a small replay buffer, so
+> calling ``CodexClient/processLogs(bufferSize:)`` after `connect` still surfaces
+> the banner lines.
+>
+> With `RUST_LOG` set, lines arrive with ANSI color escapes (e.g. `\u{001B}[32m INFO\u{001B}[0m`).
+> Use ``Swift/String/strippingAnsiEscapes`` to remove them at render time:
+>
+> ```swift
+> for await line in await client.processLogs() {
+>     logModel.append(line.strippingAnsiEscapes)
+> }
+> ```
+
 ## Basic pattern
 
 ```swift

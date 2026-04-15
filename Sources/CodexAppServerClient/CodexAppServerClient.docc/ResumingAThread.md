@@ -4,19 +4,22 @@ Create a thread with `ephemeral: false`, save its ID, and call `RPC.ThreadResume
 
 ## Overview
 
-By default, ephemeral threads exist only for the lifetime of the session and are not written to disk. To resume a conversation across app launches, create the thread with `ephemeral: false` and persist the returned thread ID. On relaunch, pass that ID to `RPC.ThreadResume`.
+A thread is **persistent (resumable) by default** — when `ThreadStartParams.ephemeral` is omitted or `nil`, codex writes the thread to disk and `RPC.ThreadResume` will find it. Pass `ephemeral: true` only when you explicitly want an in-memory-only thread that vanishes at end of session. Persist the returned thread id and call `RPC.ThreadResume` on relaunch to restore context.
 
 ## Creating a persistent thread
 
 ```swift
+// `ephemeral` omitted (or nil) — codex writes the thread to disk by default.
 let thread = try await client.call(
     RPC.ThreadStart.self,
-    params: ThreadStartParams(ephemeral: false)
+    params: ThreadStartParams()
 )
 let savedThreadId = thread.thread.id
 // Persist savedThreadId — UserDefaults, a database, wherever makes sense for your app.
 UserDefaults.standard.set(savedThreadId, forKey: "lastThreadId")
 ```
+
+You can also pass `ephemeral: false` explicitly for clarity; both behave identically on the wire.
 
 ## Resuming on relaunch
 
@@ -34,7 +37,7 @@ if let savedId = UserDefaults.standard.string(forKey: "lastThreadId") {
         UserDefaults.standard.removeObject(forKey: "lastThreadId")
         let fresh = try await client.call(
             RPC.ThreadStart.self,
-            params: ThreadStartParams(ephemeral: false)
+            params: ThreadStartParams()
         )
         UserDefaults.standard.set(fresh.thread.id, forKey: "lastThreadId")
     }

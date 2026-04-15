@@ -36,7 +36,7 @@ public actor CodexClient {
     private var delegate: WebSocketOpenDelegate?
     private var listenTask: Task<Void, Never>?
 #if os(macOS)
-    private var localProcess: LocalCodexAppServerProcess?
+    internal var localProcess: LocalCodexAppServerProcess?
 #endif
     private var nextRequestID = 1
     private var pendingRequests: [Int: CheckedContinuation<Data, Error>] = [:]

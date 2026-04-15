@@ -24,6 +24,13 @@ extension CodexClient {
     ///     // only events for this thread (plus system lifecycle events)
     /// }
     /// ```
+    ///
+    /// > Important: Subscribe *before* invoking RPCs whose notifications come from a
+    /// > separate server task — most importantly `RPC.TurnStart`, whose deltas race
+    /// > the response. `RPC.ThreadStart`'s `ThreadStarted` notification is in-task
+    /// > and safe to subscribe-after, but for turns prefer
+    /// > ``streamTurn(input:threadId:)`` or order your subscribe before the turn
+    /// > trigger.
     public func events(
         forThread threadId: String,
         bufferSize: Int = 1024
@@ -164,19 +171,25 @@ extension CodexClient {
     #if os(macOS)
     /// Stream of stderr lines from the locally-managed codex process.
     ///
-    /// Available only for ``CodexConnection/localManaged(_:)``. Backed by
-    /// ``CodexEvent/processLog(line:)`` events.
+    /// Available only for ``CodexConnection/localManaged(_:)``. Subscribes directly to
+    /// the underlying stderr broadcaster so that subscribers attaching after `connect`
+    /// still receive the startup banner lines (replayed from a small buffer). The
+    /// `bufferSize` parameter is retained for source compatibility but no longer
+    /// affects buffering — the broadcaster manages its own replay buffer.
+    ///
+    /// Returns an empty, immediately-finished stream for `.remote` connections.
     public func processLogs(
         bufferSize: Int = 256
     ) -> AsyncStream<String> {
-        let base = events(bufferingPolicy: .bufferingNewest(bufferSize))
+        guard let process = localProcess else {
+            return AsyncStream { continuation in continuation.finish() }
+        }
         return AsyncStream { continuation in
             let task = Task {
-                for await event in base {
+                let lines = await process.stderrLines()
+                for await line in lines {
                     if Task.isCancelled { break }
-                    if case .processLog(let line) = event {
-                        continuation.yield(line)
-                    }
+                    continuation.yield(line)
                 }
                 continuation.finish()
             }

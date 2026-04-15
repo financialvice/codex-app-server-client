@@ -41,17 +41,31 @@ internal actor LocalCodexAppServerProcess {
         let websocketURL = URL(string: "ws://127.0.0.1:\(port)")!
         let readyURL = URL(string: "http://127.0.0.1:\(port)/readyz")!
 
+        var serverArgs: [String] = ["app-server", "--listen", websocketURL.absoluteString]
+        for key in options.extraConfig.keys.sorted() {
+            serverArgs.append("-c")
+            serverArgs.append("\(key)=\(options.extraConfig[key] ?? "")")
+        }
+        serverArgs.append(contentsOf: options.extraArguments)
+
         let process = Process()
         if executable.contains("/") {
             process.executableURL = URL(fileURLWithPath: executable)
-            process.arguments = ["app-server", "--listen", websocketURL.absoluteString]
+            process.arguments = serverArgs
         } else {
             process.executableURL = URL(fileURLWithPath: "/usr/bin/env")
-            process.arguments = [executable, "app-server", "--listen", websocketURL.absoluteString]
+            process.arguments = [executable] + serverArgs
         }
         process.currentDirectoryURL = options.workingDirectory
 
         var environment = ProcessInfo.processInfo.environment
+        if let codexHome = options.codexHome {
+            try? FileManager.default.createDirectory(
+                at: codexHome,
+                withIntermediateDirectories: true
+            )
+            environment["CODEX_HOME"] = codexHome.path
+        }
         for (key, value) in options.environment {
             environment[key] = value
         }
@@ -203,7 +217,11 @@ internal actor StderrBroadcaster {
 
     func subscribe() -> AsyncStream<String> {
         let id = UUID()
+        let snapshot = recentLines
         return AsyncStream { continuation in
+            for line in snapshot {
+                continuation.yield(line)
+            }
             if finished {
                 continuation.finish()
                 return

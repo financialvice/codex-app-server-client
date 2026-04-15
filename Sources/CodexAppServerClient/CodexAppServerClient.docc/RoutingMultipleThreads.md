@@ -6,6 +6,14 @@ One `CodexClient` instance hosts many concurrent threads; use the `threadId` car
 
 A single ``CodexClient`` can run many threads simultaneously. There is no per-thread stream — all events arrive through the same ``CodexClient/events(bufferSize:)`` multicast. Every notification struct carries a `threadId` field you can use to demultiplex events to per-thread state.
 
+> Important: ``CodexClient/events(bufferSize:)`` does not buffer events emitted before
+> subscription. For RPCs whose follow-up notifications come from a *different* server
+> task than the response (notably `RPC.TurnStart`, whose `AgentMessageDelta`
+> notifications are emitted concurrently with the response), you must call
+> `events()` / ``CodexClient/events(forThread:bufferSize:)`` *before* invoking the
+> trigger RPC. ``CodexClient/streamTurn(input:threadId:)`` already does this for
+> turns; reach for it instead of rolling your own when you can.
+
 ## Starting multiple threads
 
 ```swift

@@ -3,6 +3,13 @@ import CodexAppServerProtocol
 
 /// How strictly to enforce that the running codex binary matches the version pinned to this
 /// Swift package.
+///
+/// Default is ``exact``. For ``CodexConnection/localManaged(_:)`` this checks the locally
+/// installed `codex` binary's `--version` output against `CodexBindingMetadata.codexVersion`
+/// before the child process is even spawned — when both are in lockstep (the supported
+/// release model), `.exact` succeeds and is the right choice. Reach for ``allowMismatch``
+/// only when you genuinely cannot pin the binary (e.g. development machines running a
+/// drifted local build).
 public enum VersionPolicy: Sendable {
     /// Require the connected codex to match `CodexBindingMetadata.codexVersion` exactly.
     case exact
@@ -18,7 +25,32 @@ public struct LocalServerOptions: Sendable {
     /// Working directory for the child process. Defaults to the current process directory.
     public var workingDirectory: URL?
     /// Environment variables added to or overriding the current process environment.
+    /// Entries here override ``codexHome`` if the same key (`CODEX_HOME`) is set in both.
     public var environment: [String: String]
+    /// Override the codex configuration directory. Forwarded to the child process as
+    /// `CODEX_HOME`. Defaults to nil — codex resolves `~/.codex` as usual.
+    ///
+    /// The directory is created (with intermediate directories) before the child is
+    /// launched if it doesn't already exist — codex itself crashes immediately when
+    /// `CODEX_HOME` points to a nonexistent path.
+    ///
+    /// Useful for sandbox testing, CI isolation, or running multiple codex instances
+    /// against separate config / auth state.
+    public var codexHome: URL?
+    /// Config overrides forwarded as `-c key=value` to `codex app-server`.
+    ///
+    /// Equivalent to passing `["-c", "key=value", ...]` via ``extraArguments``. Most
+    /// `~/.codex/config.toml` keys (e.g. `sandbox_mode`,
+    /// `features.exec_permission_approvals`) are reachable this way. Per-thread
+    /// alternatives on `ThreadStartParams` (`sandbox`, `model`, `cwd`, freeform `config`)
+    /// are usually preferable when they exist.
+    public var extraConfig: [String: String]
+    /// Additional command-line arguments appended to `codex app-server`.
+    ///
+    /// Use for flags with no JSON-RPC equivalent (e.g. `--enable foo` / `--disable bar`,
+    /// websocket auth flags). Reach for typed protocol params on `ThreadStartParams`
+    /// first when available.
+    public var extraArguments: [String]
     /// How long to wait for the spawned codex process to report ready before failing.
     /// Raise this on cold-start machines, CI boxes with slow disks, or when running
     /// a debug-build codex that takes longer to initialise. Defaults to 10 seconds.
@@ -28,11 +60,17 @@ public struct LocalServerOptions: Sendable {
         codexExecutable: String? = nil,
         workingDirectory: URL? = nil,
         environment: [String: String] = [:],
+        codexHome: URL? = nil,
+        extraConfig: [String: String] = [:],
+        extraArguments: [String] = [],
         readinessTimeout: Duration = .seconds(10)
     ) {
         self.codexExecutable = codexExecutable
         self.workingDirectory = workingDirectory
         self.environment = environment
+        self.codexHome = codexHome
+        self.extraConfig = extraConfig
+        self.extraArguments = extraArguments
         self.readinessTimeout = readinessTimeout
     }
 }
@@ -224,6 +262,22 @@ public enum CodexClientError: Error, LocalizedError, Sendable {
         case .processLaunchFailed(let message):
             "Failed to launch codex app-server: \(message)"
         }
+    }
+}
+
+public extension InitializeResponse {
+    /// The codex semver version parsed from ``userAgent``, or `nil` if no version
+    /// substring could be located.
+    ///
+    /// `userAgent` is the *combined* server+client identity string codex assembles
+    /// during `initialize`, formatted as:
+    /// `"<originator>/<codex-version> (<OS>; <arch>) <terminal-UA> (<clientName>; <clientVersion>)"`.
+    /// The `<originator>` prefix is process-global on the codex side and may be
+    /// overwritten by the first client's `clientInfo.name` rather than the literal
+    /// `"codex_cli_rs"` — never key off the prefix. Use this property to extract the
+    /// underlying codex version, which is the only stable component.
+    var codexVersion: String? {
+        CodexVersionChecker.parseVersion(from: userAgent)
     }
 }
 
